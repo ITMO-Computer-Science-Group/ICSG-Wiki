@@ -43,6 +43,16 @@
 </li>
                                     
   <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">俄语</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/RLS/Russian Language Grammar/Grammar for Russian.md" class="dropdown-item">俄语语法</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">物理</a>
     <ul class="dropdown-menu">
             
@@ -204,6 +214,9 @@
   </li>
                                 </ul>
                             </li>
+                            <li class="navitem">
+                                <a href="../../../friends/" class="nav-link">友链</a>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
@@ -302,6 +315,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="4"><a href="#16" class="nav-link">§1.6 铁电体（中文译名不确定）</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#_10" class="nav-link">参考文献：</a>
@@ -320,18 +337,11 @@
 <ul>
 <li>
 <h3 id="_3">第一章：运动学</h3>
-<ul>
-<li>建议阅读以下资料：<ul>
-<li><a href="../Russian%20Language%20Grammar/Grammar%20for%20Russian.md#形动词">形动词</a></li>
-<li><a href="../Russian%20Language%20Grammar/Grammar%20for%20Russian.md#前置词语法">前置词</a></li>
-</ul>
-</li>
-</ul>
 </li>
 <li>
 <h3 id="_4">第二章：力学守恒定律</h3>
 <ul>
-<li>该分支下无可梳理内容，语言部分请移步<a href="https://itmo-computer-science-group.github.io/Russian-Language-Studying/">Russian-Language-Studying</a>仓库下的<a href="https://itmo-computer-science-group.github.io/Russian-Language-Studying/Physics/%E7%89%9B%E9%A1%BF%E5%8A%9B%E5%AD%A6.html">牛顿力学.md</a></li>
+<li>该分支下无可梳理内容</li>
 </ul>
 </li>
 <li>
@@ -651,12 +661,13 @@ $$к=\frac{n_0p_e^2}{3\varepsilon_0k_БT}$$</li>
     $$\sigma_p=-\frac{\partial P_x}{\partial x}-\frac{\partial P_y}{\partial y}-\frac{\partial P_z}{\partial z}=-div\vec{P}\quad(2.10)$$<ul>
 <li>
 <h4 id="14_1">§1.4 电感应矢量</h4>
-<p>$$
+$$
 \vec{E}<em>{микро}=\vec{E}</em>{своб}+\vec{E}<em>{связ}\quad(2.11)\
 \vec{E}=&lt;\vec{E}</em>{микро}&gt;=&lt;\vec{E}<em>{своб}&gt;+&lt;\vec{E}</em>{связ}&gt;\
 \underset{(S)}{\oint}\vec{E}\cdot d\vec{S}=\frac{1}{\varepsilon_0}(q_{охв}^{своб}+q_{охв}^{связ})\quad(2.12)
 $$
-<img alt="" src="../pic/YKWL3.1.4.1.png" /></p>
+<img alt="" src="../pic/YKWL3.1.4.1.png" /></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -681,48 +692,60 @@ $$
 \vec{D}=\varepsilon_0\vec{E}+к\varepsilon_0\vec{E}=(1+к)\varepsilon_0\vec{E}=\varepsilon\varepsilon_0\vec{E}\quad(2.17)
 $$
 $\varepsilon=1+к$ - 相对介电常数
-    - #### §1.5 在两种介质之间的界面处产生静电场的条件
-- 第一种媒介——$E_1,D_1\varepsilon_1$
-- 第二种媒介——$E_2,D_2,\varepsilon_2$
-<img alt="" src="../pic/YKWL3.1.5.1.png" /></p>
-<p>$$
-\underset{(L)}{\oint}\vec{E}d\vec{l}=0\
-\lim_{\Delta h\to 0}\underset{(L)}{\oint}\vec{E}d\vec{l}=(E_{2\tau}-E_{1\tau})\cdot dl=0\
+- #### §1.5 在两种介质之间的界面处产生静电场的条件
+    - 第一种媒介——$E_1,D_1\varepsilon_1$
+    - 第二种媒介——$E_2,D_2,\varepsilon_2$
+    <img alt="" src="../pic/YKWL3.1.5.1.png" /></p>
+<pre><code>$$
+\underset{(L)}{\oint}\vec{E}d\vec{l}=0\\
+\lim_{\Delta h\to 0}\underset{(L)}{\oint}\vec{E}d\vec{l}=(E_{2\tau}-E_{1\tau})\cdot dl=0\\
 E_{2\tau}=E_{1\tau}\quad(2.18)
 $$
 - 穿过该表面时，与两种介质之间的界面相切的场强分量不变。
 $$
-D=\varepsilon\varepsilon_0E\
+D=\varepsilon\varepsilon_0E\\
 \frac{D_{2\tau}}{D_1\tau}=\frac{\varepsilon_2\varepsilon_0E_{2\tau}}{\varepsilon_1\varepsilon_0E_{1\tau}}\quad\Rightarrow\quad D_{1\tau}=\frac{\varepsilon_2}{\varepsilon_1}D_{1\tau}\quad(2.19)
 $$
-<img alt="" src="../pic/YKWL3.1.5.2.png" /></p>
-<p>$$
-\underset{(S)}{\oint}\vec{D}d\vec{S}=q_{охв}^{своб}\
-\lim_{\Delta h\to 0}\underset{(S)}{\oint}\vec{D}d\vec{S}=\lim_{\Delta h\to 0}q_{охв}^{своб}\
+![](pic/YKWL3.1.5.2.png)
+
+$$
+\underset{(S)}{\oint}\vec{D}d\vec{S}=q_{охв}^{своб}\\
+\lim_{\Delta h\to 0}\underset{(S)}{\oint}\vec{D}d\vec{S}=\lim_{\Delta h\to 0}q_{охв}^{своб}\\
 $$
 如果在界面上没有自由电荷
 $$
-\lim_{\Delta h\to 0}q_{охв}^{своб}=0\
-\lim_{\Delta h\to 0}\underset{(S)}{\oint}\vec{D}d\vec{S}=(D_{2n}-D_{1n})d\vec{S}=0\
+\lim_{\Delta h\to 0}q_{охв}^{своб}=0\\
+\lim_{\Delta h\to 0}\underset{(S)}{\oint}\vec{D}d\vec{S}=(D_{2n}-D_{1n})d\vec{S}=0\\
 D_{2n}=D_{1n}\quad(2.20)
 $$
 - 当穿过两种介质之间的界面时，在没有表面自由电荷的情况下，电位移的法向分量不会改变。
 $$
 \frac{E_{2n}}{E_{1n}}=\frac{D_{2n}/\varepsilon_2\varepsilon_0}{D_{1n}/\varepsilon_1\varepsilon_0}\quad\Rightarrow\quad E_{2n}=\frac{\varepsilon_1}{\varepsilon_2}E_{1n}\quad(2.21)
 $$
-    - #### §1.6 铁电体（中文译名不确定）
-- 铁电体 (Сегнетоэлектрики) 是一组在一定温度范围内具有自发（自发）极化的晶体电介质，它们在电场，变形，温度变化等外部影响的影响下发生很大变化。
-    - сегнетова соль    $NaKC_4H_4O_6\cdot4H_2O$
-    - титанат бария    $BaTiO_3$
-            - <img alt="" src="../pic/YKWL3.1.6.1.png" />
-            - <img alt="" src="../pic/YKWL3.1.6.2.png" />
-        - $P_S$ - 饱和极化
-        - $P_R$ - 残余极化
-        - $E_C$ - 矫顽磁力
-        $K_{max}~10^3$
-        - 在$T&gt;TC$（居里温度）时，隔离电介质变成了普通的极性电介质
-            - $BaTiO_3-T_C=406K$
-            - $LiNbO_3-T_C=1483K$</p>
+</code></pre>
+<ul>
+<li>
+<h4 id="16">§1.6 铁电体（中文译名不确定）</h4>
+<ul>
+<li>铁电体 (Сегнетоэлектрики) 是一组在一定温度范围内具有自发（自发）极化的晶体电介质，它们在电场，变形，温度变化等外部影响的影响下发生很大变化。<ul>
+<li>сегнетова соль    $NaKC_4H_4O_6\cdot4H_2O$</li>
+<li>титанат бария    $BaTiO_3$
+        - <img alt="" src="../pic/YKWL3.1.6.1.png" />
+        - <img alt="" src="../pic/YKWL3.1.6.2.png" /><ul>
+<li>$P_S$ - 饱和极化</li>
+<li>$P_R$ - 残余极化</li>
+<li>$E_C$ - 矫顽磁力
+$K_{max}~10^3$</li>
+<li>在$T&gt;TC$（居里温度）时，隔离电介质变成了普通的极性电介质<ul>
+<li>$BaTiO_3-T_C=406K$</li>
+<li>$LiNbO_3-T_C=1483K$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </li>
