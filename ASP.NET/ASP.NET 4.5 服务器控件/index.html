@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="ICSG-Group">
+        <link rel="canonical" href="https://itmo.ranying.xyz/ASP.NET/ASP.NET%204.5%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A7%E4%BB%B6/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>ASP.NET 4.5 服务器控件 - Russian Natural Science Wiki</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Russian Natural Science Wiki</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">语言学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/List/语言学习/" class="dropdown-item">目录</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">俄语</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/Russian-Language-Studying/Russian Language Grammar/Grammar for Russian/" class="dropdown-item">俄语语法</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">物理</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/Russian-Language-Studying/Physics/牛顿力学/" class="dropdown-item">牛顿力学</a>
+</li>
+            
+<li>
+    <a href="/Russian-Language-Studying/Physics/分子物理学/" class="dropdown-item">分子物理学</a>
+</li>
+            
+<li>
+    <a href="/Russian-Language-Studying/Physics/电磁学/" class="dropdown-item">电磁学</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">化学</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/Russian-Language-Studying/Chemistry/无机化学基础/" class="dropdown-item">无机化学基础</a>
+</li>
+            
+<li>
+    <a href="/Russian-Language-Studying/Chemistry/物质结构基础/" class="dropdown-item">物质结构基础</a>
+</li>
+            
+<li>
+    <a href="/Russian-Language-Studying/Chemistry/化学计量基础/" class="dropdown-item">化学计量基础</a>
+</li>
+            
+<li>
+    <a href="/Russian-Language-Studying/Chemistry/化学反应原理/" class="dropdown-item">化学反应原理</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">数学</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/Russian-Language-Studying/Math/实数运算/" class="dropdown-item">实数运算</a>
+</li>
+            
+<li>
+    <a href="/Russian-Language-Studying/Math/基本初等函数/" class="dropdown-item">基本初等函数</a>
+</li>
+            
+<li>
+    <a href="/Russian-Language-Studying/Math/指数和对数/" class="dropdown-item">指数和对数</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">信息</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/Russian-Language-Studying/Information/hardware/" class="dropdown-item">硬件</a>
+</li>
+            
+<li>
+    <a href="/Russian-Language-Studying/Information/Excel/" class="dropdown-item">Excel</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">工程制图</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/Russian-Language-Studying/Engineering%20graphics/制图标准/" class="dropdown-item">制图标准</a>
+</li>
+            
+<li>
+    <a href="/Russian-Language-Studying/Engineering%20graphics/图形几何学/" class="dropdown-item">图形几何学</a>
+</li>
+            
+<li>
+    <a href="/Russian-Language-Studying/Engineering%20graphics/点的三面投影/" class="dropdown-item">点的三面投影</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">预科课程 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/List/预科课程/" class="dropdown-item">目录</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">物理</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/Physics/预科物理/" class="dropdown-item">预科物理</a>
+</li>
+            
+<li>
+    <a href="/Physics/分子物理学与热力学教材/" class="dropdown-item">分子物理学与热力学教材</a>
+</li>
+            
+<li>
+    <a href="/Physics/单位/" class="dropdown-item">单位</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">化学</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/Chemistry/普通化学/" class="dropdown-item">普通化学</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">数学</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/Math/预科数学/" class="dropdown-item">预科数学</a>
+</li>
+            
+<li>
+    <a href="/Math/高中数学/" class="dropdown-item">高中数学</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">信息</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/Information/预科信息/" class="dropdown-item">预科信息</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">工程制图</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/Engineering%20graphics/工程制图/" class="dropdown-item">工程制图</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">软件工程 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/list/软件工程/" class="dropdown-item">目录</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../friends/" class="nav-link">友链</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/edit/main/ASP.NET/ASP.NET 4.5 服务器控件.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#aspnet-45" class="nav-link">ASP.NET 4.5 服务器控件</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="aspnet-45">ASP.NET 4.5 服务器控件</h1>
+<ul>
+<li>HTML服务器控件<ul>
+<li>runat="server"</li>
+<li>id=""</li>
+</ul>
+</li>
+<li>
+<p>Web服务器控件</p>
+<ul>
+<li>基本属性<ul>
+<li>外观属性<ul>
+<li>BackColor：背景色，#RRGGBB</li>
+<li>ForeColor：前景色，#RRGGBB</li>
+<li>Border边框属性<ul>
+<li>BorderWidth：边框宽度</li>
+<li>BorderColor：边框颜色，#RRGGBB</li>
+<li>BorderStyle：边框样式，有以下取值：<ul>
+<li>Notset：默认值</li>
+<li>None：没有边框</li>
+<li>Dotted：边框为虚线，点较小</li>
+<li>Dashed：边框为虚线，点较大</li>
+<li>Solid：边框为实线</li>
+<li>Double：边框为实线，但厚度是Solid的两倍</li>
+<li>Groove：在对象四周出现3D凹陷式的边框</li>
+<li>Ridge：在对象四周出现3D突起式的边框</li>
+<li>Inset：控件呈陷入状</li>
+<li>Outset：控件呈凸起状</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Font字体属性<ul>
+<li>Font-Bold：如果设置为true，则会变成粗体</li>
+<li>Font-Italic：如果设置为true，则会变成斜体</li>
+<li>Font-Names：设置字体的名字</li>
+<li>Font-Size：设置字体的大小，有九种取值：<ul>
+<li>Smaller</li>
+<li>Larger</li>
+<li>XX-Small</li>
+<li>X-Small</li>
+<li>Small</li>
+<li>Medium</li>
+<li>Large</li>
+<li>X-Large</li>
+<li>XX-Large</li>
+</ul>
+</li>
+<li>Font-Strikeout：如果设置为true，则会显示删除线</li>
+<li>Font-Underline：如果设置为true，则会显示下划线</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>行为属性<ul>
+<li>Enabled：设置为true时，控件可用</li>
+<li>ToolTip：设置控件的提示信息</li>
+<li>Visible：设置控件是否可见</li>
+</ul>
+</li>
+<li>可访问性<ul>
+<li>AccessKey：为控件指定快捷键，如果设置为“A”，那么按下alt+A时控件将获得焦点</li>
+<li>TabIndex：设置按下Tab键后控件获得焦点的顺序</li>
+</ul>
+</li>
+<li>布局属性<ul>
+<li>Height：设置高度</li>
+<li>Width：设置宽度</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>事件模型</p>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>支持的控件</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Click</td>
+<td>Button</td>
+<td>ImageButton</td>
+</tr>
+<tr>
+<td>TextChanged</td>
+<td>TextBox</td>
+<td>输入焦点变化</td>
+</tr>
+<tr>
+<td>SelectedIndexChanged</td>
+<td>DropDownList</td>
+<td>ListBox</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li>
+<p>文本服务器控件</p>
+<ul>
+<li>Label控件<ul>
+<li>Text属性：显示的内容</li>
+</ul>
+</li>
+<li>Literal控件<ul>
+<li>Text属性：显示的文本</li>
+<li>Mode属性：设置文本的显示方式，支持以下值：<ul>
+<li>Transform：转换以适应请求浏览器的协议</li>
+<li>PassThrough：按原样呈现在浏览器中</li>
+<li>Encode：使用HtmlEncode的方法进行编码，将HTML编码转换为文本表现形式</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>TextBox控件</p>
+<ul>
+<li>AutoPostBack属性：文本修改后是否回传回服务器，默认false不回传</li>
+<li>Columns属性：获取或设置文本框的宽度（以字符为单位）</li>
+<li>MaxLength属性：获取或设置文本框中最多允许的字符数</li>
+<li>ReadOnly属性：获取或设定是否允许更改文本内容，true表示只读，false表示可以修改</li>
+<li>
+<p>TextMode属性：用于设置文本的显示模式，该属性有以下选项：</p>
+<table>
+<thead>
+<tr>
+<th>选项名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Color</td>
+<td>表示颜色项模式</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>表示日期输入模式</td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>表示datetime模式</td>
+</tr>
+<tr>
+<td>DateTimeLocal</td>
+<td>表示本地datetime模式</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>表示电子邮件模式</td>
+</tr>
+<tr>
+<td>Month</td>
+<td>表示月份项模式</td>
+</tr>
+<tr>
+<td>MultiLine</td>
+<td>表示多行输入模式</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>表示数字项模式</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>表示密码输入模式</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>表示电话号码项模式</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>表示数值范围模式</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>表示搜索字符串模式</td>
+</tr>
+<tr>
+<td>SingleLine</td>
+<td>表示单行输入模式</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>表示时间输入模式</td>
+</tr>
+<tr>
+<td>Url</td>
+<td>表示URL模式</td>
+</tr>
+<tr>
+<td>Week</td>
+<td>表示输入年-周模式</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Text属性：设置和读取TextBox中的文字</p>
+</li>
+<li>Row属性：获取或设置多行文本框中显示的行数，默认为0表示单行文本框，该属性当TextMode属性为MultiLine时才有效</li>
+<li>Focus()方法：获取焦点<ul>
+<li>HyperLink控件</li>
+</ul>
+</li>
+<li>Text属性：设置链接文本</li>
+<li>NavigateURL属性：设置URL目标</li>
+<li>Target属性：设置目标链接的呈现方式，有以下四种：<ul>
+<li>_parent：显示在父框架中</li>
+<li>_blank：在新窗口中打开</li>
+<li>_self：显示在当前框架中</li>
+<li>_top：显示在全窗口中</li>
+</ul>
+</li>
+<li>ImageUrl：获取或设置超链接的图像</li>
+<li>按钮服务器控件<ul>
+<li>Button控件</li>
+</ul>
+</li>
+<li>Text属性：获取或设置文本内容</li>
+<li>CommandName属性：获取或设置按钮将要触发事件的名称</li>
+<li>CommandArgument属性：用于指示命令传递的参数，提供有关要执行命令的附加信息以便在事件中进行判断</li>
+<li>OnClick属性：当用户单击按钮时要执行的事件处理方法</li>
+<li>Command属性：单击时发生的服务器端事件</li>
+<li>PostBackUrl属性：获取或设置单击Button时从当前页发送到的URL</li>
+<li>OnClientClick属性：单击时发生的客户端事件，JS函数<ul>
+<li>LinkButton控件</li>
+</ul>
+</li>
+<li>Text属性：获取或设置文本内容</li>
+<li>CommandName属性：获取或设置按钮将要触发事件的名称</li>
+<li>CommandArgument属性：用于指示命令传递的参数，提供有关要执行命令的附加信息以便在事件中进行判断</li>
+<li>OnClick属性：当用户单击按钮时要执行的事件处理方法</li>
+<li>Command属性：单击时发生的服务器端事件</li>
+<li>PostBackUrl属性：获取或设置单击Button时从当前页发送到的URL</li>
+<li>OnClientClick属性：单击时发生的客户端事件，JS函数<ul>
+<li>ImageButton控件</li>
+</ul>
+</li>
+<li>Text属性：获取或设置文本内容</li>
+<li>CommandName属性：获取或设置按钮将要触发事件的名称</li>
+<li>CommandArgument属性：用于指示命令传递的参数，提供有关要执行命令的附加信息以便在事件中进行判断</li>
+<li>OnClick属性：当用户单击按钮时要执行的事件处理方法</li>
+<li>Command属性：单击时发生的服务器端事件</li>
+<li>PostBackUrl属性：获取或设置单击Button时从当前页发送到的URL</li>
+<li>OnClientClick属性：单击时发生的客户端事件，JS函数</li>
+<li>ImageUrl属性：图片的URL</li>
+<li>AlternateText属性：图像无法显示时替换文字</li>
+<li>图像服务器控件<ul>
+<li>Image控件</li>
+</ul>
+</li>
+<li>ImageUrl属性：图片的URL</li>
+<li>AlternateText属性：图像无法显示时替换文字</li>
+<li>GenerateEmptyAlternateText属性：如果将此项设置为true，则呈现图片的alt属性</li>
+<li>DescriptionUrl属性：指向该图片详细描述的页面链接</li>
+<li>ImageAlign属性：控件相对于其他元素的对齐方式，有以下值：<ul>
+<li>Left：图像沿网页的左边缘对齐，文字在图像右边换行</li>
+<li>Right：图像沿网页的右边缘对齐，文字在图像左边换行</li>
+<li>BaseLine：图像的下边缘与第一行文本的下边缘对齐</li>
+<li>Top：图像的上边缘与同一行上最高元素的上边缘对齐</li>
+<li>Middle：图像的中间与第一行文本的下边缘对齐</li>
+<li>Bottom：图像的下边缘与第一行文本的下边缘对齐</li>
+<li>AbsBottom：图像的下边缘与同一行中最大元素的下边缘对齐</li>
+<li>AbsMiddle：图像的中间与同一行中最大元素的中间对齐</li>
+<li>TextTop：图像的上边缘与同一行上最高文本的上边缘对齐</li>
+<li>ImageMap控件</li>
+</ul>
+</li>
+<li>ImageUrl属性：图片的URL</li>
+<li>AlternateText属性：图像无法显示时替换文字</li>
+<li>ImageAlign属性：控件相对于其他元素的对齐方式，有以下值：<ul>
+<li>Left：图像沿网页的左边缘对齐，文字在图像右边换行</li>
+<li>Right：图像沿网页的右边缘对齐，文字在图像左边换行</li>
+<li>BaseLine：图像的下边缘与第一行文本的下边缘对齐</li>
+<li>Top：图像的上边缘与同一行上最高元素的上边缘对齐</li>
+<li>Middle：图像的中间与第一行文本的下边缘对齐</li>
+<li>Bottom：图像的下边缘与第一行文本的下边缘对齐</li>
+<li>AbsBottom：图像的下边缘与同一行中最大元素的下边缘对齐</li>
+<li>AbsMiddle：图像的中间与同一行中最大元素的中间对齐</li>
+<li>TextTop：图像的上边缘与同一行上最高文本的上边缘对齐</li>
+</ul>
+</li>
+<li>HotSpotMode属性：获取或设置图像上热点区域的类型，对应枚举类型 System.Web.UI.WebControls.HotSpotMode，它有四个枚举值：<ul>
+<li>NotSet：默认值，定向到用户指定的URL地址</li>
+<li>PostBack：回传操作，单击后执行后部的Click事件</li>
+<li>Inactive：无任何操作</li>
+<li>Navigate：定向到指定的URL地址</li>
+</ul>
+</li>
+<li>HotSpot属性：该属性对应 System.Web.UI.WebControls.HotSpot 对象集合<ul>
+<li>CircleHotSpot：圆形热点</li>
+<li>RectangleHotSpot：矩形热点</li>
+<li>PolygonHotSpot：多边形热点</li>
+</ul>
+</li>
+<li>Click事件</li>
+<li>Focus()方法</li>
+<li>选择服务器控件<ul>
+<li>RadioButton控件</li>
+</ul>
+</li>
+<li>AutoPostBack属性：获取或设定一个值，指定是否回传</li>
+<li>Checked属性：获取或设定一个值，指示是否已经选中</li>
+<li>GroupName属性：获取或设置单选按钮所属的组名</li>
+<li>TextAlign属性：获取或设置文本标签在单选框的左边还是右边，默认为Right，可以是Left</li>
+<li>Text属性：获取或设置与单选框关联的文本标签</li>
+<li>CheckedChanged事件：当Checked属性值改变时发生<ul>
+<li>RadioButtonList控件</li>
+</ul>
+</li>
+<li>RepeatColumns属性：获取或设置要在RadioButtonList控件中显示的列数</li>
+<li>RepeatDirection属性：获取或设置控件是垂直显示还是水平显示<ul>
+<li>Vertical：默认</li>
+<li>Horizontal</li>
+</ul>
+</li>
+<li>RepeatLayout属性：获取或设置组内单选按钮的布局</li>
+<li>SelectedIndex属性：获取或设置列表中选定项的最低序号索引</li>
+<li>SelectedItem属性：获取列表控件中索引最小的选定项</li>
+<li>SelectedValue属性：获取列表控件中的选定项的值，或选择列表控件中包含指定项的值</li>
+<li>SelectedIndexChanged事件：选定项变化时发生</li>
+<li>DataBinding：当服务器控件绑定到数据源时发生</li>
+<li>Items集合：与列表中的每项对应，基本属性：<ul>
+<li>Text：每个选项的文本</li>
+<li>Value：每个选项的值</li>
+<li>Selected：选项的状态，True表示默认选中</li>
+<li>CheckBox控件</li>
+</ul>
+</li>
+<li>AutoPostBack属性：获取或设定是否回传</li>
+<li>Checked属性：获取或设置是否选中，True或False</li>
+<li>Text属性：获取或设置文本标签</li>
+<li>TextAlign属性：获取或设置文本标签显示在复选框的Right还是Left，默认是Right</li>
+<li>CheckedChanged事件：选中状态改变时发生<ul>
+<li>CheckedBoxList控件</li>
+</ul>
+</li>
+<li>AutoPostBack属性：获取或设定是否回传</li>
+<li>CellPadding属性：获取或设置单元格的边框和内容之间的距离</li>
+<li>DataSource属性：获取或设置对象，数据绑定控件从该对象中检索其数据项列表</li>
+<li>DataTextField属性：获取或设置为列表项提供文本内容的数据源字段</li>
+<li>DataValueField属性：获取或设置为各列表项提供值的数据源字段</li>
+<li>Items集合：与列表中的每项对应，基本属性：<ul>
+<li>Text：每个选项的文本</li>
+<li>Value：每个选项的值</li>
+<li>Selected：选项的状态，True表示默认选中</li>
+</ul>
+</li>
+<li>RepeatColumns属性：获取或设置要在CheckedBoxList控件中显示的列数</li>
+<li>RepeatDirection属性：获取或设置控件是垂直显示还是水平显示<ul>
+<li>Vertical：默认</li>
+<li>Horizontal</li>
+</ul>
+</li>
+<li>RepeatLayout属性：获取或设置组内元素的布局，是Table排列还是直接排列</li>
+<li>SelectedIndex属性：获取或设置列表中选定项的最低序号索引</li>
+<li>SelectedItem属性：获取列表控件中索引最小的选定项</li>
+<li>SelectedValue属性：获取列表控件中的选定项的值，或选择列表控件中包含指定项的值</li>
+<li>SelectedIndexChanged事件：选定项变化时发生</li>
+<li>TextAlign属性：获取或设置文本标签显示在复选框的Right还是Left，默认是Right</li>
+<li>Checked属性：是否选中</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../mathjax/LaTeX.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

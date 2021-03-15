@@ -1,1 +1,0 @@
-# ICSG-Wiki
