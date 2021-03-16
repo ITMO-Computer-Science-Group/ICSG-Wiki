@@ -8,7 +8,7 @@
         <meta name="author" content="ICSG-Group">
         <link rel="canonical" href="https://itmo.ranying.xyz/Tutorial/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Index - Russian Natural Science Wiki</title>
+        <title>官方文档 —— Russian Natural Science Wiki - Russian Natural Science Wiki</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -255,73 +255,46 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">内容生产规则：</a>
+            <li class="nav-item" data-level="1"><a href="#russian-natural-science-wiki" class="nav-link">官方文档 —— Russian Natural Science Wiki</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="3"><a href="#1" class="nav-link">1，文档格式，一般有如下两种：</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="3"><a href="#1_1" class="nav-link">(1)，临时格式：生产者针对单个任务对材料进行归纳梳理后的格式</a>
+            <li class="nav-item" data-level="2"><a href="#wiki" class="nav-link">Wiki 如何工作？</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#_2" class="nav-link">第&lt;部分序数&gt;部分：&lt;部分名&gt;</a>
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">我如何增加或修改内容？</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">第&lt;章节序数&gt;章：&lt;章节名&gt;</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="3"><a href="#_4" class="nav-link">§&lt;小节序数&gt;. &lt;小节名&gt;</a>
+            <li class="nav-item" data-level="3"><a href="#_2" class="nav-link">新增科目</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="3"><a href="#2" class="nav-link">(2)，归档格式：由维护者对生产内容按照逻辑关系归档后的格式</a>
+            <li class="nav-item" data-level="3"><a href="#_3" class="nav-link">对科目新增页面</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#_5" class="nav-link">文档标题</a>
+            <li class="nav-item" data-level="3"><a href="#_4" class="nav-link">添加内容</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#_6" class="nav-link">索引：</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#_7" class="nav-link">第&lt;部分序数&gt;部分：&lt;部分名&gt;</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#_8" class="nav-link">正文：</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#_9" class="nav-link">第&lt;部分序数&gt;部分：&lt;部分名&gt;</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#_10" class="nav-link">第&lt;章节序数&gt;章：&lt;章节名&gt;</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="3"><a href="#_11" class="nav-link">§&lt;小节序数&gt;. &lt;小节名&gt;</a>
+            <li class="nav-item" data-level="3"><a href="#github" class="nav-link">您不了解代码或 GitHub</a>
               <ul class="nav flex-column">
               </ul>
             </li>
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">我需要掌握哪些技术？</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="3"><a href="#_6" class="nav-link">本仓库的文件标准</a>
+              <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#_12" class="nav-link">参考文献：</a>
+            <li class="nav-item" data-level="3"><a href="#markdown" class="nav-link">Markdown</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#_13" class="nav-link">内容生产规则：</a>
+              </ul>
+            </li>
+            <li class="nav-item" data-level="3"><a href="#latex" class="nav-link">LaTeX</a>
               <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
               </ul>
@@ -331,157 +304,376 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
+<h1 id="russian-natural-science-wiki">官方文档 —— Russian Natural Science Wiki</h1>
+<h2 id="wiki">Wiki 如何工作？</h2>
+<p>我们将 Wiki 的内容完全开源至 <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki">GitHub仓库</a>，您可以通过修改仓库的内容来为此 Wiki 做出贡献。</p>
+<p>此 Wiki 的内容范围是中国学生在俄罗斯留学时理工科学习的内容，GitHub 仓库实质上是一个文件夹，我们将所有专业的所有科目作为子文件夹，在索引中用专业来划分各个科目。</p>
+<h2 id="_1">我如何增加或修改内容？</h2>
+<h3 id="_2">新增科目</h3>
+<p>在 GitHub 仓库根目录下新建一个目录即可</p>
+<h3 id="_3">对科目新增页面</h3>
+<p>在对应科目的目录新建文件即可</p>
+<h3 id="_4">添加内容</h3>
+<p>在目标页面中按照我们的 <a href="#本仓库的文件标准">标准</a> 用 <a href="#markdown">Markdown</a> 和 <a href="#latex">LaTeX</a> 编写文件，并提交至此仓库。</p>
+<h3 id="github">您不了解代码或 GitHub</h3>
+<ol>
+<li>注册 <a href="https://github.com/">GitHub 账号</a></li>
+<li>打开 <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki">Wiki 仓库地址</a></li>
+<li>点击 Add file，在下拉选项中点击 Create new file</li>
+<li>此时您将会看到两个文本框：</li>
+<li>目录文本框：“Natural-Science-Wiki/Name your file in ITMO-Computer-Science-Group:main”，此时将 <code>Name your file</code> 改成想要提交的目录位置（如果这个科目还没有被建立），或者在 <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki">Wiki 仓库</a>打开指定的目录，此处即可不用填写。</li>
+<li>文件内容文本框：在这里用 <code>Markdown</code> 和 <code>LaTeX</code> 编写文件</li>
+<li>编写完成后可点击 <code>Preview</code> 预览</li>
+<li>点击下方的 <code>Propose new file</code> （绿色）保存文件</li>
+<li>点击 <code>Create pull request</code> （绿色）向 Wiki 创建提交请求</li>
+<li>在新的页面留下附言、评论或说明，然后点击 <code>Create pull request</code> （绿色）</li>
+<li>好！等待我们的审核即可！</li>
+</ol>
+<h2 id="_5">我需要掌握哪些技术？</h2>
+<h3 id="_6">本仓库的文件标准</h3>
+<p>我们的标准很简单：</p>
 <ul>
-<li>使用 GitHub 提出 pr 修改内容错误：<a href="https://github.com/ITMO-Computer-Science-Group/">GitHub</a></li>
+<li>每个文件必须要有一个文件标题</li>
+<li>内容标题从大标题到小标题，标题层级从二依次递减</li>
+<li>内容使用无序列表表示其逻辑</li>
 </ul>
-<h2 id="_1">内容生产规则：</h2>
-<h3 id="1"><strong>1，文档格式，一般有如下两种：</strong></h3>
-<h3 id="1_1">(1)，临时格式：生产者针对单个任务对材料进行归纳梳理后的格式</h3>
-<blockquote>
-<h1 id="_2"><strong>第&lt;部分序数&gt;部分：&lt;部分名&gt;</strong></h1>
-<ul>
-<li>
-<h2 id="_3">第&lt;章节序数&gt;章：&lt;章节名&gt;</h2>
-</li>
-<li>
-<h3 id="_4"><strong>§&lt;小节序数&gt;. &lt;小节名&gt;</strong></h3>
-<ul>
-<li>知识点<ul>
-<li>定义</li>
-<li>描述</li>
-<li>性质<ul>
-<li>1，</li>
-<li>2，</li>
-<li>......</li>
-</ul>
-</li>
-<li>说明</li>
-<li>公式</li>
-<li>......</li>
-<li>
-<blockquote>
-<p>补充及注释</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>&lt;参考文献名称&gt;——&lt;参考文献来源&gt;</p>
-</li>
-</ul>
-</blockquote>
-<p>具体实现需要根据生产者根据实际情况自行调整</p>
-<h3 id="2">(2)，归档格式：由维护者对生产内容按照逻辑关系归档后的格式</h3>
-<blockquote>
-<h1 id="_5"><strong>文档标题</strong></h1>
-<h1 id="_6">索引：</h1>
-<h1 id="_7"><strong>第&lt;部分序数&gt;部分</strong>：&lt;部分名&gt;</h1>
-<ul>
-<li><strong><a href="#第&lt;章节序数&gt;章：&lt;章节名&gt;">第&lt;章节序数&gt;章：章节名</a></strong></li>
-<li><a href="#§&lt;小节序数&gt;.%20&lt;小节名&gt;">§&lt;小节序数&gt;.小节名</a></li>
-</ul>
-<h1 id="_8">正文：</h1>
-<h1 id="_9"><strong>第&lt;部分序数&gt;部分：&lt;部分名&gt;</strong></h1>
-<ul>
-<li>
-<h2 id="_10">第&lt;章节序数&gt;章：&lt;章节名&gt;</h2>
-</li>
-<li>
-<h3 id="_11"><strong>§&lt;小节序数&gt;. &lt;小节名&gt;</strong></h3>
-<ul>
-<li>知识点<ul>
-<li>定义</li>
-<li>描述</li>
-<li>性质<ul>
-<li>1，</li>
-<li>2，</li>
-<li>......</li>
-</ul>
-</li>
-<li>说明</li>
-<li>公式</li>
-<li>......</li>
-<li>
-<blockquote>
-<p>补充及注释</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="_12">参考文献：</h1>
-<ul>
-<li>&lt;参考文献名称&gt;——&lt;参考文献来源&gt;</li>
-</ul>
-</blockquote>
-<h2 id="_13">内容生产规则：</h2>
-<ul>
-<li>一个文档的基本格式，通常包含以下部分，他们都是可选的：<ul>
-<li>Word</li>
-<li>Grammar</li>
-</ul>
-</li>
-<li>文档模板</li>
-</ul>
-<pre><code># Title
+<p>我们给出一个模板：</p>
+<pre><code># 文件标题
 
-- [Grammar](#grammar)
-- [Word](#word)
+## 第一级内容标题
 
-## Grammar
+### 第二级内容标题
 
-## Word
-
-| русский                 | 中文              |
-|-------------------------|-------------------|
+- 内容
+    - 内容
+        - 内容
 
 </code></pre>
+<h3 id="markdown">Markdown</h3>
+<p>这是一个 GitHub Flavored Markdown 的简单教程，只取了部分和 Wiki 编辑有关的内容。Markdown 不同于 Word 等软件，他没有太多的富文本格式。如果想要了解更多，请查找 GitHub Flavored Markdown 的相关资料。</p>
 <ul>
-<li>关于 <code>Word</code> 部分</li>
-<li>总要求：<ul>
-<li>记录词的原型</li>
-<li>非专有名词首字母不大写</li>
-<li>可信度排名：字典&gt;千亿词霸&gt;译酷&gt;谷歌翻译</li>
+<li>换行：在一行的结尾加两个空格</li>
+<li>文字高亮（反斜杠，在键盘左上角）：`文字`</li>
+<li>斜体：*斜体*</li>
+<li>粗体：**粗体**</li>
+<li>
+<p>标题</p>
+<p># 一级标题<br />
+## 二级标题<br />
+### 三级标题<br />
+#### 四级标题<br />
+##### 五级标题<br />
+###### 六级标题  </p>
+</li>
+<li>
+<p>表格</p>
+<ul>
+<li>
+<p>标准 Markdown 语法：</p>
+<p><code>|表头|左对齐|居中|右对齐|
+|----|:----|:----:|----:|
+|内容|内容|内容|内容|</code></p>
+</li>
+<li>
+<p>Excel 转换成 Markdown 表格：</p>
+<ul>
+<li>点击 <a href="https://tableconvert.com/">https://tableconvert.com/</a>，在上方 import 选择并复制您的 Excel，在下方选择 Markdown 并复制转换得到的 Markdown 语法</li>
 </ul>
 </li>
-<li>动词<ul>
-<li>要求动词不定式，有两个体的，未完成体在完成体前面</li>
-<li>要求记录在原文中的接格关系</li>
 </ul>
 </li>
-<li>名词组<ul>
-<li>具有以下特征的被称为“名词组”</li>
-<li>各部分高内聚的，整体与句子其他成分低耦合的</li>
-<li>整个词组在中文中有专有名词的</li>
-<li>名词组首先要单独记录，其次在可选的情况下，可以将里面的单词分别单独记录</li>
-</ul>
+<li>
+<p>无序列表</p>
+<p><code>- 无序列表的顶级
+    - 无序列表的下一级
+        - ...</code></p>
 </li>
-<li>名词<ul>
-<li>如果名词不在名词组中，直接记录</li>
-<li>如果名词在名词组中，可选的记录</li>
-</ul>
+<li>
+<p>链接</p>
+<p><code>[文字](URL地址)</code></p>
 </li>
-<li>形容词<ul>
-<li>如果形容词在名词组中，可选的记录</li>
-<li>如果形容词有接格关系（这通常是由其动词决定的），要求写出形容词的接格关系</li>
 </ul>
+<h3 id="latex">LaTeX</h3>
+<p>这里给出了部分 LaTeX 的公式语法，我们使用 LaTeX 在网页上表示复杂公式。（搞理工的应该都知道 LaTeX）</p>
+<ul>
+<li>
+<p>一般公式：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>效果</th>
+<th>源码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分式</td>
+<td>$\frac{x}{y}$</td>
+<td>\frac{x}{y}</td>
+</tr>
+<tr>
+<td>根号</td>
+<td>$\sqrt{x}$</td>
+<td>\sqrt{x}</td>
+</tr>
+<tr>
+<td>多次根</td>
+<td>$\sqrt[b]{a}$</td>
+<td>\sqrt[b]{a}</td>
+</tr>
+<tr>
+<td>多次方</td>
+<td>$a^{b}$</td>
+<td>a^{b}</td>
+</tr>
+<tr>
+<td>积分</td>
+<td>$\int_{a}^{b}$</td>
+<td>\int_{a}^{b}</td>
+</tr>
+<tr>
+<td>求和</td>
+<td>$\sum_{n=1}^{20}$</td>
+<td>\sum_{n=1}^{20}</td>
+</tr>
+<tr>
+<td>极限</td>
+<td>$\underset{x\rightarrow\infty}{\lim}$</td>
+<td>\underset{x\rightarrow\infty}{\lim}</td>
+</tr>
+</tbody>
+</table>
 </li>
-<li>副词<ul>
-<li>~~副词有对应形容词的，只记录对应形容词~~ 我相信没有人能遵守这一条，所以我们不要了</li>
-<li>副词没有对应形容词的，记录当前副词，例如“【副】жарко”</li>
-</ul>
+<li>
+<p>运算符号</p>
+<table>
+<thead>
+<tr>
+<th>效果</th>
+<th>源码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\times$</td>
+<td>\times</td>
+</tr>
+<tr>
+<td>$\div$</td>
+<td>\div</td>
+</tr>
+<tr>
+<td>$\cdot$</td>
+<td>\cdot</td>
+</tr>
+<tr>
+<td>$\approx$</td>
+<td>\approx</td>
+</tr>
+<tr>
+<td>$\neq$</td>
+<td>\neq</td>
+</tr>
+<tr>
+<td>$\equiv$</td>
+<td>\equiv</td>
+</tr>
+</tbody>
+</table>
 </li>
-<li>其他词<ul>
-<li>前置词请记录到<a href="Russian%20Language%20Grammar/Grammar%20for%20Russian.md#前置词语法">前置词语法</a>中</li>
-<li>要求标注词性，例如“【代】он”</li>
-</ul>
+<li>
+<p>希腊字母</p>
+<table>
+<thead>
+<tr>
+<th>效果</th>
+<th>源码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha$</td>
+<td>\alpha</td>
+</tr>
+<tr>
+<td>$\Alpha$</td>
+<td>\Alpha</td>
+</tr>
+</tbody>
+</table>
 </li>
-<li>【】</li>
-<li>（）</li>
+<li>
+<p>希腊字母名称</p>
+<table>
+<thead>
+<tr>
+<th>效果</th>
+<th>源码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Α α</td>
+<td>Alpha</td>
+</tr>
+<tr>
+<td>Β β</td>
+<td>Beta</td>
+</tr>
+<tr>
+<td>Γ γ</td>
+<td>Gamma</td>
+</tr>
+<tr>
+<td>Δ δ</td>
+<td>Delta</td>
+</tr>
+<tr>
+<td>Λ λ</td>
+<td>Lambda</td>
+</tr>
+<tr>
+<td>Μ μ</td>
+<td>Mu</td>
+</tr>
+<tr>
+<td>Η η</td>
+<td>Eta</td>
+</tr>
+<tr>
+<td>Θ θ</td>
+<td>Theta</td>
+</tr>
+<tr>
+<td>Ρ ρ</td>
+<td>Rho</td>
+</tr>
+<tr>
+<td>Σ σ</td>
+<td>Sigma</td>
+</tr>
+<tr>
+<td>Φ φ</td>
+<td>Phi</td>
+</tr>
+<tr>
+<td>Ω ω</td>
+<td>Omega</td>
+</tr>
+<tr>
+<td>Π π</td>
+<td>Pi</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>上下标</p>
+<table>
+<thead>
+<tr>
+<th>效果</th>
+<th>源码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>${xxx}^{bbb}$</td>
+<td>{xxx}^{bbb}</td>
+</tr>
+<tr>
+<td>${xxx}_{bbb}$</td>
+<td>{xxx}_{bbb}</td>
+</tr>
+<tr>
+<td>$_{bbb}^{ccc}xxx$</td>
+<td>_{bbb}^{ccc}xxx</td>
+</tr>
+<tr>
+<td>$_{bbb}xxx$</td>
+<td>_{bbb}xxx</td>
+</tr>
+<tr>
+<td>$^{ccc}xxx$</td>
+<td>^{ccc}xxx</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>在头顶的东西</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>效果</th>
+<th>源码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>$\hat{x}$</td>
+<td>\hat{x}</td>
+</tr>
+<tr>
+<td></td>
+<td>$\bar{x}$</td>
+<td>\bar{x}</td>
+</tr>
+<tr>
+<td></td>
+<td>$\widetilde{x}$</td>
+<td>\widetilde{x}</td>
+</tr>
+<tr>
+<td>上划线</td>
+<td>$\overline{x}$</td>
+<td>\overline{x}</td>
+</tr>
+<tr>
+<td>下划线</td>
+<td>$\underline{x}$</td>
+<td>\underline{x}</td>
+</tr>
+<tr>
+<td>向量</td>
+<td>$\vec{a}$</td>
+<td>\vec{a}</td>
+</tr>
+<tr>
+<td>向右向量</td>
+<td>$\overrightarrow{AB}$</td>
+<td>\overrightarrow{AB}</td>
+</tr>
+<tr>
+<td>向左向量</td>
+<td>$\overleftarrow{DE}$</td>
+<td>\overleftarrow{DE}</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>括号</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>效果</th>
+<th>源码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>$\underbrace{jack}_{4}$</td>
+<td>\underbrace{jack}_{4}</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ul></div>
             </div>
         </div>
