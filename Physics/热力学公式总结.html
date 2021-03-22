@@ -1,0 +1,1212 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="这个 Wiki 是我们整理的关于在俄罗斯留学时理工科学习的知识汇总，这个网站欢迎大家来贡献和修改内容。">
+      
+      
+      
+        <meta name="author" content="ICSG-Group">
+      
+      
+        <link rel="canonical" href="https://itmo.ranying.xyz/Physics/%E7%83%AD%E5%8A%9B%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93.html">
+      
+      <link rel="icon" href="../theme/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
+    
+    
+      
+        <title>理想气体状态方程 - Russian Natural Science Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2c0c5eaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#7e56c2">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Russian Natural Science Wiki" class="md-header__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
+      
+  <img src="../theme/icon.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Russian Natural Science Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              理想气体状态方程
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/" title="前往 GitHub 仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Russian Natural Science Wiki" class="md-nav__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
+      
+  <img src="../theme/icon.jpg" alt="logo">
+
+    </a>
+    Russian Natural Science Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/" title="前往 GitHub 仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      <label class="md-nav__link" for="__nav_1">
+        语言学习
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="语言学习" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          语言学习
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/List/语言学习/" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
+      
+      <label class="md-nav__link" for="__nav_1_2">
+        俄语
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="俄语" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          俄语
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Russian Language Grammar/Grammar for Russian.html" class="md-nav__link">
+        俄语语法
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" >
+      
+      <label class="md-nav__link" for="__nav_1_3">
+        物理
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="物理" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          物理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Physics/牛顿力学.html" class="md-nav__link">
+        牛顿力学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Physics/分子物理学.html" class="md-nav__link">
+        分子物理学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Physics/电磁学.html" class="md-nav__link">
+        电磁学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4" type="checkbox" id="__nav_1_4" >
+      
+      <label class="md-nav__link" for="__nav_1_4">
+        化学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="化学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          化学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Chemistry/无机化学基础.html" class="md-nav__link">
+        无机化学基础
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Chemistry/物质结构基础.html" class="md-nav__link">
+        物质结构基础
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Chemistry/化学计量基础.html" class="md-nav__link">
+        化学计量基础
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Chemistry/化学反应原理.html" class="md-nav__link">
+        化学反应原理
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_5" type="checkbox" id="__nav_1_5" >
+      
+      <label class="md-nav__link" for="__nav_1_5">
+        数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="数学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Math/实数运算.html" class="md-nav__link">
+        实数运算
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Math/基本初等函数.html" class="md-nav__link">
+        基本初等函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Math/指数和对数.html" class="md-nav__link">
+        指数和对数
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6" type="checkbox" id="__nav_1_6" >
+      
+      <label class="md-nav__link" for="__nav_1_6">
+        信息
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="信息" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_6">
+          <span class="md-nav__icon md-icon"></span>
+          信息
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Information/hardware.html" class="md-nav__link">
+        硬件
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Information/Excel.html" class="md-nav__link">
+        Excel
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_7" type="checkbox" id="__nav_1_7" >
+      
+      <label class="md-nav__link" for="__nav_1_7">
+        工程制图
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="工程制图" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_7">
+          <span class="md-nav__icon md-icon"></span>
+          工程制图
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Engineering%20graphics/制图标准.html" class="md-nav__link">
+        制图标准
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Engineering%20graphics/图形几何学.html" class="md-nav__link">
+        图形几何学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Engineering%20graphics/点的三面投影.html" class="md-nav__link">
+        点的三面投影
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        预科课程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="预科课程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          预科课程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/List/预科课程.html" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        物理
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="物理" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          物理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Physics/预科物理.html" class="md-nav__link">
+        预科物理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Physics/分子物理学与热力学教材.html" class="md-nav__link">
+        分子物理学与热力学教材
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Physics/单位.html" class="md-nav__link">
+        单位
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        化学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="化学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          化学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Chemistry/普通化学.html" class="md-nav__link">
+        普通化学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="数学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Math/预科数学.html" class="md-nav__link">
+        预科数学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Math/高中数学.html" class="md-nav__link">
+        高中数学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        信息
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="信息" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          信息
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Information/预科信息.html" class="md-nav__link">
+        预科信息
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      <label class="md-nav__link" for="__nav_2_6">
+        工程制图
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="工程制图" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          工程制图
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Engineering%20graphics/工程制图.html" class="md-nav__link">
+        工程制图
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        软件工程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="软件工程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          软件工程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/List/软件工程.html" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/friends.html" class="md-nav__link">
+        友链
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/edit/main/Physics/热力学公式总结.md" title="编辑此页" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="_1">理想气体状态方程</h1>
+<ul>
+<li>
+<ol>
+<li>Уравнение Клапейрона-Менделеева(理想气体状态方程)
+      $$pV = \frac{m}{\mu}RT$$ 
+其中$p$为气体压力;$V$为气体体积;$m$为气体质量;${\mu}$为摩尔质量;$R$为通用气体常数,$R$=8.31 Дж/(моль$\cdot$К);$T$为热力学温度 ;$\frac{m}{\mu}$为体系中气体的物质的量</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Количество вещества(物质的量)
+  $$ν = \frac{m}{\mu} = \frac{N} {N_A}$$
+其中$N$为气体分子数；$N_A$为阿伏伽德罗常数，$N_A$=6.02$\cdot$$10^{23}$ ${моль}^{-1}$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Объединённый газовый закон(理想气体方程)
+$$ \frac{pV}{T} =const $$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Уравнение состояния изотермического процесса(等温过程变化方程)
+ $$ pV = const \quad при\quad  T=const$$ </li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Уравнение состояния изобарного процесса (等压过程变化方程)
+$$ \frac{V}{T} =const \quad  или \quad  \frac{V_{1}}{T_{1}} = \frac{V_{2}}{T_{2}}   $$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Уравнение состояния изохорного процесса (等容过程变化方程)
+$$ \frac{p}{T} = const \quad  или \quad \frac{p_{1}}{T_{1}} = \frac{p_{2}}{T_{2}} $$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Плотность вещества(物质密度)
+$$ \rho =\frac{p \mu}{RT} $$
+其中$\rho$为物质密度;${\mu}$为摩尔质量</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Закон Дальтона(道尔顿定律) 
+$$p=p_1+p_2+...+p_n$$</li>
+</ol>
+</li>
+</ul>
+<h1 id="_2">气体分子动力学理论的基本方程及理想气体内能</h1>
+<ul>
+<li>
+<ol>
+<li>Основное уравнение молекулярно-кинетической теории идеальных    газов(气体分子动力学理论的基本方程)
+$$p=\frac{2}{3} n &lt;\varepsilon_n&gt;=\frac{2}{3} n\frac{m <v^2>}{2} $$
+其中p为气体压力;n为气体分子浓度;$&lt;\varepsilon_n&gt;$为是一个分子运动的平均能量;m为分子质量;$<v^2>$为速度平方的平均值</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Средняя кинетическая энергия, приходящаяся на одну степень свободы(单自由度平均动能)
+  $$&lt;\varepsilon_1&gt;=\frac{1}{2}kT$$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Средняя кинетическая энергия молекулы(分子平均动能)
+  $$&lt;\varepsilon&gt;= \frac{i}{2}kT$$
+其中k为玻尔兹曼常数，k=$\frac{R}{N_A}$=1.38 $\cdot$ $10^{-23}$ Дж/К ;i为分子自由度,对于单原子气体i=3,对于双原子气体i=5,对于三种以上的原子气体i=6</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Внутренняя энергия произвольной массы идеального газа (理想气体质量内能)
+  $$U=\frac{m}{\mu} \frac{i}{2} RT$$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Зависимость давления газа от концентрации молекул и абсолютной температуры(气体压力与分子浓度和绝对温度的关系)
+  $$p=nkT$$</li>
+</ol>
+</li>
+</ul>
+<h1 id="_3">气体分子速率</h1>
+<ul>
+<li>
+<ol>
+<li>Скорости молекул(分子速率)</li>
+</ol>
+</li>
+<li>最概然速率
+$$<v_{B}>=\sqrt{\frac{2kT}{m_1}}=\sqrt{\frac{2RT}{\mu}}$$</li>
+<li>平均速率
+  $$<v>=\sqrt{\frac{8kT}{\pi m_1}}=\sqrt{\frac{8RT}{\pi \mu}}$$</li>
+<li>均方根速率
+  $$<v_{kb}>=\sqrt{\frac{3kT}{m_1}}=\sqrt{\frac{3RT}{\mu}}$$
+ 其中$m_1$为分子质量</li>
+<li>
+<ol>
+<li>Средняя длина свободного пробега молекул газа(气体分子的平均自由路径长度)
+$$<l>  =\frac{1}{\sqrt{2}\pi d^2 n}$$
+其中d为分子的有效直径</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Среднее число соударений, испытываемых одной молекулой газа в единицу времени(一个气体分子在单位时间内经历的平均碰撞次数)
+  $$<z>=\sqrt{2} \pi d^2 n <v>$$
+ 其中$<v>$为分子的平均速率</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Барометрическая формула, выражающая зависимость давления идеального газа от высоты h над поверхностью Земли(理想气体压力与地面上空h高度的关系式)
+  $$p=p_0e^{-\frac{\mu g h}{RT}}$$
+其中p为气体在高度h时的压力;$p_0$为气体在高度h=0时的压力;T为海拔h=0时的绝对气温</li>
+</ol>
+</li>
+</ul>
+<h1 id="_4">热力学第一定律及比热容</h1>
+<ul>
+<li>
+<ol>
+<li>Первое начало термодинамики(热力学第一定律)
+  $$Q=\Delta U+A$$
+其中Q为与环境之间交换的热量;$\Delta$U为气体内能的变化;A为系统对环境做功</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Молярная теплоемкость газа при постоянном объёме(恒容气体比热容)<br />
+  $$C_{V_{\mu}}=\frac{i}{2}R$$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Молярная теплоёмкость газа при постоянном давлении(恒压气体比热容)
+  $$C_{P_{\mu}}=\frac{i+2}{2}R$$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Связь между удельной (c) и молярной $C_{\mu}$ теплоемкостями  (气体比热容与分子比热容之间的关系)
+  $$C_{\mu}=c\mu$$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Внутренняя энергия идеального газа (理想气体内能)
+  $$U=\frac{m}{\mu} \frac{i}{2} RT=\frac{m}{\mu} C_{V_{\mu}}T$$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Работа расширения газа в изотермическом процессе(等温过程中的气体膨胀做功)
+  $$A=\frac{m}{\mu}RT ln\frac{V_2}{V_1}$$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Работа расширения газа в изобарном процессе(等压过程中的气体膨胀做功)<br />
+  $$A=p {\Delta V} =\frac{m}{\mu}R \Delta T$$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Работа расширения в адиабатном процессе(绝热过程中的气体膨胀做功)
+$$A=- \Delta U=\frac{m} {\mu}C_{V_{\mu}} \Delta T \quad  или \quad A=\frac{RT_1}{\gamma-1}\cdot \frac{m}{\mu}[1-{(\frac{V_2}{V_1})}^{\gamma-1}]$$
+其中$\gamma$为绝热指数，$\gamma$=$\frac{c_p}{c_v}$=$\frac{i+2}{i}$</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Уравнение состояния адиабатного процесса(绝热过程状态方程)
+  $$PV^{\gamma}=const$$</li>
+</ol>
+</li>
+</ul>
+<h1 id="_5">热机效率与卡诺循环</h1>
+<ul>
+<li>
+<ol>
+<li>Коэффициент полезного действия тепловой машины(热机效率)
+  $$\eta =\frac{A}{Q_1}=\frac{Q_1-Q_2}{Q_1}$$
+ 其中A为气体在循环中做功;A=$Q_1$-$Q_2$;$Q_1$为工作体从散热器接收的热量;$Q_2$为工作体给予受热体的热量</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>КПД цикла Карно(卡诺循环)
+  $$\eta=\frac{T_1-T_2}{T_1} $$
+其中$T_1$为散热器温度;$T_2$为受热器温度</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>通过上面两个公式不难得出 $\eta =\frac{Q_1-Q_2}{Q_1}=\frac{T_1-T_2}{T_1}$;即$\frac{Q_1}{T_1}=\frac{Q_2}{T_2}$;所以对于两个绝热物体之间的等温变迁，都有一个常数$\frac{Q}{T}$</li>
+</ol>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.top", "header.autohide"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1c7c35e.min.js"></script>
+      
+        <script src="../mathjax/LaTeX.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1380 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="这个 Wiki 是我们整理的关于在俄罗斯留学时理工科学习的知识汇总，这个网站欢迎大家来贡献和修改内容。">
+      
+      
+      
+        <meta name="author" content="ICSG-Group">
+      
+      
+        <link rel="canonical" href="https://itmo.ranying.xyz/ASP.NET/ASP.NET%204.5%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A7%E4%BB%B6.html">
+      
+      <link rel="icon" href="../theme/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
+    
+    
+      
+        <title>ASP.NET 4.5 服务器控件 - Russian Natural Science Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2c0c5eaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#7e56c2">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aspnet-45" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Russian Natural Science Wiki" class="md-header__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
+      
+  <img src="../theme/icon.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Russian Natural Science Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ASP.NET 4.5 服务器控件
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/" title="前往 GitHub 仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Russian Natural Science Wiki" class="md-nav__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
+      
+  <img src="../theme/icon.jpg" alt="logo">
+
+    </a>
+    Russian Natural Science Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/" title="前往 GitHub 仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      <label class="md-nav__link" for="__nav_1">
+        语言学习
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="语言学习" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          语言学习
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/List/语言学习/" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
+      
+      <label class="md-nav__link" for="__nav_1_2">
+        俄语
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="俄语" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          俄语
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Russian Language Grammar/Grammar for Russian.html" class="md-nav__link">
+        俄语语法
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" >
+      
+      <label class="md-nav__link" for="__nav_1_3">
+        物理
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="物理" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          物理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Physics/牛顿力学.html" class="md-nav__link">
+        牛顿力学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Physics/分子物理学.html" class="md-nav__link">
+        分子物理学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Physics/电磁学.html" class="md-nav__link">
+        电磁学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4" type="checkbox" id="__nav_1_4" >
+      
+      <label class="md-nav__link" for="__nav_1_4">
+        化学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="化学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          化学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Chemistry/无机化学基础.html" class="md-nav__link">
+        无机化学基础
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Chemistry/物质结构基础.html" class="md-nav__link">
+        物质结构基础
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Chemistry/化学计量基础.html" class="md-nav__link">
+        化学计量基础
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Chemistry/化学反应原理.html" class="md-nav__link">
+        化学反应原理
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_5" type="checkbox" id="__nav_1_5" >
+      
+      <label class="md-nav__link" for="__nav_1_5">
+        数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="数学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Math/实数运算.html" class="md-nav__link">
+        实数运算
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Math/基本初等函数.html" class="md-nav__link">
+        基本初等函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Math/指数和对数.html" class="md-nav__link">
+        指数和对数
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6" type="checkbox" id="__nav_1_6" >
+      
+      <label class="md-nav__link" for="__nav_1_6">
+        信息
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="信息" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_6">
+          <span class="md-nav__icon md-icon"></span>
+          信息
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Information/hardware.html" class="md-nav__link">
+        硬件
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Information/Excel.html" class="md-nav__link">
+        Excel
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_7" type="checkbox" id="__nav_1_7" >
+      
+      <label class="md-nav__link" for="__nav_1_7">
+        工程制图
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="工程制图" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_7">
+          <span class="md-nav__icon md-icon"></span>
+          工程制图
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Engineering%20graphics/制图标准.html" class="md-nav__link">
+        制图标准
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Engineering%20graphics/图形几何学.html" class="md-nav__link">
+        图形几何学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian-Language-Studying/Engineering%20graphics/点的三面投影.html" class="md-nav__link">
+        点的三面投影
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        预科课程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="预科课程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          预科课程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/List/预科课程.html" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        物理
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="物理" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          物理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Physics/预科物理.html" class="md-nav__link">
+        预科物理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Physics/分子物理学与热力学教材.html" class="md-nav__link">
+        分子物理学与热力学教材
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Physics/单位.html" class="md-nav__link">
+        单位
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        化学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="化学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          化学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Chemistry/普通化学.html" class="md-nav__link">
+        普通化学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="数学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Math/预科数学.html" class="md-nav__link">
+        预科数学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Math/高中数学.html" class="md-nav__link">
+        高中数学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        信息
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="信息" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          信息
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Information/预科信息.html" class="md-nav__link">
+        预科信息
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      <label class="md-nav__link" for="__nav_2_6">
+        工程制图
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="工程制图" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          工程制图
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Engineering%20graphics/工程制图.html" class="md-nav__link">
+        工程制图
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        软件工程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="软件工程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          软件工程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/List/软件工程.html" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/friends.html" class="md-nav__link">
+        友链
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/edit/main/ASP.NET/ASP.NET 4.5 服务器控件.md" title="编辑此页" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="aspnet-45">ASP.NET 4.5 服务器控件</h1>
+<ul>
+<li>HTML服务器控件<ul>
+<li>runat="server"</li>
+<li>id=""</li>
+</ul>
+</li>
+<li>
+<p>Web服务器控件</p>
+<ul>
+<li>基本属性<ul>
+<li>外观属性<ul>
+<li>BackColor：背景色，#RRGGBB</li>
+<li>ForeColor：前景色，#RRGGBB</li>
+<li>Border边框属性<ul>
+<li>BorderWidth：边框宽度</li>
+<li>BorderColor：边框颜色，#RRGGBB</li>
+<li>BorderStyle：边框样式，有以下取值：<ul>
+<li>Notset：默认值</li>
+<li>None：没有边框</li>
+<li>Dotted：边框为虚线，点较小</li>
+<li>Dashed：边框为虚线，点较大</li>
+<li>Solid：边框为实线</li>
+<li>Double：边框为实线，但厚度是Solid的两倍</li>
+<li>Groove：在对象四周出现3D凹陷式的边框</li>
+<li>Ridge：在对象四周出现3D突起式的边框</li>
+<li>Inset：控件呈陷入状</li>
+<li>Outset：控件呈凸起状</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Font字体属性<ul>
+<li>Font-Bold：如果设置为true，则会变成粗体</li>
+<li>Font-Italic：如果设置为true，则会变成斜体</li>
+<li>Font-Names：设置字体的名字</li>
+<li>Font-Size：设置字体的大小，有九种取值：<ul>
+<li>Smaller</li>
+<li>Larger</li>
+<li>XX-Small</li>
+<li>X-Small</li>
+<li>Small</li>
+<li>Medium</li>
+<li>Large</li>
+<li>X-Large</li>
+<li>XX-Large</li>
+</ul>
+</li>
+<li>Font-Strikeout：如果设置为true，则会显示删除线</li>
+<li>Font-Underline：如果设置为true，则会显示下划线</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>行为属性<ul>
+<li>Enabled：设置为true时，控件可用</li>
+<li>ToolTip：设置控件的提示信息</li>
+<li>Visible：设置控件是否可见</li>
+</ul>
+</li>
+<li>可访问性<ul>
+<li>AccessKey：为控件指定快捷键，如果设置为“A”，那么按下alt+A时控件将获得焦点</li>
+<li>TabIndex：设置按下Tab键后控件获得焦点的顺序</li>
+</ul>
+</li>
+<li>布局属性<ul>
+<li>Height：设置高度</li>
+<li>Width：设置宽度</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>事件模型</p>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>支持的控件</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Click</td>
+<td>Button</td>
+<td>ImageButton</td>
+</tr>
+<tr>
+<td>TextChanged</td>
+<td>TextBox</td>
+<td>输入焦点变化</td>
+</tr>
+<tr>
+<td>SelectedIndexChanged</td>
+<td>DropDownList</td>
+<td>ListBox</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li>
+<p>文本服务器控件</p>
+<ul>
+<li>Label控件<ul>
+<li>Text属性：显示的内容</li>
+</ul>
+</li>
+<li>Literal控件<ul>
+<li>Text属性：显示的文本</li>
+<li>Mode属性：设置文本的显示方式，支持以下值：<ul>
+<li>Transform：转换以适应请求浏览器的协议</li>
+<li>PassThrough：按原样呈现在浏览器中</li>
+<li>Encode：使用HtmlEncode的方法进行编码，将HTML编码转换为文本表现形式</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>TextBox控件</p>
+<ul>
+<li>AutoPostBack属性：文本修改后是否回传回服务器，默认false不回传</li>
+<li>Columns属性：获取或设置文本框的宽度（以字符为单位）</li>
+<li>MaxLength属性：获取或设置文本框中最多允许的字符数</li>
+<li>ReadOnly属性：获取或设定是否允许更改文本内容，true表示只读，false表示可以修改</li>
+<li>
+<p>TextMode属性：用于设置文本的显示模式，该属性有以下选项：</p>
+<table>
+<thead>
+<tr>
+<th>选项名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Color</td>
+<td>表示颜色项模式</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>表示日期输入模式</td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>表示datetime模式</td>
+</tr>
+<tr>
+<td>DateTimeLocal</td>
+<td>表示本地datetime模式</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>表示电子邮件模式</td>
+</tr>
+<tr>
+<td>Month</td>
+<td>表示月份项模式</td>
+</tr>
+<tr>
+<td>MultiLine</td>
+<td>表示多行输入模式</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>表示数字项模式</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>表示密码输入模式</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>表示电话号码项模式</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>表示数值范围模式</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>表示搜索字符串模式</td>
+</tr>
+<tr>
+<td>SingleLine</td>
+<td>表示单行输入模式</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>表示时间输入模式</td>
+</tr>
+<tr>
+<td>Url</td>
+<td>表示URL模式</td>
+</tr>
+<tr>
+<td>Week</td>
+<td>表示输入年-周模式</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Text属性：设置和读取TextBox中的文字</p>
+</li>
+<li>Row属性：获取或设置多行文本框中显示的行数，默认为0表示单行文本框，该属性当TextMode属性为MultiLine时才有效</li>
+<li>Focus()方法：获取焦点<ul>
+<li>HyperLink控件</li>
+</ul>
+</li>
+<li>Text属性：设置链接文本</li>
+<li>NavigateURL属性：设置URL目标</li>
+<li>Target属性：设置目标链接的呈现方式，有以下四种：<ul>
+<li>_parent：显示在父框架中</li>
+<li>_blank：在新窗口中打开</li>
+<li>_self：显示在当前框架中</li>
+<li>_top：显示在全窗口中</li>
+</ul>
+</li>
+<li>ImageUrl：获取或设置超链接的图像</li>
+<li>按钮服务器控件<ul>
+<li>Button控件</li>
+</ul>
+</li>
+<li>Text属性：获取或设置文本内容</li>
+<li>CommandName属性：获取或设置按钮将要触发事件的名称</li>
+<li>CommandArgument属性：用于指示命令传递的参数，提供有关要执行命令的附加信息以便在事件中进行判断</li>
+<li>OnClick属性：当用户单击按钮时要执行的事件处理方法</li>
+<li>Command属性：单击时发生的服务器端事件</li>
+<li>PostBackUrl属性：获取或设置单击Button时从当前页发送到的URL</li>
+<li>OnClientClick属性：单击时发生的客户端事件，JS函数<ul>
+<li>LinkButton控件</li>
+</ul>
+</li>
+<li>Text属性：获取或设置文本内容</li>
+<li>CommandName属性：获取或设置按钮将要触发事件的名称</li>
+<li>CommandArgument属性：用于指示命令传递的参数，提供有关要执行命令的附加信息以便在事件中进行判断</li>
+<li>OnClick属性：当用户单击按钮时要执行的事件处理方法</li>
+<li>Command属性：单击时发生的服务器端事件</li>
+<li>PostBackUrl属性：获取或设置单击Button时从当前页发送到的URL</li>
+<li>OnClientClick属性：单击时发生的客户端事件，JS函数<ul>
+<li>ImageButton控件</li>
+</ul>
+</li>
+<li>Text属性：获取或设置文本内容</li>
+<li>CommandName属性：获取或设置按钮将要触发事件的名称</li>
+<li>CommandArgument属性：用于指示命令传递的参数，提供有关要执行命令的附加信息以便在事件中进行判断</li>
+<li>OnClick属性：当用户单击按钮时要执行的事件处理方法</li>
+<li>Command属性：单击时发生的服务器端事件</li>
+<li>PostBackUrl属性：获取或设置单击Button时从当前页发送到的URL</li>
+<li>OnClientClick属性：单击时发生的客户端事件，JS函数</li>
+<li>ImageUrl属性：图片的URL</li>
+<li>AlternateText属性：图像无法显示时替换文字</li>
+<li>图像服务器控件<ul>
+<li>Image控件</li>
+</ul>
+</li>
+<li>ImageUrl属性：图片的URL</li>
+<li>AlternateText属性：图像无法显示时替换文字</li>
+<li>GenerateEmptyAlternateText属性：如果将此项设置为true，则呈现图片的alt属性</li>
+<li>DescriptionUrl属性：指向该图片详细描述的页面链接</li>
+<li>ImageAlign属性：控件相对于其他元素的对齐方式，有以下值：<ul>
+<li>Left：图像沿网页的左边缘对齐，文字在图像右边换行</li>
+<li>Right：图像沿网页的右边缘对齐，文字在图像左边换行</li>
+<li>BaseLine：图像的下边缘与第一行文本的下边缘对齐</li>
+<li>Top：图像的上边缘与同一行上最高元素的上边缘对齐</li>
+<li>Middle：图像的中间与第一行文本的下边缘对齐</li>
+<li>Bottom：图像的下边缘与第一行文本的下边缘对齐</li>
+<li>AbsBottom：图像的下边缘与同一行中最大元素的下边缘对齐</li>
+<li>AbsMiddle：图像的中间与同一行中最大元素的中间对齐</li>
+<li>TextTop：图像的上边缘与同一行上最高文本的上边缘对齐</li>
+<li>ImageMap控件</li>
+</ul>
+</li>
+<li>ImageUrl属性：图片的URL</li>
+<li>AlternateText属性：图像无法显示时替换文字</li>
+<li>ImageAlign属性：控件相对于其他元素的对齐方式，有以下值：<ul>
+<li>Left：图像沿网页的左边缘对齐，文字在图像右边换行</li>
+<li>Right：图像沿网页的右边缘对齐，文字在图像左边换行</li>
+<li>BaseLine：图像的下边缘与第一行文本的下边缘对齐</li>
+<li>Top：图像的上边缘与同一行上最高元素的上边缘对齐</li>
+<li>Middle：图像的中间与第一行文本的下边缘对齐</li>
+<li>Bottom：图像的下边缘与第一行文本的下边缘对齐</li>
+<li>AbsBottom：图像的下边缘与同一行中最大元素的下边缘对齐</li>
+<li>AbsMiddle：图像的中间与同一行中最大元素的中间对齐</li>
+<li>TextTop：图像的上边缘与同一行上最高文本的上边缘对齐</li>
+</ul>
+</li>
+<li>HotSpotMode属性：获取或设置图像上热点区域的类型，对应枚举类型 System.Web.UI.WebControls.HotSpotMode，它有四个枚举值：<ul>
+<li>NotSet：默认值，定向到用户指定的URL地址</li>
+<li>PostBack：回传操作，单击后执行后部的Click事件</li>
+<li>Inactive：无任何操作</li>
+<li>Navigate：定向到指定的URL地址</li>
+</ul>
+</li>
+<li>HotSpot属性：该属性对应 System.Web.UI.WebControls.HotSpot 对象集合<ul>
+<li>CircleHotSpot：圆形热点</li>
+<li>RectangleHotSpot：矩形热点</li>
+<li>PolygonHotSpot：多边形热点</li>
+</ul>
+</li>
+<li>Click事件</li>
+<li>Focus()方法</li>
+<li>选择服务器控件<ul>
+<li>RadioButton控件</li>
+</ul>
+</li>
+<li>AutoPostBack属性：获取或设定一个值，指定是否回传</li>
+<li>Checked属性：获取或设定一个值，指示是否已经选中</li>
+<li>GroupName属性：获取或设置单选按钮所属的组名</li>
+<li>TextAlign属性：获取或设置文本标签在单选框的左边还是右边，默认为Right，可以是Left</li>
+<li>Text属性：获取或设置与单选框关联的文本标签</li>
+<li>CheckedChanged事件：当Checked属性值改变时发生<ul>
+<li>RadioButtonList控件</li>
+</ul>
+</li>
+<li>RepeatColumns属性：获取或设置要在RadioButtonList控件中显示的列数</li>
+<li>RepeatDirection属性：获取或设置控件是垂直显示还是水平显示<ul>
+<li>Vertical：默认</li>
+<li>Horizontal</li>
+</ul>
+</li>
+<li>RepeatLayout属性：获取或设置组内单选按钮的布局</li>
+<li>SelectedIndex属性：获取或设置列表中选定项的最低序号索引</li>
+<li>SelectedItem属性：获取列表控件中索引最小的选定项</li>
+<li>SelectedValue属性：获取列表控件中的选定项的值，或选择列表控件中包含指定项的值</li>
+<li>SelectedIndexChanged事件：选定项变化时发生</li>
+<li>DataBinding：当服务器控件绑定到数据源时发生</li>
+<li>Items集合：与列表中的每项对应，基本属性：<ul>
+<li>Text：每个选项的文本</li>
+<li>Value：每个选项的值</li>
+<li>Selected：选项的状态，True表示默认选中</li>
+<li>CheckBox控件</li>
+</ul>
+</li>
+<li>AutoPostBack属性：获取或设定是否回传</li>
+<li>Checked属性：获取或设置是否选中，True或False</li>
+<li>Text属性：获取或设置文本标签</li>
+<li>TextAlign属性：获取或设置文本标签显示在复选框的Right还是Left，默认是Right</li>
+<li>CheckedChanged事件：选中状态改变时发生<ul>
+<li>CheckedBoxList控件</li>
+</ul>
+</li>
+<li>AutoPostBack属性：获取或设定是否回传</li>
+<li>CellPadding属性：获取或设置单元格的边框和内容之间的距离</li>
+<li>DataSource属性：获取或设置对象，数据绑定控件从该对象中检索其数据项列表</li>
+<li>DataTextField属性：获取或设置为列表项提供文本内容的数据源字段</li>
+<li>DataValueField属性：获取或设置为各列表项提供值的数据源字段</li>
+<li>Items集合：与列表中的每项对应，基本属性：<ul>
+<li>Text：每个选项的文本</li>
+<li>Value：每个选项的值</li>
+<li>Selected：选项的状态，True表示默认选中</li>
+</ul>
+</li>
+<li>RepeatColumns属性：获取或设置要在CheckedBoxList控件中显示的列数</li>
+<li>RepeatDirection属性：获取或设置控件是垂直显示还是水平显示<ul>
+<li>Vertical：默认</li>
+<li>Horizontal</li>
+</ul>
+</li>
+<li>RepeatLayout属性：获取或设置组内元素的布局，是Table排列还是直接排列</li>
+<li>SelectedIndex属性：获取或设置列表中选定项的最低序号索引</li>
+<li>SelectedItem属性：获取列表控件中索引最小的选定项</li>
+<li>SelectedValue属性：获取列表控件中的选定项的值，或选择列表控件中包含指定项的值</li>
+<li>SelectedIndexChanged事件：选定项变化时发生</li>
+<li>TextAlign属性：获取或设置文本标签显示在复选框的Right还是Left，默认是Right</li>
+<li>Checked属性：是否选中</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.top", "header.autohide"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1c7c35e.min.js"></script>
+      
+        <script src="../mathjax/LaTeX.js"></script>
+      
+    
+  </body>
+</html>
