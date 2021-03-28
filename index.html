@@ -653,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/History/关于俄罗斯与俄罗斯人.md" class="md-nav__link">
+      <a href="/History/关于俄罗斯与俄罗斯人.html" class="md-nav__link">
         关于俄罗斯与俄罗斯人
       </a>
     </li>
@@ -665,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/History在俄罗斯学习与生活.md" class="md-nav__link">
+      <a href="/History在俄罗斯学习与生活.html" class="md-nav__link">
         在俄罗斯学习与生活
       </a>
     </li>
@@ -905,10 +905,20 @@
         margin: auto;
     }
     .headpicPanel {
-        width: 100%;
         float: left;
+        width: 100%;
     }
-    .headpicPanel>div{
+    @media screen and (min-width: 1000px) {
+        .headpicPanel>div {
+            width: 700px;
+        }
+    }
+    @media screen and (max-width: 999px) {
+        .headpicPanel>div {
+            width: 100%;
+        }
+    }
+    .headpicPanel>div>div{
         width: 160px;
         height: 200px;
         float: left;
@@ -918,7 +928,7 @@
         border: 2px solid black;
         margin: 2px;
     }
-    .headpicPanel>div>center{
+    .headpicPanel>div>div>center{
         margin: 4px;
     }
 </style>
@@ -932,6 +942,7 @@
 <h2 id="_4">贡献人员</h2>
 <h3 id="icsg">ICSG 成员：</h3>
 <div class="headpicPanel">
+<div>
     <div>
         <center>
             <div class="headpic" style="background-image: url('img/headpic/Ran-ying.jpg');"></div><br />
@@ -988,6 +999,7 @@
         </center>
         <span></span>  
     </div>
+</div>
 </div>
 
 <h3 id="_5">编外贡献者：</h3>
