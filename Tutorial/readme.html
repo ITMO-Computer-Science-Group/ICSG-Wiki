@@ -861,49 +861,15 @@
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    您需要掌握哪些技术？
+    您需要遵守哪些标准？
   </a>
   
-    <nav class="md-nav" aria-label="您需要掌握哪些技术？">
+    <nav class="md-nav" aria-label="您需要遵守哪些标准？">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    本仓库的文件标准
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    第一级内容标题
-  </a>
-  
-    <nav class="md-nav" aria-label="第一级内容标题">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    第二级内容标题
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#markdown" class="md-nav__link">
-    Markdown
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#latex" class="md-nav__link">
-    LaTeX
+  <a href="#1" class="md-nav__link">
+    1. 文件标准
   </a>
   
 </li>
@@ -947,7 +913,7 @@
 <ol>
 <li>注册 <a href="https://github.com/">GitHub 账号</a></li>
 <li>打开 <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki">Wiki 仓库地址</a></li>
-<li>点击 Add file，在下拉选项中点击 Create new file</li>
+<li>点击 Add file，在下拉选项中点击 <code>Create new file</code></li>
 <li>此时您将会看到两个文本框：<ol>
 <li>目录文本框：“Natural-Science-Wiki/Name your file in ITMO-Computer-Science-Group:main”，此时将  <code>Name your file</code> 改成想要提交的目录位置（如果这个科目还没有被建立），或者在 <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki">Wiki 仓库</a>打开指定的目录，此处即可不用填写。</li>
 <li>文件内容文本框：在这里用 <code>Markdown</code> 和 <code>LaTeX</code> 编写文件</li>
@@ -959,9 +925,9 @@
 <li>在新的页面留下附言、评论或说明，然后点击 <code>Create pull request</code> （绿色）</li>
 <li>好！接下来等待我们的审核即可！</li>
 </ol>
-<h2 id="_6">您需要掌握哪些技术？</h2>
-<h3 id="_7">本仓库的文件标准</h3>
-<p>我们的标准很简单：</p>
+<h2 id="_6">您需要遵守哪些标准？</h2>
+<h3 id="1">1. 文件标准</h3>
+<p>当您在创建以及编辑文档时，需要遵守我们的文件标准，我们的文件标准很简单：</p>
 <ul>
 <li>每个文件必须要有一个文件标题作为文件名称，并以 <code>.md</code> 作为文件扩展名</li>
 <li>文件标题应在文件中用<code>一级标题</code>置顶显示</li>
@@ -969,38 +935,38 @@
 <li>内容使用<code>无序列表</code>表示其逻辑，类似于思维导图</li>
 </ul>
 <p>我们给出一个一般模板：</p>
-<ul>
-<li>样式
-    &gt;# 文件标题
-    &gt;
-    &gt;## 第一级内容标题
-    &gt;
-    &gt;### 第二级内容标题
-    &gt;
-    &gt;- 主干内容
-    &gt;    - 分支内容
-    &gt;        - 次级分支内容</li>
-<li>
-<p>源码
-    ```
-    # 文件标题</p>
+<p>样式</p>
+<blockquote>
+<h1 id="_7">文件标题</h1>
 <h2 id="_8">第一级内容标题</h2>
 <h3 id="_9">第二级内容标题</h3>
 <ul>
-<li>主干内容<ul>
+<li>主干内容</li>
 <li>分支内容<ul>
 <li>次级分支内容</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<p>```
-标准的具体实现可以参考我们已经做出的文件</p>
-</li>
-</ul>
-<h3 id="markdown">Markdown</h3>
-<p><code>Markdown</code> 是一个轻量化的文本排版语言，不同于 Word 等软件，Markdown 没有太多的富文本格式其内容形式多样，语法简单，并且十分容易上手。<br />
+</blockquote>
+<p>源码</p>
+<pre><code>```
+# 文件标题
+
+## 第一级内容标题
+
+### 第二级内容标题
+
+- 主干内容
+    - 分支内容
+        - 次级分支内容
+
+```
+</code></pre>
+<p>标准的具体实现可以参考我们已经做出的文件</p>
+<h3 id="2-git-message">2. git message 标准</h3>
+<h2 id="_10">您需要了解哪些技术？</h2>
+<h3 id="1-markdown">1. Markdown</h3>
+<p><code>Markdown</code> 是一个轻量化的文本排版语言，不同于 Word 等文档排版，Markdown 没有太多的富文本格式，但其内容形式多样，语法简单，并且十分容易上手。<br />
 以下是一个 GitHub Flavored Markdown 的简单教程，只收录了和本 Wiki 编辑有关的部分内容。如果想要了解更多，请自行查找 GitHub Flavored Markdown 的相关资料。</p>
 <ul>
 <li>标题<ul>
@@ -1106,13 +1072,13 @@
     <code>java
     public class operate {
         public static void main(String[] args) {
-            System.out.println("Hello, World!")
+            System.out.println("Hello, World!");
         }
     }</code></li>
 <li>源码：<pre><code>```java
 public class operate {
     public static void main(String[] args) {
-        System.out.println("Hello, World!")
+        System.out.println("Hello, World!");
     }
 }
 ```
@@ -1123,9 +1089,9 @@ public class operate {
 </ul>
 </li>
 </ul>
-<h3 id="latex">LaTeX</h3>
-<p><code>LaTeX</code> 是基于 Tex 的一个十分强大的文字排版语言，其内容极为丰富，但是语法较为复杂，使用门槛较高，因此我们只取用其公式部分的语法，以弥补原生 Markdown 不支持公式显示的缺陷。<br />
-这里给出了部分常用的 LaTeX 公式语法，我们使用这种方式在网页上表示复杂公式。</p>
+<h3 id="2-latex">2. LaTeX</h3>
+<p><code>LaTeX</code> 是基于 Tex 的一个十分强大的文字排版语言，其内容极为丰富，但是语法较为复杂，学习门槛较高，因此我们只取用其公式部分的语法，以弥补原生 Markdown 不支持公式显示的缺陷。<br />
+这里给出了部分常用的 LaTeX 公式语法，我们使用这种方式在网页上表示公式及符号。</p>
 <ul>
 <li>
 <p>公式的插入</p>
@@ -1161,6 +1127,11 @@ public class operate {
 <td>\frac{x}{y}</td>
 </tr>
 <tr>
+<td>绝对值</td>
+<td>$\lvert a\rvert$</td>
+<td></td>
+</tr>
+<tr>
 <td>根号</td>
 <td>$\sqrt{x}$</td>
 <td>\sqrt{x}</td>
@@ -1194,38 +1165,105 @@ public class operate {
 </table>
 </li>
 <li>
-<p>运算符号</p>
+<p>常用符号</p>
 <table>
 <thead>
 <tr>
+<th>名称</th>
 <th>效果</th>
 <th>源码</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>无穷</td>
+<td>$\infty$</td>
+<td>\infty</td>
+</tr>
+<tr>
+<td>正负号</td>
+<td>$\pm$ $\mp$</td>
+<td>\pm \mp</td>
+</tr>
+<tr>
+<td>乘号</td>
 <td>$\times$</td>
 <td>\times</td>
 </tr>
 <tr>
+<td>除号</td>
 <td>$\div$</td>
 <td>\div</td>
 </tr>
 <tr>
+<td>点乘号</td>
 <td>$\cdot$</td>
 <td>\cdot</td>
 </tr>
 <tr>
+<td>角度</td>
+<td>$\degree$</td>
+<td>\degree</td>
+</tr>
+<tr>
+<td>成比例</td>
+<td>$\propto$</td>
+<td>\propto</td>
+</tr>
+<tr>
+<td>约等于号</td>
 <td>$\approx$</td>
 <td>\approx</td>
 </tr>
 <tr>
+<td>不等于号</td>
 <td>$\neq$</td>
 <td>\neq</td>
 </tr>
 <tr>
+<td>同余号</td>
 <td>$\equiv$</td>
 <td>\equiv</td>
+</tr>
+<tr>
+<td>向右单/双箭头</td>
+<td>$\rightarrow$ $\Rightarrow$</td>
+<td>\rightarrow \Rightarrow</td>
+</tr>
+<tr>
+<td>左右单/双箭头</td>
+<td>$\leftrightarrow$ $\Leftrightarrow$</td>
+<td>\leftrightarrow \Leftrightarrow</td>
+</tr>
+<tr>
+<td>包含于/包含</td>
+<td>$\in$ $\ni$</td>
+<td>\in \ni</td>
+</tr>
+<tr>
+<td>任取</td>
+<td>$\forall$</td>
+<td>\forall</td>
+</tr>
+<tr>
+<td>存在/不存在</td>
+<td>$\exists$ $\nexists$</td>
+<td>\exists \nexists</td>
+</tr>
+<tr>
+<td>并集</td>
+<td>$\cup$</td>
+<td>\cup</td>
+</tr>
+<tr>
+<td>交集</td>
+<td>$\cap$</td>
+<td>\cap</td>
+</tr>
+<tr>
+<td>补集</td>
+<td>$\complement$</td>
+<td>\complement</td>
 </tr>
 </tbody>
 </table>
