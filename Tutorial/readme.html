@@ -448,7 +448,7 @@
   
     <li class="md-nav__item">
       <a href="/Physics/预科物理课件.html" class="md-nav__link">
-        预科物理
+        预科物理课件
       </a>
     </li>
   
@@ -460,7 +460,19 @@
   
     <li class="md-nav__item">
       <a href="/Physics/预科物理教材.html" class="md-nav__link">
-        分子物理学与热力学教材
+        预科物理教材
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Physics/热力学公式总结" class="md-nav__link">
+        热力学公式总结
       </a>
     </li>
   
@@ -1077,9 +1089,9 @@ public class operate {
 </ul>
 </li>
 </ul>
-<h3 id="2-latex">2. LaTeX</h3>
-<p><code>LaTeX</code> 是基于 Tex 的一个十分强大的文字排版语言，其内容极为丰富，但是语法较为复杂，学习门槛较高，因此我们只取用其公式部分的语法，以弥补原生 Markdown 不支持公式显示的缺陷。<br />
-这里给出了部分常用的 LaTeX 公式语法，我们使用这种方式在网页上表示公式及符号。</p>
+<h3 id="2-latex">2. $\LaTeX$</h3>
+<p>$\LaTeX$ 是基于 <code>Tex</code> 的一个十分强大的文字排版语言，其内容极为丰富，但是语法较为复杂，学习门槛较高，因此我们只取用其公式部分的语法，以弥补原生 Markdown 不支持公式显示的缺陷。<br />
+这里给出了部分常用的 $\LaTeX$ 公式语法，我们使用这种方式在网页上表示公式及符号。</p>
 <ul>
 <li>
 <p>公式的插入</p>
@@ -1096,6 +1108,30 @@ public class operate {
 <li><code>$$这是一个独行公式$$</code></li>
 </ul>
 </li>
+</ul>
+</li>
+<li>
+<p>公式中的空格分隔</p>
+<ul>
+<li>需要注意的是，在 $\LaTeX$ 源码中的空格不会在公式渲染后显示，一般来说，$\LaTeX$ 源码中的空格仅用于分割代码字段，例如这就是一个例子：<ul>
+<li>源码：<code>$这是   一个    公  式$</code></li>
+<li>效果：$这是   一个    公  式$</li>
+</ul>
+</li>
+<li>如果要使用空格分隔公式内容，有以下写法：<ul>
+<li>短空行：<code>\quad</code><ul>
+<li>源码：<code>$这是\quad一个\quad公\quad式$</code></li>
+<li>效果：$这是\quad一个\quad公\quad式$</li>
+</ul>
+</li>
+<li>长空行：<code>\qquad</code><ul>
+<li>源码：<code>$这是\qquad一个\qquad公\qquad式$</code></li>
+<li>效果：$这是\qquad一个\qquad公\qquad式$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>规范：一般对于公式与其公式编号（如果有的话），之间用 <code>\qquad</code> 分隔，对于一般的公式见间隔，使用<code>\quad</code>即可，具体根据实际情况判断</li>
 </ul>
 </li>
 <li>
@@ -1117,7 +1153,7 @@ public class operate {
 <tr>
 <td>绝对值</td>
 <td>$\lvert a\rvert$</td>
-<td></td>
+<td>\lvert a\rvert</td>
 </tr>
 <tr>
 <td>根号</td>
@@ -1192,6 +1228,11 @@ public class operate {
 <td>角度</td>
 <td>$\degree$</td>
 <td>\degree</td>
+</tr>
+<tr>
+<td>单波浪线</td>
+<td>$\sim$</td>
+<td>\sim</td>
 </tr>
 <tr>
 <td>成比例</td>
@@ -1445,10 +1486,29 @@ public class operate {
 <td>$\underbrace{jack}_{4}$</td>
 <td>\underbrace{jack}_{4}</td>
 </tr>
+<tr>
+<td>一般括号</td>
+<td>$(\frac{\frac{a}{b}}{c})$</td>
+<td>()</td>
+</tr>
+<tr>
+<td>自适应括号</td>
+<td>$\left(\frac{\frac{a}{b}}{c}\right)$</td>
+<td>\left(\right)</td>
+</tr>
 </tbody>
 </table>
 </li>
 </ul>
+<!--
+
+【信息】Excel 08 + [range]
+File: Excel_Task_0.8-2021-03-27.doc
+Range: all
+Target knowledge File：Information/预科信息.md
+target grammar file: ...
+
+-->
                 
               
               
