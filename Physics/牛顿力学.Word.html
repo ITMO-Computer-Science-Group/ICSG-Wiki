@@ -1,0 +1,3806 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="这个 Wiki 是我们整理的关于在俄罗斯留学时理工科学习的知识汇总，这个网站欢迎大家来贡献和修改内容。">
+      
+      
+      
+        <meta name="author" content="ICSG-Group">
+      
+      
+        <link rel="canonical" href="https://itmo.ranying.xyz/Physics/%E7%89%9B%E9%A1%BF%E5%8A%9B%E5%AD%A6.Word.html">
+      
+      <link rel="icon" href="/theme/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
+    
+    
+      
+        <title>牛顿力学 - Russian Natural Science Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2c0c5eaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#7e56c2">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Russian Natural Science Wiki" class="md-header__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
+      
+  <img src="/theme/icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Russian Natural Science Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              牛顿力学
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/" title="前往 GitHub 仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Russian Natural Science Wiki" class="md-nav__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
+      
+  <img src="/theme/icon.png" alt="logo">
+
+    </a>
+    Russian Natural Science Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/" title="前往 GitHub 仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      <label class="md-nav__link" for="__nav_1">
+        语言学习
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="语言学习" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          语言学习
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" >
+      
+      <label class="md-nav__link" for="__nav_1_1">
+        俄语
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="俄语" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          俄语
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Russian Language Grammar/Grammar for Russian.html" class="md-nav__link">
+        俄语语法
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
+      
+      <label class="md-nav__link" for="__nav_1_2">
+        物理
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="物理" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          物理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Physics/预科物理.Grammar.html" class="md-nav__link">
+        预科物理
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" >
+      
+      <label class="md-nav__link" for="__nav_1_3">
+        化学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="化学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          化学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Chemistry/预科化学.Grammar.html" class="md-nav__link">
+        预科化学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4" type="checkbox" id="__nav_1_4" >
+      
+      <label class="md-nav__link" for="__nav_1_4">
+        数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="数学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Math/预科数学.Grammar.html" class="md-nav__link">
+        预科数学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        预科课程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="预科课程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          预科课程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/List/预科课程.html" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        物理
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="物理" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          物理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Physics/预科物理课件.html" class="md-nav__link">
+        预科物理课件
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Physics/预科物理教材.html" class="md-nav__link">
+        预科物理教材
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Physics/热力学公式总结" class="md-nav__link">
+        热力学公式总结
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        化学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="化学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          化学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Chemistry/普通化学.html" class="md-nav__link">
+        普通化学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="数学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Math/预科数学.html" class="md-nav__link">
+        预科数学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Math/高中数学.html" class="md-nav__link">
+        高中数学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        信息
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="信息" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          信息
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Information/预科信息.html" class="md-nav__link">
+        预科信息
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      <label class="md-nav__link" for="__nav_2_6">
+        历史
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="历史" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          历史
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/History/关于俄罗斯与俄罗斯人.html" class="md-nav__link">
+        关于俄罗斯与俄罗斯人
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/History/在俄罗斯学习与生活.html" class="md-nav__link">
+        在俄罗斯学习与生活
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
+      
+      <label class="md-nav__link" for="__nav_2_7">
+        工程制图
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="工程制图" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          工程制图
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Engineering%20graphics/工程制图.html" class="md-nav__link">
+        工程制图
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        软件工程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="软件工程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          软件工程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/List/软件工程.html" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Java/Java教材.html" class="md-nav__link">
+        Java
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/friends.html" class="md-nav__link">
+        友链
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#word" class="md-nav__link">
+    Word
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/edit/main/Physics/牛顿力学.Word.md" title="编辑此页" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="_1">牛顿力学</h1>
+<h2 id="word">Word</h2>
+<table>
+<thead>
+<tr>
+<th>русский</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>кинематика</td>
+<td>运动学</td>
+</tr>
+<tr>
+<td>динамика</td>
+<td>动力学</td>
+</tr>
+<tr>
+<td>материальная точка</td>
+<td>质点</td>
+</tr>
+<tr>
+<td>механика</td>
+<td>力学，机械学</td>
+</tr>
+<tr>
+<td>механическое движение</td>
+<td>机械运动</td>
+</tr>
+<tr>
+<td>положения</td>
+<td>位置</td>
+</tr>
+<tr>
+<td>тело</td>
+<td>物体</td>
+</tr>
+<tr>
+<td>пространство</td>
+<td>空间</td>
+</tr>
+<tr>
+<td>течение</td>
+<td>过程，期间</td>
+</tr>
+<tr>
+<td>раздел</td>
+<td>章节，分支</td>
+</tr>
+<tr>
+<td>описание</td>
+<td>说明，描写，描述</td>
+</tr>
+<tr>
+<td>способ</td>
+<td>方法</td>
+</tr>
+<tr>
+<td>характеристика</td>
+<td>特征，特性</td>
+</tr>
+<tr>
+<td>движение</td>
+<td>运动</td>
+</tr>
+<tr>
+<td>определение</td>
+<td>确定、判断、定义</td>
+</tr>
+<tr>
+<td>изменение</td>
+<td>变化</td>
+</tr>
+<tr>
+<td>тип</td>
+<td>类型</td>
+</tr>
+<tr>
+<td>простейший</td>
+<td>（простой的最高级）最简单的</td>
+</tr>
+<tr>
+<td>отношение</td>
+<td>态度，对待</td>
+</tr>
+<tr>
+<td>отношения</td>
+<td>（复）关系</td>
+</tr>
+<tr>
+<td>тело отсчета</td>
+<td>参照物</td>
+</tr>
+<tr>
+<td>система координат</td>
+<td>坐标系</td>
+</tr>
+<tr>
+<td>количественный</td>
+<td>定量的</td>
+</tr>
+<tr>
+<td>прямоугольник</td>
+<td>长方形</td>
+</tr>
+<tr>
+<td>необходимо</td>
+<td>【副】必要</td>
+</tr>
+<tr>
+<td>способ отсчета времени</td>
+<td>计时方式</td>
+</tr>
+<tr>
+<td>совокупность</td>
+<td>（阴）集合</td>
+</tr>
+<tr>
+<td>координата</td>
+<td>坐标</td>
+</tr>
+<tr>
+<td>связанный</td>
+<td>有联系的</td>
+</tr>
+<tr>
+<td>образовать</td>
+<td>[未，完]（过去式只用作完成体）形成</td>
+</tr>
+<tr>
+<td>определение систем отсчета</td>
+<td>参照系</td>
+</tr>
+<tr>
+<td>пространственно-временный</td>
+<td>时空的</td>
+</tr>
+<tr>
+<td>радиус-вектор</td>
+<td>半径矢量（向量）</td>
+</tr>
+<tr>
+<td>траектория движения</td>
+<td>运动轨迹</td>
+</tr>
+<tr>
+<td>вектор перемещения</td>
+<td>位移矢量（位移）</td>
+</tr>
+<tr>
+<td>путь</td>
+<td>（阳）路程</td>
+</tr>
+<tr>
+<td>скалярная физическая величина</td>
+<td>标量物理量</td>
+</tr>
+<tr>
+<td>участок</td>
+<td>段，区域</td>
+</tr>
+<tr>
+<td>равенство</td>
+<td>等式</td>
+</tr>
+<tr>
+<td>знак</td>
+<td>符号</td>
+</tr>
+<tr>
+<td>соответствовать чему/с чем</td>
+<td>符合…</td>
+</tr>
+<tr>
+<td>траектория</td>
+<td>轨迹，路径</td>
+</tr>
+<tr>
+<td>прямолинейный</td>
+<td>直线的</td>
+</tr>
+<tr>
+<td>процесс</td>
+<td>过程</td>
+</tr>
+<tr>
+<td>направление</td>
+<td>方向</td>
+</tr>
+<tr>
+<td>средняя скорость</td>
+<td>平均速度</td>
+</tr>
+<tr>
+<td>средняя путевая скорость</td>
+<td>平均路程速度</td>
+</tr>
+<tr>
+<td>средняя скорость перемещения</td>
+<td>平均位移速度</td>
+</tr>
+<tr>
+<td>мгновенная скорость</td>
+<td>瞬时速度</td>
+</tr>
+<tr>
+<td>направлять направить что на что</td>
+<td>把…指向……</td>
+</tr>
+<tr>
+<td>сторона</td>
+<td>方向</td>
+</tr>
+<tr>
+<td>касательная к чему</td>
+<td>与…相切的切线</td>
+</tr>
+<tr>
+<td>скорость</td>
+<td>（阴）速度</td>
+</tr>
+<tr>
+<td>производная</td>
+<td>导数</td>
+</tr>
+<tr>
+<td>закон</td>
+<td>法则，定律</td>
+</tr>
+<tr>
+<td>относительно</td>
+<td>【副】相对地</td>
+</tr>
+<tr>
+<td>относительно чего</td>
+<td>【前】相对于…，关于，有关…</td>
+</tr>
+<tr>
+<td>связано</td>
+<td>连接地</td>
+</tr>
+<tr>
+<td>соотношение</td>
+<td>比值，比例</td>
+</tr>
+<tr>
+<td>относительная скорость</td>
+<td>相对速度</td>
+</tr>
+<tr>
+<td>торможение</td>
+<td>减速</td>
+</tr>
+<tr>
+<td>характеризовать</td>
+<td>（未，完）表现…的特征；说明…的性质</td>
+</tr>
+<tr>
+<td>по определению</td>
+<td>根据定义</td>
+</tr>
+<tr>
+<td>постоянный</td>
+<td>恒定的,不变的</td>
+</tr>
+<tr>
+<td>оставаться остаться</td>
+<td>始终是</td>
+</tr>
+<tr>
+<td>центростремительное (нормальное) ускорение</td>
+<td>向心加速度</td>
+</tr>
+<tr>
+<td>касательное (тангенциальное)ускорение</td>
+<td>切线</td>
+</tr>
+<tr>
+<td>модуль</td>
+<td>（阳）模</td>
+</tr>
+<tr>
+<td>увеличиваться увеличиться</td>
+<td>增加，扩大</td>
+</tr>
+<tr>
+<td>уменьшаться уменьшиться</td>
+<td>减小，降低</td>
+</tr>
+<tr>
+<td>направлено</td>
+<td>指向，针对</td>
+</tr>
+<tr>
+<td>окружность</td>
+<td>圆，圆周</td>
+</tr>
+<tr>
+<td>горизонт</td>
+<td>水平线</td>
+</tr>
+<tr>
+<td>поле тяжести Земли</td>
+<td>地球重力场</td>
+</tr>
+<tr>
+<td>отсутствие</td>
+<td>没有，缺乏</td>
+</tr>
+<tr>
+<td>сопротивление</td>
+<td>阻力</td>
+</tr>
+<tr>
+<td>дальность</td>
+<td>(阴)距离</td>
+</tr>
+<tr>
+<td>полет</td>
+<td>飞行</td>
+</tr>
+<tr>
+<td>верхний</td>
+<td>上的</td>
+</tr>
+<tr>
+<td>подъем</td>
+<td>上升</td>
+</tr>
+<tr>
+<td>уравнение</td>
+<td>方程</td>
+</tr>
+<tr>
+<td>парабола</td>
+<td>抛物线</td>
+</tr>
+<tr>
+<td>угол</td>
+<td>角，角度</td>
+</tr>
+<tr>
+<td>совершать</td>
+<td>进行</td>
+</tr>
+<tr>
+<td>поворот</td>
+<td>转动</td>
+</tr>
+<tr>
+<td>период</td>
+<td>周期</td>
+</tr>
+<tr>
+<td>частота</td>
+<td>频率</td>
+</tr>
+<tr>
+<td>количество</td>
+<td>数量</td>
+</tr>
+<tr>
+<td>вагонетка</td>
+<td>手推车，小车</td>
+</tr>
+<tr>
+<td>погрузка</td>
+<td>装载</td>
+</tr>
+<tr>
+<td>выгрузка</td>
+<td>卸载</td>
+</tr>
+<tr>
+<td>определять определить</td>
+<td>确定</td>
+</tr>
+<tr>
+<td>значение</td>
+<td>数值</td>
+</tr>
+<tr>
+<td>разбивать разбить на что</td>
+<td>分为……</td>
+</tr>
+<tr>
+<td>этап</td>
+<td>阶段</td>
+</tr>
+<tr>
+<td>равноускоренный</td>
+<td>匀加速的</td>
+</tr>
+<tr>
+<td>покой</td>
+<td>静止</td>
+</tr>
+<tr>
+<td>достижение</td>
+<td>达到，做到</td>
+</tr>
+<tr>
+<td>равнозамедленный</td>
+<td>匀减速的</td>
+</tr>
+<tr>
+<td>поверхность</td>
+<td>(阴)面，表面</td>
+</tr>
+<tr>
+<td>брусок</td>
+<td>块（小木块）</td>
+</tr>
+<tr>
+<td>пройденный</td>
+<td>通过的，已通过的</td>
+</tr>
+<tr>
+<td>формула</td>
+<td>公式</td>
+</tr>
+<tr>
+<td>двигаться（-аюсь, -аешься或-`ижусь, -<code>ижешься; \-</code>игаясь）</td>
+<td>移动</td>
+</tr>
+<tr>
+<td>брошенный</td>
+<td>抛掷</td>
+</tr>
+<tr>
+<td>вертикально</td>
+<td>垂直的</td>
+</tr>
+<tr>
+<td>график</td>
+<td>时间表，图表</td>
+</tr>
+<tr>
+<td>катер</td>
+<td>小艇</td>
+</tr>
+<tr>
+<td>плоскость</td>
+<td>（阴）平面</td>
+</tr>
+<tr>
+<td>Ньютон</td>
+<td>牛顿</td>
+</tr>
+<tr>
+<td>инерциальная система</td>
+<td>惯性系</td>
+</tr>
+<tr>
+<td>действовать подействовать на что</td>
+<td>对…起作用，有影响</td>
+</tr>
+<tr>
+<td>принцип</td>
+<td>原理，定理</td>
+</tr>
+<tr>
+<td>относительность</td>
+<td>（阴）相对性</td>
+</tr>
+<tr>
+<td>существовать</td>
+<td>存在</td>
+</tr>
+<tr>
+<td>бесчисленный</td>
+<td>无数的</td>
+</tr>
+<tr>
+<td>инерциальная система отсчета (ИСО)</td>
+<td>惯性参考系</td>
+</tr>
+<tr>
+<td>равномерный</td>
+<td>相同的，平均的，均匀的</td>
+</tr>
+<tr>
+<td>прямолинейно</td>
+<td>直线地</td>
+</tr>
+<tr>
+<td>явление</td>
+<td>现象</td>
+</tr>
+<tr>
+<td>протекать протечь</td>
+<td>进行</td>
+</tr>
+<tr>
+<td>условия</td>
+<td>条件</td>
+</tr>
+<tr>
+<td>одинаковый</td>
+<td>一样的，相同的</td>
+</tr>
+<tr>
+<td>импульс</td>
+<td>冲量，动量</td>
+</tr>
+<tr>
+<td>равнодействующий</td>
+<td>合力的，合成的</td>
+</tr>
+<tr>
+<td>масса</td>
+<td>质量</td>
+</tr>
+<tr>
+<td>изменяться измениться</td>
+<td>改变</td>
+</tr>
+<tr>
+<td>действующий</td>
+<td>作用在</td>
+</tr>
+<tr>
+<td>взаимодействовать</td>
+<td>相互作用</td>
+</tr>
+<tr>
+<td>направленный</td>
+<td>方向的</td>
+</tr>
+<tr>
+<td>противоположный</td>
+<td>相反的</td>
+</tr>
+<tr>
+<td>планета</td>
+<td>行星</td>
+</tr>
+<tr>
+<td>перпендикулярно</td>
+<td>垂直于</td>
+</tr>
+<tr>
+<td>реакция</td>
+<td>反作用</td>
+</tr>
+<tr>
+<td>опора</td>
+<td>支点</td>
+</tr>
+<tr>
+<td>трение</td>
+<td>摩擦，摩擦力</td>
+</tr>
+<tr>
+<td>касательный</td>
+<td>切线的</td>
+</tr>
+<tr>
+<td>составляющая</td>
+<td>部分，组成</td>
+</tr>
+<tr>
+<td>покоиться на чём</td>
+<td>以…为基础，在…基础上</td>
+</tr>
+<tr>
+<td>шероховатый</td>
+<td>粗糙的，不光滑的</td>
+</tr>
+<tr>
+<td>прикладывать приложить что</td>
+<td>施用，运用</td>
+</tr>
+<tr>
+<td>прикладывать приложить что к чему</td>
+<td>把…贴到…上</td>
+</tr>
+<tr>
+<td>сила трения покоя</td>
+<td>静摩擦力</td>
+</tr>
+<tr>
+<td>полностью</td>
+<td>完全</td>
+</tr>
+<tr>
+<td>уравновешивать уравновесить</td>
+<td>使平衡</td>
+</tr>
+<tr>
+<td>превышать превысить кого-что на что</td>
+<td>超出，超过…多少</td>
+</tr>
+<tr>
+<td>превышать превысить кого-что чем</td>
+<td>超出，超过…多少</td>
+</tr>
+<tr>
+<td>сила трения скольжения</td>
+<td>滑动摩擦力</td>
+</tr>
+<tr>
+<td>сила упругости</td>
+<td>弹力</td>
+</tr>
+<tr>
+<td>деформированный</td>
+<td>变形的</td>
+</tr>
+<tr>
+<td>пружина</td>
+<td>弹簧</td>
+</tr>
+<tr>
+<td>растянутый</td>
+<td>被拉长的</td>
+</tr>
+<tr>
+<td>резинк</td>
+<td>皮筋</td>
+</tr>
+<tr>
+<td>материал</td>
+<td>材料</td>
+</tr>
+<tr>
+<td>поперечный</td>
+<td>横向的</td>
+</tr>
+<tr>
+<td>сечение</td>
+<td>截面</td>
+</tr>
+<tr>
+<td>последовательный</td>
+<td>顺序的，依次的</td>
+</tr>
+<tr>
+<td>соединение</td>
+<td>连接</td>
+</tr>
+<tr>
+<td>параллельный</td>
+<td>平行的，并联的</td>
+</tr>
+<tr>
+<td>сила натяжения</td>
+<td>拉力</td>
+</tr>
+<tr>
+<td>нити</td>
+<td>线</td>
+</tr>
+<tr>
+<td>сила сопротивления</td>
+<td>阻力</td>
+</tr>
+<tr>
+<td>жидкость</td>
+<td>液体</td>
+</tr>
+<tr>
+<td>Закон всемирного тяготения</td>
+<td>万有引力定律</td>
+</tr>
+<tr>
+<td>пропорциональный чему</td>
+<td>与…成正比</td>
+</tr>
+<tr>
+<td>квадрат</td>
+<td>平方</td>
+</tr>
+<tr>
+<td>расстояние</td>
+<td>距离</td>
+</tr>
+<tr>
+<td>обратно пропорциональный</td>
+<td>反比例的</td>
+</tr>
+<tr>
+<td>сферический</td>
+<td>球形的</td>
+</tr>
+<tr>
+<td>симметричный</td>
+<td>对称的，平衡的</td>
+</tr>
+<tr>
+<td>тяжесть</td>
+<td>（阴）重力，重心</td>
+</tr>
+<tr>
+<td>падение</td>
+<td>落体，落下</td>
+</tr>
+<tr>
+<td>гравитационный</td>
+<td>万有引力的，重力的</td>
+</tr>
+<tr>
+<td>притяжение</td>
+<td>吸引力</td>
+</tr>
+<tr>
+<td>удерживать удержать</td>
+<td>保持</td>
+</tr>
+<tr>
+<td>орбита</td>
+<td>轨道</td>
+</tr>
+<tr>
+<td>по своей природе</td>
+<td>从本质上讲</td>
+</tr>
+<tr>
+<td>тождественный</td>
+<td>相同的，同等的</td>
+</tr>
+<tr>
+<td>вблизи чего</td>
+<td>在…附近</td>
+</tr>
+<tr>
+<td>ускорение свободного падения</td>
+<td>重力加速度，自由落体加速度</td>
+</tr>
+<tr>
+<td>спутник</td>
+<td>卫星</td>
+</tr>
+<tr>
+<td>круговой</td>
+<td>圆形的</td>
+</tr>
+<tr>
+<td>обращение</td>
+<td>旋转</td>
+</tr>
+<tr>
+<td>Первая космическая скорость</td>
+<td>第一宇宙速度</td>
+</tr>
+<tr>
+<td>преодолеть</td>
+<td>克服</td>
+</tr>
+<tr>
+<td>плотность</td>
+<td>（阴）密度</td>
+</tr>
+<tr>
+<td>Закон сохранения импульса</td>
+<td>动量守恒定律</td>
+</tr>
+<tr>
+<td>сохранение</td>
+<td>保持，守恒</td>
+</tr>
+<tr>
+<td>столкновение</td>
+<td>碰撞</td>
+</tr>
+<tr>
+<td>массы сколько кг</td>
+<td>质量为…</td>
+</tr>
+<tr>
+<td>длины сколько м</td>
+<td>长为…米</td>
+</tr>
+<tr>
+<td>тележка</td>
+<td>（理想模型）小车</td>
+</tr>
+<tr>
+<td>двигаться двинуться</td>
+<td>运动</td>
+</tr>
+<tr>
+<td>навстречу друг другу</td>
+<td>相向而行</td>
+</tr>
+<tr>
+<td>с какой скоростью</td>
+<td>以……的速度</td>
+</tr>
+<tr>
+<td>рельс</td>
+<td>导轨，滑轨</td>
+</tr>
+<tr>
+<td>по чему</td>
+<td>沿着……</td>
+</tr>
+<tr>
+<td>поравняться с кем/чем</td>
+<td>与……并排，看齐</td>
+</tr>
+<tr>
+<td>перепрыгнуть с чего на что</td>
+<td>从…跳到…</td>
+</tr>
+<tr>
+<td>перепрыгнуть что/через что</td>
+<td>跳过…</td>
+</tr>
+<tr>
+<td>перпендикулярный</td>
+<td>垂直的</td>
+</tr>
+<tr>
+<td>во сколько раз</td>
+<td>多少倍</td>
+</tr>
+<tr>
+<td>величина</td>
+<td>数值</td>
+</tr>
+<tr>
+<td>конечный</td>
+<td>最终的</td>
+</tr>
+<tr>
+<td>задний</td>
+<td>后面的</td>
+</tr>
+<tr>
+<td>край</td>
+<td>边缘</td>
+</tr>
+<tr>
+<td>доска</td>
+<td>（理想模型）木板</td>
+</tr>
+<tr>
+<td>лежать</td>
+<td>横着，躺着</td>
+</tr>
+<tr>
+<td>гладкий</td>
+<td>光滑的</td>
+</tr>
+<tr>
+<td>на гладкой горизонтальной поверхности</td>
+<td>在光滑水平面上</td>
+</tr>
+<tr>
+<td>соскользнуть с чего по чему на что</td>
+<td>从…沿着…滑下去到…</td>
+</tr>
+<tr>
+<td>сила</td>
+<td>力</td>
+</tr>
+<tr>
+<td>приложить какую силу сколько Н к чему</td>
+<td>给чему……的力</td>
+</tr>
+<tr>
+<td>достаточный</td>
+<td>充足的，足够的</td>
+</tr>
+<tr>
+<td>скольжение</td>
+<td>滑动</td>
+</tr>
+<tr>
+<td>коэффициент трения между чем равен сколько</td>
+<td>……间的动摩擦因数是…</td>
+</tr>
+<tr>
+<td>нерастяжимый</td>
+<td>不可伸展的，不可延长的</td>
+</tr>
+<tr>
+<td>нити</td>
+<td>（理想模型）线</td>
+</tr>
+<tr>
+<td>на легкой нерастяжимой нити</td>
+<td>（理想模型）在轻的不可拉长的绳上</td>
+</tr>
+<tr>
+<td>подвешенный</td>
+<td>悬挂的</td>
+</tr>
+<tr>
+<td>шарик</td>
+<td>（理想模型）小球</td>
+</tr>
+<tr>
+<td>пуля</td>
+<td>（理想模型）子弹</td>
+</tr>
+<tr>
+<td>летящий</td>
+<td>飞行的（летать 的现在主动形动词）</td>
+</tr>
+<tr>
+<td>упасть падать</td>
+<td>落下</td>
+</tr>
+<tr>
+<td>застревать застрять в чём</td>
+<td>卡住，陷在</td>
+</tr>
+<tr>
+<td>сразу</td>
+<td>【副】立刻，马上（瞬间）</td>
+</tr>
+<tr>
+<td>соударение</td>
+<td>碰撞</td>
+</tr>
+<tr>
+<td>покоиться</td>
+<td>处于静止状态</td>
+</tr>
+<tr>
+<td>трение о чём</td>
+<td>对……的摩擦力</td>
+</tr>
+<tr>
+<td>пренебречь чем</td>
+<td>忽略不计</td>
+</tr>
+<tr>
+<td>гиря</td>
+<td>（理想模型）砝码</td>
+</tr>
+<tr>
+<td>неравный</td>
+<td>不相等的</td>
+</tr>
+<tr>
+<td>вес</td>
+<td>重量</td>
+</tr>
+<tr>
+<td>привязанный к чему</td>
+<td>连接在…上的</td>
+</tr>
+<tr>
+<td>конец</td>
+<td>终点，末端</td>
+</tr>
+<tr>
+<td>веревка</td>
+<td>（理想模型）绳</td>
+</tr>
+<tr>
+<td>перекинуть перекинутый что через чего</td>
+<td>把 что 扔到 чего</td>
+</tr>
+<tr>
+<td>невесомый</td>
+<td>失重的，无重量的</td>
+</tr>
+<tr>
+<td>блок</td>
+<td>（理想模型）块/滑轮</td>
+</tr>
+<tr>
+<td>невесомый блок</td>
+<td>无重量的滑轮</td>
+</tr>
+<tr>
+<td>неподвижный блок</td>
+<td>定滑轮</td>
+</tr>
+<tr>
+<td>при чём</td>
+<td>附属于…</td>
+</tr>
+<tr>
+<td>более легкая (веревка)</td>
+<td>较轻的（绳，此处省略）</td>
+</tr>
+<tr>
+<td>расположенный</td>
+<td>被布置的（расположить 的过去被动式形动词）</td>
+</tr>
+<tr>
+<td>расстояние сколько м</td>
+<td>……距离</td>
+</tr>
+<tr>
+<td>предоставлять предоставить чему</td>
+<td>令，让</td>
+</tr>
+<tr>
+<td>действие</td>
+<td>作用</td>
+</tr>
+<tr>
+<td>сила тяжести</td>
+<td>重力</td>
+</tr>
+<tr>
+<td>под действием силы тяжести</td>
+<td>在重力作用下（под чём 在……条件下）</td>
+</tr>
+<tr>
+<td>секунда</td>
+<td>秒</td>
+</tr>
+<tr>
+<td>неподвижный</td>
+<td>静止的，固定的</td>
+</tr>
+<tr>
+<td>висеть что на чём/ над чем</td>
+<td>把… 挂在…/（上方）悬挂在…</td>
+</tr>
+<tr>
+<td>груз</td>
+<td>（理想模型）重量，负载</td>
+</tr>
+<tr>
+<td>ухватиться за кого-что</td>
+<td>抓住，握住</td>
+</tr>
+<tr>
+<td>обезьяна</td>
+<td>（理想模型）猴子</td>
+</tr>
+<tr>
+<td>карабкаться</td>
+<td>攀登，爬上</td>
+</tr>
+<tr>
+<td>вверх</td>
+<td>【副】向上</td>
+</tr>
+<tr>
+<td>достигнуть чего</td>
+<td>取得、达到…</td>
+</tr>
+<tr>
+<td>первоначально</td>
+<td>最初</td>
+</tr>
+<tr>
+<td>проволочный</td>
+<td>金属丝的</td>
+</tr>
+<tr>
+<td>кольцо</td>
+<td>环，圈</td>
+</tr>
+<tr>
+<td>радиус сколько м</td>
+<td>半径为……</td>
+</tr>
+<tr>
+<td>надевать надеть</td>
+<td>穿过</td>
+</tr>
+<tr>
+<td>скользить скользнуть</td>
+<td>滑行</td>
+</tr>
+<tr>
+<td>вертикальный</td>
+<td>纵向的</td>
+</tr>
+<tr>
+<td>вокруг вертикальной оси</td>
+<td>围绕着纵轴</td>
+</tr>
+<tr>
+<td>вращательный</td>
+<td>旋转的</td>
+</tr>
+<tr>
+<td>приводится во вращательное движение вокруг вертикальной оси</td>
+<td>绕垂直轴旋转运动</td>
+</tr>
+<tr>
+<td>проходящий</td>
+<td>通过的，贯穿的(проходить 的现在主动形动词)</td>
+</tr>
+<tr>
+<td>угловой</td>
+<td>角的，角度的</td>
+</tr>
+<tr>
+<td>диаметр</td>
+<td>直径</td>
+</tr>
+<tr>
+<td>что с угловой скоростью сколько рад/сек</td>
+<td>角速度为……的что</td>
+</tr>
+<tr>
+<td>величина перемещения</td>
+<td>位移</td>
+</tr>
+<tr>
+<td>прямоугольный</td>
+<td>矩形的，直角的</td>
+</tr>
+<tr>
+<td>клин</td>
+<td>楔子，斜板</td>
+</tr>
+<tr>
+<td>горизонтально (горизонтальный)</td>
+<td>水平地</td>
+</tr>
+<tr>
+<td>ускорение</td>
+<td>加速度（ускорить(-ся)--ускорять(-ся) 的动名词）</td>
+</tr>
+<tr>
+<td>с ускорением сколько м/с²</td>
+<td>加速度为……м/с²的</td>
+</tr>
+<tr>
+<td>наклонный</td>
+<td>倾斜的</td>
+</tr>
+<tr>
+<td>прикрепленный что к чему</td>
+<td>被固定的，被连接的</td>
+</tr>
+<tr>
+<td>вершина</td>
+<td>顶部，顶点</td>
+</tr>
+<tr>
+<td>упругий</td>
+<td>有弹性的</td>
+</tr>
+<tr>
+<td>шнур</td>
+<td>绳，软线</td>
+</tr>
+<tr>
+<td>коэффициент</td>
+<td>系数，因数,率,比</td>
+</tr>
+<tr>
+<td>жесткость</td>
+<td>（阴）刚度，劲度</td>
+</tr>
+<tr>
+<td>коэффициент жесткости</td>
+<td>劲度系数</td>
+</tr>
+<tr>
+<td>прикрепленный к чему упругим шнуром с коэффициентом жесткости сколько Н/м</td>
+<td>用一根劲度系数为…Н/м的弹性绳连接在чему</td>
+</tr>
+<tr>
+<td>максимальный</td>
+<td>最大的，最大限度的</td>
+</tr>
+<tr>
+<td>удлинение</td>
+<td>伸长长度</td>
+</tr>
+<tr>
+<td>состояние</td>
+<td>状态，情况</td>
+</tr>
+<tr>
+<td>(не)растянутый</td>
+<td>（未）拉的失去弹性的</td>
+</tr>
+<tr>
+<td>максимальное удлинение шнура из нерастянутого состояния</td>
+<td>弹簧的最大的伸长长度（在弹性范围内）</td>
+</tr>
+<tr>
+<td>составляющий</td>
+<td>分量，分力，部分</td>
+</tr>
+<tr>
+<td>определить</td>
+<td>测定，算出（完）-лённый（-ён, -ена）</td>
+</tr>
+<tr>
+<td>приложенный что к чему</td>
+<td>施加的（力）</td>
+</tr>
+<tr>
+<td>на короткое время</td>
+<td>在短时间内</td>
+</tr>
+<tr>
+<td>под углом сколько градусов к какому направлению</td>
+<td>与哪个方向成多少度</td>
+</tr>
+<tr>
+<td>грузик</td>
+<td>（理想模型）重块</td>
+</tr>
+<tr>
+<td>соединенный</td>
+<td>连接的</td>
+</tr>
+<tr>
+<td>пружинный  вес</td>
+<td>弹簧秤</td>
+</tr>
+<tr>
+<td>показание</td>
+<td>读数，示数</td>
+</tr>
+<tr>
+<td>Законы сохранения в механике</td>
+<td>力学守恒定律</td>
+</tr>
+<tr>
+<td>постоянная сила</td>
+<td>恒定力</td>
+</tr>
+<tr>
+<td>работа какой силы на чём</td>
+<td>какой的力在чём上的做功</td>
+</tr>
+<tr>
+<td>действующий на что</td>
+<td>作用在……上（действовать的现在时主动形动词）</td>
+</tr>
+<tr>
+<td>скалярная величина</td>
+<td>标量值</td>
+</tr>
+<tr>
+<td>угол между чем</td>
+<td>……之间的角度</td>
+</tr>
+<tr>
+<td>мощность силы</td>
+<td>功率</td>
+</tr>
+<tr>
+<td>интенсивность производства работы</td>
+<td>做工强度</td>
+</tr>
+<tr>
+<td>Мгновенная мощность</td>
+<td>瞬时功率</td>
+</tr>
+<tr>
+<td>Потенциальная энергия</td>
+<td>势能</td>
+</tr>
+<tr>
+<td>перемещать переместить</td>
+<td>移动</td>
+</tr>
+<tr>
+<td>принципиальный</td>
+<td>原理上的</td>
+</tr>
+<tr>
+<td>стационарные силы</td>
+<td>恒定力</td>
+</tr>
+<tr>
+<td>зависящий от чего</td>
+<td>取决于（зависеть的现在时主动形动词）</td>
+</tr>
+<tr>
+<td>форма</td>
+<td>形式，形态</td>
+</tr>
+<tr>
+<td>определяться определиться</td>
+<td>被确定</td>
+</tr>
+<tr>
+<td>замкнутый траектория</td>
+<td>闭环轨迹</td>
+</tr>
+<tr>
+<td>сила тяжести</td>
+<td>重力</td>
+</tr>
+<tr>
+<td>сила гравитационного притяжения</td>
+<td>引力</td>
+</tr>
+<tr>
+<td>сила упругости.</td>
+<td>弹力</td>
+</tr>
+<tr>
+<td>сила Кулона.</td>
+<td>库仑力</td>
+</tr>
+<tr>
+<td>сила трения скольжения.</td>
+<td>滑动摩擦力</td>
+</tr>
+<tr>
+<td>сила сопротивления</td>
+<td>阻力</td>
+</tr>
+<tr>
+<td>понятие</td>
+<td>概念</td>
+</tr>
+<tr>
+<td>неоднозначный</td>
+<td>不确定的</td>
+</tr>
+<tr>
+<td>абсолютный</td>
+<td>绝对的</td>
+</tr>
+<tr>
+<td>значение</td>
+<td>数值</td>
+</tr>
+<tr>
+<td>фактически</td>
+<td>【副】事实上</td>
+</tr>
+<tr>
+<td>удобный</td>
+<td>合适的</td>
+</tr>
+<tr>
+<td>плоскость</td>
+<td>平面</td>
+</tr>
+<tr>
+<td>ноль потенциальной энергии</td>
+<td>零势能点</td>
+</tr>
+<tr>
+<td>остальной</td>
+<td>剩余的</td>
+</tr>
+<tr>
+<td>становиться</td>
+<td>变得</td>
+</tr>
+<tr>
+<td>вполне</td>
+<td>【副】十分，完全</td>
+</tr>
+<tr>
+<td>определённый</td>
+<td>明确的，确定的</td>
+</tr>
+<tr>
+<td>однородное поле силы тяжести</td>
+<td>均匀重力场</td>
+</tr>
+<tr>
+<td>переместить</td>
+<td>移动</td>
+</tr>
+<tr>
+<td>нулевой</td>
+<td>零的</td>
+</tr>
+<tr>
+<td>формула</td>
+<td>公式</td>
+</tr>
+<tr>
+<td>деформация</td>
+<td>形变</td>
+</tr>
+<tr>
+<td>пружина</td>
+<td>弹簧</td>
+</tr>
+<tr>
+<td>растяжение</td>
+<td>拉力</td>
+</tr>
+<tr>
+<td>сжатие</td>
+<td>压缩</td>
+</tr>
+<tr>
+<td>алгебраический</td>
+<td>代数的</td>
+</tr>
+<tr>
+<td>следствия</td>
+<td>结果</td>
+</tr>
+<tr>
+<td>приращение</td>
+<td>增量</td>
+</tr>
+<tr>
+<td>теплота</td>
+<td>热，热能</td>
+</tr>
+<tr>
+<td>Абсолютно упругий удар</td>
+<td>绝对的弹性的碰撞（理想刚体碰撞）</td>
+</tr>
+<tr>
+<td>Абсолютно неупругий удар</td>
+<td>绝对的非弹性的碰撞</td>
+</tr>
+<tr>
+<td>слипаться</td>
+<td>粘在一起，贴在一起</td>
+</tr>
+<tr>
+<td>пробивать</td>
+<td>穿过</td>
+</tr>
+<tr>
+<td>вращаться около чего</td>
+<td>围绕着…旋转</td>
+</tr>
+<tr>
+<td>вращаться вокруг чего</td>
+<td>围绕着…旋转</td>
+</tr>
+<tr>
+<td>вращаться по чему</td>
+<td>沿着…旋转</td>
+</tr>
+<tr>
+<td>вращение</td>
+<td>旋转</td>
+</tr>
+<tr>
+<td>круговой</td>
+<td>圆形的，循环的</td>
+</tr>
+<tr>
+<td>орбита</td>
+<td>范围，轨道</td>
+</tr>
+<tr>
+<td>обладая (обладать) чем</td>
+<td>具有…</td>
+</tr>
+<tr>
+<td>обладая (обладать) кинетической энергией сколько Дж</td>
+<td>以…J的动能</td>
+</tr>
+<tr>
+<td>кинетический энергия</td>
+<td>动能</td>
+</tr>
+<tr>
+<td>что принять равным …(Радиус принять равным сколько км)</td>
+<td>что 等于…（半径等于…公里）</td>
+</tr>
+<tr>
+<td>верхний</td>
+<td>上面的</td>
+</tr>
+<tr>
+<td>достигать достигнуть=достичь</td>
+<td>到达</td>
+</tr>
+<tr>
+<td>достичь чего</td>
+<td>到达…</td>
+</tr>
+<tr>
+<td>брошенный откуда куда</td>
+<td>被从…投掷到…（бросить的被动过去时形动词）</td>
+</tr>
+<tr>
+<td>траектория</td>
+<td>（射体）轨道</td>
+</tr>
+<tr>
+<td>подъём</td>
+<td>提高，上升</td>
+</tr>
+<tr>
+<td>сопротивление</td>
+<td>抵抗，反抗</td>
+</tr>
+<tr>
+<td>сила сопротивления чего</td>
+<td>…阻力</td>
+</tr>
+<tr>
+<td>стержень</td>
+<td>杆（阳）</td>
+</tr>
+<tr>
+<td>подвешенный чем к чему</td>
+<td>用чем悬挂在чему的</td>
+</tr>
+<tr>
+<td>ось вращения</td>
+<td>旋转轴</td>
+</tr>
+<tr>
+<td>закрепленный</td>
+<td>固定的</td>
+</tr>
+<tr>
+<td>посередине чего</td>
+<td>【副，前】在…中间</td>
+</tr>
+<tr>
+<td>равный по чему</td>
+<td>…相等的</td>
+</tr>
+<tr>
+<td>равный чему</td>
+<td>等于…</td>
+</tr>
+<tr>
+<td>точечная масса</td>
+<td>点质量</td>
+</tr>
+<tr>
+<td>нижний</td>
+<td>下面的，下端的</td>
+</tr>
+<tr>
+<td>что отклониться от чего во что</td>
+<td>…从чего偏移到что</td>
+</tr>
+<tr>
+<td>отклонить что от чего во что</td>
+<td>使…从чего偏移到что</td>
+</tr>
+<tr>
+<td>падать упасть на что</td>
+<td>掉落在…</td>
+</tr>
+<tr>
+<td>скатываться скатиться с чего</td>
+<td>滑下，滚下</td>
+</tr>
+<tr>
+<td>наклон</td>
+<td>倾斜，斜面</td>
+</tr>
+<tr>
+<td>угол наклона</td>
+<td>倾斜角</td>
+</tr>
+<tr>
+<td>остановка</td>
+<td>停止</td>
+</tr>
+<tr>
+<td>двигаться до остановки</td>
+<td>运动至停止</td>
+</tr>
+<tr>
+<td>пластилиновый</td>
+<td>塑料的</td>
+</tr>
+<tr>
+<td>что относиться как x:y</td>
+<td>…比为x/y</td>
+</tr>
+<tr>
+<td>касаться коснуться кого-чего чем</td>
+<td>用чем与чего接触</td>
+</tr>
+<tr>
+<td>касаться коснуться до кого-чего</td>
+<td>与…接触</td>
+</tr>
+<tr>
+<td>касаться коснуться к кому-чему</td>
+<td>与…接触</td>
+</tr>
+<tr>
+<td>что перейди при чём во что</td>
+<td>…在чём的情况下转化为что</td>
+</tr>
+<tr>
+<td>удар</td>
+<td>碰撞</td>
+</tr>
+<tr>
+<td>разводить развести</td>
+<td>分开，拉开</td>
+</tr>
+<tr>
+<td>симметричный</td>
+<td>对称的</td>
+</tr>
+<tr>
+<td>противоположный</td>
+<td>相反的，对面的</td>
+</tr>
+<tr>
+<td>сторона</td>
+<td>方向</td>
+</tr>
+<tr>
+<td>что разводить в какую сторону</td>
+<td>что沿…方向分开</td>
+</tr>
+<tr>
+<td>летящий</td>
+<td>飞行，飞行的</td>
+</tr>
+<tr>
+<td>покоящийся</td>
+<td>静止的（变格同形容词）</td>
+</tr>
+<tr>
+<td>пробивать пробить что</td>
+<td>打穿…</td>
+</tr>
+<tr>
+<td>уменьшать уменьшить</td>
+<td>减少</td>
+</tr>
+<tr>
+<td>увеличивать увеличить</td>
+<td>增大，扩大</td>
+</tr>
+<tr>
+<td>вдвое</td>
+<td>【副】两倍，一半</td>
+</tr>
+<tr>
+<td>вдвое уменьшать что</td>
+<td>减少что为原来的一半</td>
+</tr>
+<tr>
+<td>вылет</td>
+<td>飞出</td>
+</tr>
+<tr>
+<td>неупругий</td>
+<td>非弹性的</td>
+</tr>
+<tr>
+<td>упругий</td>
+<td>弹性的</td>
+</tr>
+<tr>
+<td>абсолютный</td>
+<td>绝对的，纯粹的</td>
+</tr>
+<tr>
+<td>что подниматься подняться на какую высоту</td>
+<td>…上升到多高</td>
+</tr>
+<tr>
+<td>пружина</td>
+<td>弹簧</td>
+</tr>
+<tr>
+<td>колебание</td>
+<td>不稳定，振动，摆动</td>
+</tr>
+<tr>
+<td>амплитуда</td>
+<td>振幅，范围</td>
+</tr>
+<tr>
+<td>совершать совершить</td>
+<td>举行，完成</td>
+</tr>
+<tr>
+<td>совершить колебание с амплитудой сколькл см</td>
+<td>发生振幅为…cm的振动</td>
+</tr>
+<tr>
+<td>совершить (то или иное) движение</td>
+<td>做（某种）运动</td>
+</tr>
+<tr>
+<td>иной</td>
+<td>（形容词性物主代词） （单）别的；（复）某种的</td>
+</tr>
+<tr>
+<td>тот или иной</td>
+<td>某个的，某种的</td>
+</tr>
+<tr>
+<td>упругость</td>
+<td>（阴）弹力，弹性</td>
+</tr>
+<tr>
+<td>сила упругости</td>
+<td>弹力</td>
+</tr>
+<tr>
+<td>период</td>
+<td>时期，阶段，周期</td>
+</tr>
+<tr>
+<td>зависеть от кого-чего</td>
+<td>取决于…</td>
+</tr>
+<tr>
+<td>зависит от времени по закону</td>
+<td>随时间变化的方程式</td>
+</tr>
+<tr>
+<td>время в секундах</td>
+<td>以秒为单位的时间</td>
+</tr>
+<tr>
+<td>приращение</td>
+<td>增加量，增加</td>
+</tr>
+<tr>
+<td>слипаться слипнуться</td>
+<td>黏在一起，站在一起</td>
+</tr>
+<tr>
+<td>налетать на кого-что</td>
+<td>飞着碰上…</td>
+</tr>
+<tr>
+<td>плоскость</td>
+<td>（阴）平面</td>
+</tr>
+<tr>
+<td>совершать вращение</td>
+<td>发生旋转</td>
+</tr>
+<tr>
+<td>натяжение</td>
+<td>张力，拉力</td>
+</tr>
+<tr>
+<td>прохождение</td>
+<td>通过，经过（проходить的动名词）</td>
+</tr>
+<tr>
+<td>равновесие</td>
+<td>平衡状态</td>
+</tr>
+<tr>
+<td>шар</td>
+<td>球，球体</td>
+</tr>
+<tr>
+<td>расположенный чём</td>
+<td>具有…（расположить的被动形动词过去时）</td>
+</tr>
+<tr>
+<td>сжатие</td>
+<td>压缩量，压缩</td>
+</tr>
+<tr>
+<td>недеформированный</td>
+<td>未变形的，未走样的</td>
+</tr>
+<tr>
+<td>деформированный</td>
+<td>变形的</td>
+</tr>
+<tr>
+<td>вестись</td>
+<td>发生</td>
+</tr>
+<tr>
+<td>отсчёт</td>
+<td>读出，算出</td>
+</tr>
+<tr>
+<td>отсчёт ведется от чего</td>
+<td>从…算起</td>
+</tr>
+<tr>
+<td>падение</td>
+<td>坠落</td>
+</tr>
+<tr>
+<td>состояние покоя</td>
+<td>静止状态</td>
+</tr>
+<tr>
+<td>покой</td>
+<td>静止，安静</td>
+</tr>
+<tr>
+<td>на каких(последнем) сколько м(метре) пути</td>
+<td>在路径……的……米（在路径的最后一米）</td>
+</tr>
+<tr>
+<td>санки</td>
+<td>雪橇</td>
+</tr>
+<tr>
+<td>спуск</td>
+<td>下降，斜坡</td>
+</tr>
+<tr>
+<td>имеющий что</td>
+<td>具有…的</td>
+</tr>
+<tr>
+<td>уклон</td>
+<td>倾斜，坡度</td>
+</tr>
+<tr>
+<td>имеющей уклон сколько град</td>
+<td>倾斜角为多少度的斜坡</td>
+</tr>
+<tr>
+<td>колёса</td>
+<td>车轮</td>
+</tr>
+<tr>
+<td>размер</td>
+<td>尺寸，大小</td>
+</tr>
+<tr>
+<td>петля</td>
+<td>环，圈，铰链</td>
+</tr>
+<tr>
+<td>покидать покинуть что</td>
+<td>离开</td>
+</tr>
+<tr>
+<td>длина</td>
+<td>长度</td>
+</tr>
+<tr>
+<td>желоб</td>
+<td>滚道，滑槽</td>
+</tr>
+<tr>
+<td>описывать описать</td>
+<td>沿曲线（弧线、圆圈）移动</td>
+</tr>
+<tr>
+<td>мертвая петля</td>
+<td>静止的环</td>
+</tr>
+<tr>
+<td>груз</td>
+<td>货物，重量</td>
+</tr>
+<tr>
+<td>пружинные весы</td>
+<td>弹簧秤</td>
+</tr>
+<tr>
+<td>вертикальный</td>
+<td>垂直的</td>
+</tr>
+<tr>
+<td>перпендикулярный</td>
+<td>垂直的</td>
+</tr>
+<tr>
+<td>наивысший</td>
+<td>最高的</td>
+</tr>
+<tr>
+<td>постоянный</td>
+<td>恒定的</td>
+</tr>
+<tr>
+<td>максимальный</td>
+<td>最大的，最高的</td>
+</tr>
+<tr>
+<td>пропорциональный чему</td>
+<td>与……成正比</td>
+</tr>
+<tr>
+<td>квадрат кого</td>
+<td>…的平方</td>
+</tr>
+<tr>
+<td>автомобиль</td>
+<td>（阳）（理想模型）汽车</td>
+</tr>
+<tr>
+<td>уравновешивать чего(друг друга)</td>
+<td>使（互相）平衡</td>
+</tr>
+<tr>
+<td>вниз</td>
+<td>【副】向下</td>
+</tr>
+<tr>
+<td>вверх</td>
+<td>【副】向上</td>
+</tr>
+<tr>
+<td>наклонный</td>
+<td>倾斜的</td>
+</tr>
+<tr>
+<td>теорема</td>
+<td>定理</td>
+</tr>
+<tr>
+<td>реакция</td>
+<td>反作用</td>
+</tr>
+<tr>
+<td>опора</td>
+<td>支点</td>
+</tr>
+<tr>
+<td>проекция</td>
+<td>投影</td>
+</tr>
+<tr>
+<td>шарик</td>
+<td>（理想模型）球</td>
+</tr>
+<tr>
+<td>подвешенный</td>
+<td>悬挂的</td>
+</tr>
+<tr>
+<td>невесомый</td>
+<td>无重量的</td>
+</tr>
+<tr>
+<td>отпускать отпустить</td>
+<td>松开，释放</td>
+</tr>
+<tr>
+<td>минимальный</td>
+<td>最小的，最低的</td>
+</tr>
+<tr>
+<td>ненулевой</td>
+<td>非零的</td>
+</tr>
+<tr>
+<td>Второй закон Ньютона</td>
+<td>牛顿第二定律</td>
+</tr>
+<tr>
+<td>соскальзывать соскользнуть с чего куда</td>
+<td>从…滑到…</td>
+</tr>
+<tr>
+<td>полусфера</td>
+<td>半球</td>
+</tr>
+<tr>
+<td>отрываться оторваться от чего</td>
+<td>从…脱落，离开</td>
+</tr>
+<tr>
+<td>на какой высоте над чем</td>
+<td>在半球之上的…高度</td>
+</tr>
+<tr>
+<td>образующий</td>
+<td>形成的；母线</td>
+</tr>
+<tr>
+<td>половина</td>
+<td>一半</td>
+</tr>
+<tr>
+<td>отсутствовать</td>
+<td>缺乏，没有</td>
+</tr>
+<tr>
+<td>отсутствие</td>
+<td>离开，缺乏</td>
+</tr>
+<tr>
+<td>расположенный где</td>
+<td>位于…（另一用法见Законы сохранения в механике.md/Expression: 有）</td>
+</tr>
+<tr>
+<td>помещать поместить</td>
+<td>放置</td>
+</tr>
+<tr>
+<td>сжатая</td>
+<td>压缩的</td>
+</tr>
+<tr>
+<td>расталкивать растолкать в какую сторону</td>
+<td>推向…方向</td>
+</tr>
+<tr>
+<td>стальной</td>
+<td>钢的</td>
+</tr>
+<tr>
+<td>касание</td>
+<td>接触</td>
+</tr>
+<tr>
+<td>ниже чего</td>
+<td>在…之下</td>
+</tr>
+<tr>
+<td>отводить отвести</td>
+<td>领到，牵走</td>
+</tr>
+<tr>
+<td>центр тяжести</td>
+<td>重心</td>
+</tr>
+<tr>
+<td>доля</td>
+<td>部分，比例</td>
+</tr>
+<tr>
+<td>столкновение</td>
+<td>碰撞，接触</td>
+</tr>
+<tr>
+<td>движущийся</td>
+<td>移动（двигаться的现在时形动词）</td>
+</tr>
+<tr>
+<td>прямый угол</td>
+<td>直角</td>
+</tr>
+<tr>
+<td>нить</td>
+<td>（阴）线</td>
+</tr>
+<tr>
+<td>с привязанным к чему чем</td>
+<td>在…上连接着…</td>
+</tr>
+<tr>
+<td>горизонтальный</td>
+<td>水平的</td>
+</tr>
+<tr>
+<td>наименьший</td>
+<td>最小的</td>
+</tr>
+<tr>
+<td>расстояние</td>
+<td>距离</td>
+</tr>
+<tr>
+<td>подвес</td>
+<td>悬挂，悬挂装置</td>
+</tr>
+<tr>
+<td>бивать вбить что во что</td>
+<td>将…打入，钉入…</td>
+</tr>
+<tr>
+<td>гвоздь</td>
+<td>（阳）钉子</td>
+</tr>
+<tr>
+<td>налетев на что</td>
+<td>【副】装撞上，碰上（налететь 的副动词）</td>
+</tr>
+<tr>
+<td>порываться порваться</td>
+<td>被断掉</td>
+</tr>
+<tr>
+<td>разрываться разорваться</td>
+<td>扯断</td>
+</tr>
+<tr>
+<td>класться</td>
+<td>被安置在</td>
+</tr>
+<tr>
+<td>соскальзывать соскользнуть с чего</td>
+<td>从…滑下去</td>
+</tr>
+<tr>
+<td>пуля</td>
+<td>子弹</td>
+</tr>
+<tr>
+<td>подлетать подлететь к чему</td>
+<td>飞向…</td>
+</tr>
+<tr>
+<td>пробив</td>
+<td>【副】打穿（пробить 的副动词）</td>
+</tr>
+<tr>
+<td>потерянный</td>
+<td>损失的（потерять 的过去时被动形动词）</td>
+</tr>
+<tr>
+<td>в виде тепла</td>
+<td>以热能的形式</td>
+</tr>
+<tr>
+<td>мертвый</td>
+<td>静止的</td>
+</tr>
+<tr>
+<td>скатываться  скатиться с чего</td>
+<td>滚下，滑下</td>
+</tr>
+<tr>
+<td>обеспечивать</td>
+<td>保证</td>
+</tr>
+<tr>
+<td>гладкий</td>
+<td>光滑的</td>
+</tr>
+<tr>
+<td>подвижный</td>
+<td>可以移动的</td>
+</tr>
+<tr>
+<td>сталкиваться</td>
+<td>碰撞</td>
+</tr>
+<tr>
+<td>разлетаться</td>
+<td>分离</td>
+</tr>
+<tr>
+<td>угол в каких градусах</td>
+<td>…度的角</td>
+</tr>
+<tr>
+<td>математический</td>
+<td>数学的</td>
+</tr>
+<tr>
+<td>маятник</td>
+<td>摆</td>
+</tr>
+<tr>
+<td>плита</td>
+<td>（理想模型）板</td>
+</tr>
+<tr>
+<td>сообщить чему</td>
+<td>赋予чему</td>
+</tr>
+<tr>
+<td>пересекающийся</td>
+<td>交叉，相交（пересекаться的现在时形动词）</td>
+</tr>
+<tr>
+<td>под прямым углом</td>
+<td>垂直</td>
+</tr>
+<tr>
+<td>перекресток</td>
+<td>十字路口，交叉口</td>
+</tr>
+<tr>
+<td>спустя</td>
+<td>【前】在…之后</td>
+</tr>
+<tr>
+<td>шоссе</td>
+<td>公路，马路</td>
+</tr>
+<tr>
+<td>поле</td>
+<td>场地，区域</td>
+</tr>
+<tr>
+<td>перехватывать перехватить</td>
+<td>拦截，阻截</td>
+</tr>
+<tr>
+<td>следовать последовать</td>
+<td>开往</td>
+</tr>
+<tr>
+<td>кататься</td>
+<td>滚动，行驶（不定向）</td>
+</tr>
+<tr>
+<td>катиться</td>
+<td>滚动，行驶（定向）</td>
+</tr>
+<tr>
+<td>проскальзывание</td>
+<td>滑动</td>
+</tr>
+<tr>
+<td>катиться без проскальзывания</td>
+<td>滚动而不打滑</td>
+</tr>
+<tr>
+<td>колесо</td>
+<td>轮子</td>
+</tr>
+<tr>
+<td>камешек</td>
+<td>小石头</td>
+</tr>
+<tr>
+<td>сорвавшийся</td>
+<td>掉下来，滑落（сорваться的过去时形动词）</td>
+</tr>
+<tr>
+<td>падение</td>
+<td>掉落</td>
+</tr>
+<tr>
+<td>отражаться отразиться</td>
+<td>折回，反射</td>
+</tr>
+<tr>
+<td>выбивать выбить</td>
+<td>打落</td>
+</tr>
+<tr>
+<td>скользить скользнуть</td>
+<td>滑行，滑动</td>
+</tr>
+<tr>
+<td>однородный</td>
+<td>同类的，均质的</td>
+</tr>
+<tr>
+<td>цепочка</td>
+<td>锁链，链子</td>
+</tr>
+<tr>
+<td>свешивать свесить</td>
+<td>使垂下</td>
+</tr>
+<tr>
+<td>свешивающаяся</td>
+<td>悬挂的（свешивать的现在时形动词）</td>
+</tr>
+<tr>
+<td>основание</td>
+<td>底部，底座</td>
+</tr>
+<tr>
+<td>стенка</td>
+<td>侧壁，墙壁</td>
+</tr>
+<tr>
+<td>вставлен</td>
+<td>插入</td>
+</tr>
+<tr>
+<td>с одной и той скоростью</td>
+<td>以相同的速度</td>
+</tr>
+<tr>
+<td>задний</td>
+<td>后面的</td>
+</tr>
+<tr>
+<td>передний</td>
+<td>前面的</td>
+</tr>
+<tr>
+<td>давить на что</td>
+<td>压在…上</td>
+</tr>
+<tr>
+<td>переброшена через что</td>
+<td>被搭在（перебросить的被动语态过去时形动词短尾）</td>
+</tr>
+<tr>
+<td>уравновешена</td>
+<td>平衡（уравновесить的被动语态过去时形动词短尾）</td>
+</tr>
+<tr>
+<td>толчок</td>
+<td>推，顶，冲撞</td>
+</tr>
+<tr>
+<td>каково</td>
+<td>怎样，如何（词尾变化同短尾）</td>
+</tr>
+<tr>
+<td>свешиваться свеситься</td>
+<td>垂下，悬挂</td>
+</tr>
+<tr>
+<td>частица</td>
+<td>粒子</td>
+</tr>
+<tr>
+<td>испытать столкновение</td>
+<td>经过碰撞</td>
+</tr>
+<tr>
+<td>испытывать испытать</td>
+<td>经历</td>
+</tr>
+<tr>
+<td>покоиться</td>
+<td>静止</td>
+</tr>
+<tr>
+<td>покоившаяся</td>
+<td>静止（покоиться的过去时形动词）</td>
+</tr>
+<tr>
+<td>отклоняться отклониться на уголм сколько градусов</td>
+<td>偏转…度</td>
+</tr>
+<tr>
+<td>отскакивать отскочить под углом сколько градусов</td>
+<td>以…度碰回，弹回</td>
+</tr>
+<tr>
+<td>первоначальный</td>
+<td>最初的，最开始的</td>
+</tr>
+<tr>
+<td>мощность</td>
+<td>（阴）功率</td>
+</tr>
+<tr>
+<td>функция</td>
+<td>函数</td>
+</tr>
+<tr>
+<td>времяисчисление</td>
+<td>时间的计算</td>
+</tr>
+<tr>
+<td>что как функцию чего</td>
+<td>что 随чего变化的函数</td>
+</tr>
+<tr>
+<td>застревать застрять</td>
+<td>阻塞，卡住</td>
+</tr>
+<tr>
+<td>Пренебрегая</td>
+<td>忽略（пренебречь的形动词）</td>
+</tr>
+<tr>
+<td>выделяться выделиться</td>
+<td>分离出，释放</td>
+</tr>
+<tr>
+<td>равнозамедленное движение</td>
+<td>匀减速运动</td>
+</tr>
+<tr>
+<td>работа силы тяжести</td>
+<td>重力做功</td>
+</tr>
+<tr>
+<td>минимальная скорость</td>
+<td>最小速度</td>
+</tr>
+<tr>
+<td>отклонение</td>
+<td>偏转</td>
+</tr>
+<tr>
+<td>горизонтальное положение</td>
+<td>水平位置</td>
+</tr>
+<tr>
+<td>механическая энергия</td>
+<td>机械能</td>
+</tr>
+<tr>
+<td>наклонная плоскость</td>
+<td>斜面</td>
+</tr>
+<tr>
+<td>участок</td>
+<td>路段</td>
+</tr>
+<tr>
+<td>брусок</td>
+<td>杆；棒；条；块</td>
+</tr>
+<tr>
+<td>равноускоренное движение</td>
+<td>匀加速运动</td>
+</tr>
+<tr>
+<td>равновесия</td>
+<td>平衡</td>
+</tr>
+<tr>
+<td>покоиться</td>
+<td>[未]静止</td>
+</tr>
+<tr>
+<td>равенство</td>
+<td>相等</td>
+</tr>
+<tr>
+<td>закреплять закрепить</td>
+<td>钉在，固定在</td>
+</tr>
+<tr>
+<td>проходящий</td>
+<td>通过的；贯穿的</td>
+</tr>
+<tr>
+<td>перпендикулярно</td>
+<td>垂直于</td>
+</tr>
+<tr>
+<td>плоскость</td>
+<td>平面</td>
+</tr>
+<tr>
+<td>прикладывать приложить</td>
+<td>施加</td>
+</tr>
+<tr>
+<td>относителоьный</td>
+<td>相对的；比较的</td>
+</tr>
+<tr>
+<td>алгебраическая величина</td>
+<td>代数值</td>
+</tr>
+<tr>
+<td>плечо силы</td>
+<td>力臂</td>
+</tr>
+<tr>
+<td>кратчайшее расстояние</td>
+<td>最短距离</td>
+</tr>
+<tr>
+<td>ось вращения</td>
+<td>旋转轴</td>
+</tr>
+<tr>
+<td>линии действия силы</td>
+<td>力作用线</td>
+</tr>
+<tr>
+<td>часовой стрелки</td>
+<td>时针</td>
+</tr>
+<tr>
+<td>приписать приписывать</td>
+<td>列入</td>
+</tr>
+<tr>
+<td>инерциальный</td>
+<td>惯性的</td>
+</tr>
+<tr>
+<td>отсчет</td>
+<td>读数；判读</td>
+</tr>
+<tr>
+<td>изначально</td>
+<td>本来；一开始</td>
+</tr>
+<tr>
+<td>Устойчивость равновесия</td>
+<td>平衡稳定性</td>
+</tr>
+<tr>
+<td>безразличный</td>
+<td>无关紧要的</td>
+</tr>
+<tr>
+<td>устойчивый</td>
+<td>稳定的</td>
+</tr>
+<tr>
+<td>по-прежнему</td>
+<td>依旧</td>
+</tr>
+<tr>
+<td>уравновешиваться</td>
+<td>[被动]均衡</td>
+</tr>
+<tr>
+<td>Центр тяжести</td>
+<td>重心</td>
+</tr>
+<tr>
+<td>Центр инерции</td>
+<td>惯性中心</td>
+</tr>
+<tr>
+<td>равнодействующий</td>
+<td>合力的；合成的</td>
+</tr>
+<tr>
+<td>пространство</td>
+<td>空间</td>
+</tr>
+<tr>
+<td>внутри</td>
+<td>[副]在...里面</td>
+</tr>
+<tr>
+<td>сплошное тело</td>
+<td>实心物体</td>
+</tr>
+<tr>
+<td>радиус-вектор</td>
+<td>矢量半径</td>
+</tr>
+<tr>
+<td>совпасть совпадать с чем</td>
+<td>与...重合</td>
+</tr>
+<tr>
+<td>Закон Паскаля</td>
+<td>帕斯卡定律</td>
+</tr>
+<tr>
+<td>оказать оказывать</td>
+<td>加以；给以</td>
+</tr>
+<tr>
+<td>внешний</td>
+<td>外部的</td>
+</tr>
+<tr>
+<td>давление</td>
+<td>压力</td>
+</tr>
+<tr>
+<td>жидкость</td>
+<td>流体；液体</td>
+</tr>
+<tr>
+<td>плотность</td>
+<td>密度</td>
+</tr>
+<tr>
+<td>Закон Архимеда</td>
+<td>阿基米德定律</td>
+</tr>
+<tr>
+<td>погруженный</td>
+<td>浸没的</td>
+</tr>
+<tr>
+<td>в объеме</td>
+<td>在范围内</td>
+</tr>
+<tr>
+<td>конец</td>
+<td>端，头</td>
+</tr>
+<tr>
+<td>лестница</td>
+<td>楼梯，梯子</td>
+</tr>
+<tr>
+<td>прислонять прислонить что к чему</td>
+<td>把…靠在…上</td>
+</tr>
+<tr>
+<td>сила давления</td>
+<td>压力</td>
+</tr>
+<tr>
+<td>сила реакции</td>
+<td>反作用力</td>
+</tr>
+<tr>
+<td>сторона чего</td>
+<td>……的一侧</td>
+</tr>
+<tr>
+<td>а, и, но также</td>
+<td>以及</td>
+</tr>
+<tr>
+<td>середина</td>
+<td>中间，中点</td>
+</tr>
+<tr>
+<td>что находится в равновесии</td>
+<td>……处于平衡状态</td>
+</tr>
+<tr>
+<td>проходящий через что</td>
+<td>通过……的(проходить 的现在主动形动词)</td>
+</tr>
+<tr>
+<td>перпендикулярно</td>
+<td>垂直于</td>
+</tr>
+<tr>
+<td>линия</td>
+<td>行，线，路线</td>
+</tr>
+<tr>
+<td>плечо</td>
+<td>力臂支路</td>
+</tr>
+<tr>
+<td>обозначим что за  x</td>
+<td>用x表示……</td>
+</tr>
+<tr>
+<td>соответственный</td>
+<td>恰当的，适当的，相对应的</td>
+</tr>
+<tr>
+<td>момент</td>
+<td>矩，力矩</td>
+</tr>
+<tr>
+<td>нитка</td>
+<td>细线</td>
+</tr>
+<tr>
+<td>прикрепление</td>
+<td>固定，依附</td>
+</tr>
+<tr>
+<td>вертикаль</td>
+<td>（阴）垂直线，垂面</td>
+</tr>
+<tr>
+<td>выбранный</td>
+<td>选中的，选出的</td>
+</tr>
+<tr>
+<td>учитывая, что</td>
+<td>由于，考虑到，鉴于</td>
+</tr>
+<tr>
+<td>отрезок</td>
+<td>（一）段，（一）块，线段，距离</td>
+</tr>
+<tr>
+<td>палочка</td>
+<td>小棒，小棍</td>
+</tr>
+<tr>
+<td>что выходит за край чего</td>
+<td>……超出了…的边缘</td>
+</tr>
+<tr>
+<td>треугольник</td>
+<td>三角形，三角板</td>
+</tr>
+<tr>
+<td>равнобедренный</td>
+<td>等腰的</td>
+</tr>
+<tr>
+<td>в виде</td>
+<td>形如</td>
+</tr>
+<tr>
+<td>проецировать спроецировать что на что</td>
+<td>投影，投射</td>
+</tr>
+<tr>
+<td>сосуд</td>
+<td>器皿，导管</td>
+</tr>
+<tr>
+<td>сообщающиеся сосуды</td>
+<td>连通容器</td>
+</tr>
+<tr>
+<td>ртуть</td>
+<td>（阴）汞，水银</td>
+</tr>
+<tr>
+<td>наливать налить что чем</td>
+<td>灌注，倒满</td>
+</tr>
+<tr>
+<td>налитый</td>
+<td>被灌满的</td>
+</tr>
+<tr>
+<td>доливать долить</td>
+<td>添加</td>
+</tr>
+<tr>
+<td>уровень</td>
+<td>（阳）水平，水位，水平线</td>
+</tr>
+<tr>
+<td>подниматься подняться</td>
+<td>升起，上升</td>
+</tr>
+<tr>
+<td>доливание</td>
+<td>注入，注满</td>
+</tr>
+<tr>
+<td>колено</td>
+<td>管，弯管</td>
+</tr>
+<tr>
+<td>опускаться опуститься</td>
+<td>下降，降低</td>
+</tr>
+<tr>
+<td>согласно чему</td>
+<td>依照，根据</td>
+</tr>
+<tr>
+<td>столб</td>
+<td>柱，柱状物</td>
+</tr>
+<tr>
+<td>обозначать обозначить</td>
+<td>标出，指定</td>
+</tr>
+<tr>
+<td>объем</td>
+<td>体积</td>
+</tr>
+<tr>
+<td>сила Архимеда</td>
+<td>阿基米德力</td>
+</tr>
+<tr>
+<td>известно</td>
+<td>【副】已知</td>
+</tr>
+<tr>
+<td>выталкивающий</td>
+<td>推力的</td>
+</tr>
+<tr>
+<td>выталкивающая сила</td>
+<td>浮力</td>
+</tr>
+<tr>
+<td>численно</td>
+<td>【副】在数量上</td>
+</tr>
+<tr>
+<td>взвешивать взвесить</td>
+<td>称重</td>
+</tr>
+<tr>
+<td>взвешивание</td>
+<td>称重，悬浮，加权</td>
+</tr>
+<tr>
+<td>вычитая чего</td>
+<td>减去……</td>
+</tr>
+<tr>
+<td>выражая что через что</td>
+<td>用……表示……</td>
+</tr>
+<tr>
+<td>невесомый</td>
+<td>无重量的</td>
+</tr>
+<tr>
+<td>блок</td>
+<td>滑轮</td>
+</tr>
+<tr>
+<td>стержень</td>
+<td>杆（стержни 复数）</td>
+</tr>
+<tr>
+<td>шарнирно</td>
+<td>连接在</td>
+</tr>
+<tr>
+<td>закрепленный</td>
+<td>固定的</td>
+</tr>
+<tr>
+<td>груз</td>
+<td>配重，负载</td>
+</tr>
+<tr>
+<td>переброшенной через</td>
+<td>搭在</td>
+</tr>
+<tr>
+<td>подвешивать подвесить что к чему</td>
+<td>把……挂在……地方</td>
+</tr>
+<tr>
+<td>равновесие</td>
+<td>平衡</td>
+</tr>
+<tr>
+<td>цепочка</td>
+<td>链</td>
+</tr>
+<tr>
+<td>потолок</td>
+<td>天花板</td>
+</tr>
+<tr>
+<td>подвес</td>
+<td>悬挂</td>
+</tr>
+<tr>
+<td>лунка</td>
+<td>圆窝，小坑</td>
+</tr>
+<tr>
+<td>положить</td>
+<td>放置</td>
+</tr>
+<tr>
+<td>шар</td>
+<td>球</td>
+</tr>
+<tr>
+<td>глубина</td>
+<td>深度</td>
+</tr>
+<tr>
+<td>наклонять наклонить что</td>
+<td>使……倾斜</td>
+</tr>
+<tr>
+<td>выскочить из чего</td>
+<td>从……掉落</td>
+</tr>
+<tr>
+<td>ступенька</td>
+<td>台阶</td>
+</tr>
+<tr>
+<td>вкапывать вкатить</td>
+<td>滚上</td>
+</tr>
+<tr>
+<td>подвешенный</td>
+<td>悬挂的</td>
+</tr>
+<tr>
+<td>горизонтальный</td>
+<td>水平的</td>
+</tr>
+<tr>
+<td>гладкий</td>
+<td>光滑的</td>
+</tr>
+<tr>
+<td>вертикальный</td>
+<td>垂直的</td>
+</tr>
+<tr>
+<td>однородный</td>
+<td>均质的</td>
+</tr>
+<tr>
+<td>крепление</td>
+<td>固定</td>
+</tr>
+<tr>
+<td>верхней грани куба</td>
+<td>上表面</td>
+</tr>
+<tr>
+<td>увеличивающийся</td>
+<td>不断增加的</td>
+</tr>
+<tr>
+<td>опрокидываться опрокинуться</td>
+<td>倒翻</td>
+</tr>
+<tr>
+<td>неподвижный</td>
+<td>静止的</td>
+</tr>
+<tr>
+<td>ребро</td>
+<td>棱；边</td>
+</tr>
+<tr>
+<td>ножка</td>
+<td>支脚，支柱，腿</td>
+</tr>
+<tr>
+<td>опираться опереться на что</td>
+<td>靠着…，依赖…</td>
+</tr>
+<tr>
+<td>совпадать совпасть с чем</td>
+<td>与……重合，与……同时发生</td>
+</tr>
+<tr>
+<td>цилиндр</td>
+<td>气缸，圆柱</td>
+</tr>
+<tr>
+<td>граница</td>
+<td>界限，分界线</td>
+</tr>
+<tr>
+<td>раздел</td>
+<td>分配，划分，分界线</td>
+</tr>
+<tr>
+<td>что погружено на что</td>
+<td>……浸没在……中</td>
+</tr>
+<tr>
+<td>сталь</td>
+<td>（阴）钢铁</td>
+</tr>
+<tr>
+<td>восстанавливать восстановить</td>
+<td>还原，恢复</td>
+</tr>
+<tr>
+<td>дно</td>
+<td>底面，底部</td>
+</tr>
+<tr>
+<td>равноплечий</td>
+<td>等臂的，等力臂的</td>
+</tr>
+<tr>
+<td>что уравновешно чем</td>
+<td>用……使что平衡（使что 与чем平衡）</td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.top", "header.autohide"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1c7c35e.min.js"></script>
+      
+        <script src="/mathjax/LaTeX.js"></script>
+      
+    
+  </body>
+</html>
