@@ -286,7 +286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Physics/预科物理.Grammar.html" class="md-nav__link">
+      <a href="/Physics/语言学习/预科物理.Grammar.html" class="md-nav__link">
         预科物理
       </a>
     </li>
@@ -325,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Chemistry/预科化学.Grammar.html" class="md-nav__link">
+      <a href="/Chemistry/语言学习/预科化学.Grammar.html" class="md-nav__link">
         预科化学
       </a>
     </li>
@@ -364,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Math/预科数学.Grammar.html" class="md-nav__link">
+      <a href="/Math/语言学习/预科数学.Grammar.html" class="md-nav__link">
         预科数学
       </a>
     </li>
@@ -471,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Physics/热力学公式总结" class="md-nav__link">
+      <a href="/Physics/热力学公式总结.html" class="md-nav__link">
         热力学公式总结
       </a>
     </li>
@@ -775,6 +775,21 @@
     <li class="md-nav__item">
       <a href="/friends.html" class="md-nav__link">
         友链
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Word.html" class="md-nav__link">
+        单词表
       </a>
     </li>
   
@@ -1359,6 +1374,7 @@
 <th>Функция Excel (рус.)</th>
 <th>Функция Calc (англ.)</th>
 <th>Назначение</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody>
@@ -1366,31 +1382,37 @@
 <td>ЕСЛИ</td>
 <td>IF</td>
 <td>Возвращает первое значение, если логическое выражение при вычислении дает значение ИСТИНА, и второе значение, если ложь</td>
+<td>如果布尔表达式的计算结果为true，则返回第一个值；如果为false，则返回第二个值</td>
 </tr>
 <tr>
 <td>И</td>
 <td>AND</td>
 <td>Возвращает значение ИСТИНА, если все аргументы имеют значение ИСТИНА;возвращает значение ложь, если хоть бы один аргумент имеет значение ЛОЖЬ</td>
+<td>如果所有参数均为TRUE，则返回TRUE；如果至少一个参数为FALSE，则返回False</td>
 </tr>
 <tr>
 <td>ИЛИ</td>
 <td>OR</td>
 <td>Возвращает ИСТИНА, если хотя бы один из аргументов имеет значение ИСТИНА;возвращает ложь, если все аргументы имеют значение ЛОЖЬ</td>
+<td>如果至少一个参数为TRUE，则返回TRUE；如果所有参数均为FALSE，则返回FALSE</td>
 </tr>
 <tr>
 <td>ИСТИНА</td>
 <td>TRUE</td>
 <td>Возвращает логическое значение ИСТИНА</td>
+<td>返回布尔值TRUE</td>
 </tr>
 <tr>
 <td>ЛОЖЬ</td>
 <td>FALSE</td>
 <td>Возвращает логическое значение ЛОЖЬ</td>
+<td>返回布尔值FALSE</td>
 </tr>
 <tr>
 <td>НЕ</td>
 <td>NOT</td>
 <td>Меняет на противоположное логическое значение аргумента</td>
+<td>反转参数的布尔值</td>
 </tr>
 </tbody>
 </table>
@@ -1399,26 +1421,30 @@
 <h3 id="28-excel">§2.8. Excel 逻辑函数</h3>
 <ul>
 <li>ИСТИНА()<ul>
-<li>表示 true</li>
+<li>表示 true()</li>
 </ul>
 </li>
 <li>ЛОЖЬ()<ul>
-<li>表示 false</li>
+<li>表示 false()</li>
 </ul>
 </li>
 <li>И(Логическое_значение1; [Логическое_значение1];…)<ul>
+<li>表示 and(param1; [param2];…)</li>
 <li>逻辑与</li>
 </ul>
 </li>
 <li>ИЛИ(Логическое_значение1; [Логическое_значение2];…)<ul>
+<li>表示 or(param1; [param2];…)</li>
 <li>逻辑或</li>
 </ul>
 </li>
 <li>НЕ(логическое_значение)<ul>
+<li>表示 not(param)</li>
 <li>逻辑非</li>
 </ul>
 </li>
 <li>ЕСЛИ(Логическое_выражение;[Значение_если_истина];[Значение_если_ложь])<ul>
+<li>表示 if(bool, [return if ture], [return if false])</li>
 <li>if 表达式</li>
 </ul>
 </li>
