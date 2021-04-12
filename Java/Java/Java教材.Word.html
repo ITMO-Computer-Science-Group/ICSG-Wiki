@@ -13,21 +13,21 @@
         <meta name="author" content="ICSG-Group">
       
       
-        <link rel="canonical" href="https://itmo.ranying.xyz/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E6%9F%A5%E6%89%BE.html">
+        <link rel="canonical" href="https://itmo.ranying.xyz/Java/Java/Java%E6%95%99%E6%9D%90.Word.html">
       
       <link rel="icon" href="/theme/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
     
     
       
-        <title>查找 - Russian Natural Science Wiki</title>
+        <title>лекций#0 - Russian Natural Science Wiki</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2c0c5eaf.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2c0c5eaf.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
         
           
           
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#0" class="md-skip">
           跳转至
         </a>
       
@@ -79,7 +79,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Russian Natural Science Wiki" class="md-header__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
+    <a href="../.." title="Russian Natural Science Wiki" class="md-header__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
       
   <img src="/theme/icon.png" alt="logo">
 
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              查找
+              лекций#0
             
           </span>
         </div>
@@ -172,7 +172,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Russian Natural Science Wiki" class="md-nav__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
+    <a href="../.." title="Russian Natural Science Wiki" class="md-nav__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
       
   <img src="/theme/icon.png" alt="logo">
 
@@ -798,6 +798,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#word" class="md-nav__link">
+    Word
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -808,32 +823,329 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/edit/main/数据结构和算法/查找.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/edit/main/Java/Java/Java教材.Word.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="_1">查找</h1>
+                <h1 id="0">лекций#0</h1>
 <ul>
-<li>查找<ul>
-<li>线性查找是一种在数组中查找数据的算法。与二分查找不同，即便数据没有按顺序存储，也可以应用线性查找。线性查找的操作很简单，只要在数组中从头开始依次往下查找即可。</li>
-<li>首先，检查数组中最左边的数字，将其与要查找的数进行比较。如果结果一致，查找便结束，不一致则向右检查下一个数字。</li>
-<li>重复上面的操作直到找到要查找的数为止。</li>
-<li>线性查找需要从头开始不断地按顺序检查数据，因此在数据量大且目标数据靠后，或者目标数据不存在时，比较的次数就会更多，也更为耗时。若数据量为n，线性查找的时间复杂度便为O(n)。</li>
-</ul>
-</li>
-<li>二分查找<ul>
-<li>二分查找也是一种在数组中查找数据的算法。和线性查找不同，它只能查找已经排好序的数据。二分查找通过比较数组中间的数据与目标数据的大小，可以得知目标数据是在数组的左边还是右边。因此，比较一次就可以把查找范围缩小一半。重复执行该操作就可以找到目标数据，或得出目标数据不存在的结论。</li>
-<li>首先找到数组中间的数字，将这个数字和要查找的数字进行比较，把不需要的数字移出查找范围。</li>
-<li>重复上面的操作直到找到要查找的数为止。</li>
-<li>二分查找利用已排好序的数组，每一次查找都可以将查找范围减半。查找范围内只剩一个数据时查找结束。数据量为n的数组，将其长度减半log2n次后，其中便只剩一个数据了。也就是说，在二分查找中重复执行“将目标数据和数组中间的数据进行比较后将查找范围减半”的操作log2n次后，就能找到目标数据（若没找到则可以得出数据不存在的结论），因此它的时间复杂度为O(logn)。</li>
-<li>二分查找的时间复杂度为O(logn)，与线性查找的O(n)相比速度上得到了指数倍提高（x=log2n，则n=2x）。</li>
-<li>但是，二分查找必须建立在数据已经排好序的基础上才能使用，因此添加数据时必须加到合适的位置，这就需要额外耗费维护数组的时间。</li>
-<li>而使用线性查找时，数组中的数据可以是无序的，因此添加数据时也无须顾虑位置，直接把它加在末尾即可，不需要耗费时间。</li>
-<li>综上，具体使用哪种查找方法，可以根据查找和添加两个操作哪个更为频繁来决定。</li>
+<li><a href="#лекций0">лекций#0</a><ul>
+<li><a href="#word">Word</a></li>
 </ul>
 </li>
 </ul>
+<h3 id="word">Word</h3>
+<table>
+<thead>
+<tr>
+<th>русский</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>теорети́ческий</td>
+<td>理论的</td>
+</tr>
+<tr>
+<td>включа́ть/включи́ть</td>
+<td>[未]包括在内,列入</td>
+</tr>
+<tr>
+<td>осно́ва</td>
+<td>基本原理，机架</td>
+</tr>
+<tr>
+<td>констру́кция</td>
+<td>结构，构造</td>
+</tr>
+<tr>
+<td>ориенти́рованный</td>
+<td>学识渊博的，熟悉情况的</td>
+</tr>
+<tr>
+<td>реализа́ция</td>
+<td>实现，兑现</td>
+</tr>
+<tr>
+<td>структу́ра</td>
+<td>构造，结构</td>
+</tr>
+<tr>
+<td>хране́ние</td>
+<td>保管，保存</td>
+</tr>
+<tr>
+<td>да́нный</td>
+<td>[代词]这个，所谈到的那一个</td>
+</tr>
+<tr>
+<td>алгори́тм</td>
+<td>算法，纲要</td>
+</tr>
+<tr>
+<td>типово́й</td>
+<td>合乎标准的</td>
+</tr>
+<tr>
+<td>обеспе́чение</td>
+<td>保证，保障</td>
+</tr>
+<tr>
+<td>практи́ческий</td>
+<td>实际的，实用的</td>
+</tr>
+<tr>
+<td>ход</td>
+<td>行程，运行</td>
+</tr>
+<tr>
+<td>на́вык</td>
+<td>习惯，经验，技巧</td>
+</tr>
+<tr>
+<td>паке́т</td>
+<td>一束，捆，组</td>
+</tr>
+<tr>
+<td>интерфе́йс</td>
+<td>接口，分界面</td>
+</tr>
+<tr>
+<td>предоставля́ть/предоста́вить</td>
+<td>赋予，使享有</td>
+</tr>
+<tr>
+<td>за́пуск</td>
+<td>运行，启动</td>
+</tr>
+<tr>
+<td>компиля́ция</td>
+<td>编写，编译</td>
+</tr>
+<tr>
+<td>отла́дка</td>
+<td>调整，调试</td>
+</tr>
+<tr>
+<td>реда́ктор</td>
+<td>编辑（的人），编辑器</td>
+</tr>
+<tr>
+<td>необходи́мо</td>
+<td>必须，一定要</td>
+</tr>
+<tr>
+<td>автоматиза́ции</td>
+<td>自动化</td>
+</tr>
+<tr>
+<td>проце́сс</td>
+<td>过程，程序</td>
+</tr>
+<tr>
+<td>оптимиза́ция</td>
+<td>优化</td>
+</tr>
+<tr>
+<td>иссле́дование</td>
+<td>调查，研究</td>
+</tr>
+<tr>
+<td>де́йствие</td>
+<td>动作，作用</td>
+</tr>
+<tr>
+<td>содержа́ть</td>
+<td>设置，包含，维持</td>
+</tr>
+<tr>
+<td>исполня́ть/испо́лнить</td>
+<td>执行，实现</td>
+</tr>
+<tr>
+<td>кома́нд</td>
+<td>指令，口令</td>
+</tr>
+<tr>
+<td>исхо́дный</td>
+<td>原始的，起始的</td>
+</tr>
+<tr>
+<td>испо́льзовать</td>
+<td>利用，使用</td>
+</tr>
+<tr>
+<td>виртуа́льный</td>
+<td>虚拟的，潜在的</td>
+</tr>
+<tr>
+<td>соотве́тствовать</td>
+<td>适合于</td>
+</tr>
+<tr>
+<td>аппара́тный</td>
+<td>硬件的，机件的</td>
+</tr>
+<tr>
+<td>обеспе́чение</td>
+<td>保障，保证</td>
+</tr>
+<tr>
+<td>выраже́ние</td>
+<td>表达，表现</td>
+</tr>
+<tr>
+<td>семе́стр</td>
+<td>学期</td>
+</tr>
+<tr>
+<td>ко́да</td>
+<td>代码</td>
+</tr>
+<tr>
+<td>осуществи́ть/осуществля́ть</td>
+<td>实施，实现</td>
+</tr>
+<tr>
+<td>кле́тка</td>
+<td>笼子，格子</td>
+</tr>
+<tr>
+<td>взаимоде́йствие</td>
+<td>相互作用,协同动作,相互关系</td>
+</tr>
+<tr>
+<td>исхо́дный</td>
+<td>开头的，起源的</td>
+</tr>
+<tr>
+<td>конста́нта</td>
+<td>常数，恒量</td>
+</tr>
+<tr>
+<td>указа́тель</td>
+<td>指标，指示剂</td>
+</tr>
+<tr>
+<td>шабло́н</td>
+<td>模版，规</td>
+</tr>
+<tr>
+<td>ти́п</td>
+<td>类型，形式</td>
+</tr>
+<tr>
+<td>смы́сл</td>
+<td>含义，目的</td>
+</tr>
+<tr>
+<td>объе́кт</td>
+<td>对象</td>
+</tr>
+<tr>
+<td>конкре́тный</td>
+<td>具体的</td>
+</tr>
+<tr>
+<td>допусти́мый</td>
+<td>可容许的</td>
+</tr>
+<tr>
+<td>диапазо́н</td>
+<td>范围</td>
+</tr>
+<tr>
+<td>па́мять</td>
+<td>储存容量，内存（名词）</td>
+</tr>
+<tr>
+<td>си́мвольный</td>
+<td>字符的，符号的</td>
+</tr>
+<tr>
+<td>поте́ря</td>
+<td>损失，丢失</td>
+</tr>
+<tr>
+<td>то́чность</td>
+<td>精确度</td>
+</tr>
+<tr>
+<td>аргуме́нт</td>
+<td>根据，自变量，参数</td>
+</tr>
+<tr>
+<td>бина́рный</td>
+<td>两重的，二进制的</td>
+</tr>
+<tr>
+<td>опера́тор</td>
+<td>算符</td>
+</tr>
+<tr>
+<td>присва́ивание</td>
+<td>赋值</td>
+</tr>
+<tr>
+<td>вычисле́ние</td>
+<td>计算，运算</td>
+</tr>
+<tr>
+<td>поря́док</td>
+<td>次序，顺序</td>
+</tr>
+<tr>
+<td>Приорите́т</td>
+<td>优先级，优先权</td>
+</tr>
+<tr>
+<td>строка́</td>
+<td>字符串</td>
+</tr>
+<tr>
+<td>после́довательность</td>
+<td>连续性，连贯性</td>
+</tr>
+<tr>
+<td>переме́нный</td>
+<td>变化的，可变的</td>
+</tr>
+<tr>
+<td>объя́вленая строка́</td>
+<td>声明字符串</td>
+</tr>
+<tr>
+<td>и́ндексы си́мволов</td>
+<td>字符串索引</td>
+</tr>
+<tr>
+<td>веще́ственное число</td>
+<td>实数</td>
+</tr>
+<tr>
+<td>констру́кция</td>
+<td>结构</td>
+</tr>
+<tr>
+<td>кома́ндный</td>
+<td>命令的</td>
+</tr>
+<tr>
+<td>после́довательности символов</td>
+<td>字符序列</td>
+</tr>
+<tr>
+<td>виртуа́льный машина Java</td>
+<td>Java虚拟机</td>
+</tr>
+<tr>
+<td>математические функции</td>
+<td>数学函数</td>
+</tr>
+</tbody>
+</table>
                 
               
               
@@ -868,10 +1180,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.top", "header.autohide"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.top", "header.autohide"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.a1c7c35e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a1c7c35e.min.js"></script>
       
         <script src="/mathjax/LaTeX.js"></script>
       
