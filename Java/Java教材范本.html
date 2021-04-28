@@ -855,7 +855,7 @@ final тип_данных имя_константы;</code></p>
             <code>Java
             int total =  8 * 5 * 4 * 12;    // ПЛОХО
             final int HOURS = 8, DAYS = 5, WEEKS = 4, MONTHS = 12; // ...
-            int total = HOURS * DAYS * WEEKS * MONTHS;  // ХОРОШО</code>
+            int total = HOURS * DAYS * WEEKS * MONTHS;    // ХОРОШО</code>
             其中：
             - 第一行语句定义了一个 <code>total</code> 变量，直接使用了右边的未命名数据（8, 5, 4, 12）赋值，虽然这种做法在语法上是合法的，但是我们难以得知这些数据的意义和用途，因此这是一段不好的代码
             - 第二行代码分别定义了 <code>HOURS</code>、<code>DAYS</code>、<code>WEEKS</code>、<code>MONTHS</code> 变量来存储这些数据，并在第三行定义的 <code>total</code> 变量的赋值中被引用，这样就能很容易理清这些数值的具体意义<br />
