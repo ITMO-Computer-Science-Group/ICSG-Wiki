@@ -20,7 +20,7 @@
     
     
       
-        <title>官方文档 —— Russian Natural Science Wiki - Russian Natural Science Wiki</title>
+        <title>说明文档 - Russian Natural Science Wiki</title>
       
     
     
@@ -45,6 +45,8 @@
       
     
     
+    
+      <link rel="stylesheet" href="/theme/theme.css">
     
     
       
@@ -97,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              官方文档 —— Russian Natural Science Wiki
+              说明文档
             
           </span>
         </div>
@@ -755,6 +757,127 @@
 
   
   
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          说明文档
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Guide.html" class="md-nav__link md-nav__link--active">
+        说明文档
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wiki" class="md-nav__link">
+    Wiki 贡献方式？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    我如何增添或修改内容？
+  </a>
+  
+    <nav class="md-nav" aria-label="我如何增添或修改内容？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    新增科目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    对科目新增页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    编辑内容
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    提交内容
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    如果您不了解代码或 GitHub
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    您需要遵守哪些标准？
+  </a>
+  
+    <nav class="md-nav" aria-label="您需要遵守哪些标准？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 文件标准
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
   
     <li class="md-nav__item">
       <a href="friends.html" class="md-nav__link">
@@ -784,7 +907,7 @@
                 <h1 id="russian-natural-science-wiki">官方文档 —— Russian Natural Science Wiki</h1>
 <h2 id="wiki">Wiki 贡献方式？</h2>
 <p>我们将 Wiki 的内容完全开源至 <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki">GitHub</a>，您可以通过 GitHub 增添或修改仓库文件来为此 Wiki 做出贡献。</p>
-<p>此 Wiki 的内容范围是中国学生在俄罗斯留学时理工科学习的内容，GitHub 仓库实质上相当于一个文件夹，我们将所有专业的所有科目作为其子文件夹，在索引中用专业来划分各个科目。</p>
+<p>此 Wiki 的内容范围预计包括中国学生在俄罗斯留学时理工科学习的各方面知识，其文档全部保存在 GitHub 仓库上。这个仓库实质上相当于一个文件夹，我们将所有专业的所有科目作为其子文件夹，在索引中用专业来划分各个科目。</p>
 <h2 id="_1">我如何增添或修改内容？</h2>
 <h3 id="_2">新增科目</h3>
 <p>在 GitHub 仓库根目录下新建一个子文件夹，以学科名称命名即可</p>
@@ -865,6 +988,10 @@
         - 等等</p>
 <h2 id="_11">您需要了解哪些技术？</h2>
 <h3 id="wiki_1">本 Wiki 网页渲染流程（只需了解即可）</h3>
+<p>首先我们需要了解一些概念：
+- 纯文本：指没有任何文本修饰的（即没有任何粗体，下划线，斜体，图形，符号或特殊字符及特殊打印格式的文本），只保存文本，不保存其格式设置，将所有的分节符、分页符、新行字符转换为段落标记的文本
+渲染流程：
+1. 纯文本 $\rightarrow$ </p>
 <h3 id="1-markdown">1. Markdown</h3>
 <p><code>Markdown</code> 是一个轻量化的文本排版语言，不同于 Word 等文档排版，Markdown 没有太多的富文本格式，但其内容形式多样，语法简单，并且十分容易上手。<br />
 以下是一个 <code>GitHub Flavored Markdown</code> 的简单教程，只收录了和本 Wiki 编辑有关的部分内容。如果想要了解更多，请自行查找 GitHub Flavored Markdown 的相关资料。</p>
@@ -1281,62 +1408,90 @@ $$</code></li>
 <table>
 <thead>
 <tr>
-<th>效果</th>
+<th>大写</th>
+<th>源码</th>
+<th>小写</th>
 <th>源码</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Α α</td>
-<td>Alpha</td>
+<td>$\Alpha$</td>
+<td>\Alpha</td>
+<td>$\alpha$</td>
+<td>\alpha</td>
 </tr>
 <tr>
-<td>Β β</td>
-<td>Beta</td>
+<td>$\Beta$</td>
+<td>\Beta</td>
+<td>$\beta$</td>
+<td>\beta</td>
 </tr>
 <tr>
-<td>Γ γ</td>
-<td>Gamma</td>
+<td>$\Gamma$</td>
+<td>\Gamma</td>
+<td>$\gamma$</td>
+<td>\gamma</td>
 </tr>
 <tr>
-<td>Δ δ</td>
-<td>Delta</td>
+<td>$\Delta$</td>
+<td>\Delta</td>
+<td>$\delta$</td>
+<td>\delta</td>
 </tr>
 <tr>
-<td>Λ λ</td>
-<td>Lambda</td>
+<td>$\Lambda$</td>
+<td>\Lambda</td>
+<td>$\lambda$</td>
+<td>\lambda</td>
 </tr>
 <tr>
-<td>Μ μ</td>
-<td>Mu</td>
+<td>$\Mu$</td>
+<td>\Mu</td>
+<td>$\mu$</td>
+<td>\mu</td>
 </tr>
 <tr>
-<td>Η η</td>
-<td>Eta</td>
+<td>$\Eta$</td>
+<td>\Eta</td>
+<td>$\eta$</td>
+<td>\eta</td>
 </tr>
 <tr>
-<td>Θ θ</td>
-<td>Theta</td>
+<td>$\Theta$</td>
+<td>\Theta</td>
+<td>$\theta$</td>
+<td>\theta</td>
 </tr>
 <tr>
-<td>Ρ ρ</td>
-<td>Rho</td>
+<td>$\Rho$</td>
+<td>\Rho</td>
+<td>$\rho$</td>
+<td>\rho</td>
 </tr>
 <tr>
-<td>Σ σ</td>
-<td>Sigma</td>
+<td>$\Sigma$</td>
+<td>\Sigma</td>
+<td>$\sigma$</td>
+<td>\sigma</td>
 </tr>
 <tr>
-<td>Φ φ</td>
-<td>Phi</td>
+<td>$\Phi$ <br> $\varPhi$</td>
+<td>\Phi <br> \varPhi</td>
+<td>$\phi$ <br> $\varphi$</td>
+<td>\phi <br> \varphi</td>
 </tr>
 <tr>
-<td>Ω ω</td>
-<td>Omega</td>
+<td>$\Omega$</td>
+<td>\Omega</td>
+<td>$\omega$</td>
+<td>\omega</td>
 </tr>
 <tr>
-<td>Π π</td>
-<td>Pi</td>
+<td>$\Pi$</td>
+<td>\Pi</td>
+<td>$\pi$</td>
+<td>\pi</td>
 </tr>
 </tbody>
 </table>
@@ -1511,47 +1666,94 @@ $$</code></li>
 
 </code></pre>
 <ul>
-<li>关于 <code>Word</code> 部分</li>
+<li>关于 <code>Word</code> 部分<ul>
 <li>总要求：<ul>
 <li>记录词的原型</li>
 <li>非专有名词首字母不大写</li>
 <li>可信度排名：字典&gt;千亿词霸&gt;译酷&gt;谷歌翻译</li>
 </ul>
 </li>
-<li>动词<ul>
+<li>对于内容来源<ul>
+<li>动词</li>
 <li>要求动词不定式，有两个体的，未完成体在完成体前面</li>
 <li>要求记录在原文中的接格关系</li>
-</ul>
-</li>
-<li>名词组<ul>
-<li>具有以下特征的被称为“名词组”</li>
+<li>名词组</li>
+<li>具有以下特征的被称为“名词组”<ul>
 <li>各部分高内聚的，整体与句子其他成分低耦合的</li>
 <li>整个词组在中文中有专有名词的</li>
-<li>名词组首先要单独记录，其次在可选的情况下，可以将里面的单词分别单独记录</li>
 </ul>
 </li>
-<li>名词<ul>
+<li>名词组首先要单独记录，其次在可选的情况下，可以将里面的单词分别单独记录</li>
+<li>名词</li>
 <li>如果名词不在名词组中，直接记录</li>
 <li>如果名词在名词组中，可选的记录</li>
-</ul>
-</li>
-<li>形容词<ul>
+<li>形容词</li>
 <li>如果形容词在名词组中，可选的记录</li>
 <li>如果形容词有接格关系（这通常是由其动词决定的），要求写出形容词的接格关系</li>
-</ul>
-</li>
-<li>副词<ul>
+<li>副词</li>
 <li>~~副词有对应形容词的，只记录对应形容词~~ 我相信没有人能遵守这一条，所以我们不要了</li>
 <li>副词没有对应形容词的，记录当前副词，例如“【副】жарко”</li>
-</ul>
-</li>
-<li>其他词<ul>
+<li>其他词</li>
 <li>前置词请记录到<a href="../Russian/Grammar%20for%20Russian.md#前置词语法">前置词语法</a>中</li>
 <li>要求标注词性，例如“【代】он”</li>
 </ul>
 </li>
-<li>【】</li>
-<li>（）</li>
+<li>对于在文中的格式<ul>
+<li>【】<ul>
+<li>此符号在中文列使用，标识<strong>俄语单词</strong>的词性、特殊性质（例如是*的形动词等）</li>
+</ul>
+</li>
+<li>（）<ul>
+<li>此符号在中文列使用，表示<strong>中文释义</strong>的某一释义的补充说明</li>
+</ul>
+</li>
+<li>；<ul>
+<li>此符号在中文列使用，标识相差较大的中文释义</li>
+</ul>
+</li>
+<li>，<ul>
+<li>此符号在中文列使用，标识相差较小的中文释义</li>
+</ul>
+</li>
+<li>
+<p>对名词特殊变格的标注</p>
+<ul>
+<li>
+<p>特殊变格不超过单数二格、复数一格、复数二格的，按照如下顺序在俄语列标注</p>
+<pre><code>сло́во -(单数二格词尾) -(复数一格词尾) -(复数二格词尾)
+сло́во -а -а́ -￠
+</code></pre>
+<ul>
+<li>￠ 表示秃尾或零词尾</li>
+<li>约定俗成，词尾有重音的单词发生重音偏移，词尾没有重音的单词重音保持不变，单词重音偏移而不在词尾的单词的格在对应位置写完整。</li>
+<li>不足三个的，将按顺序补足至目标名词的格，例如分别表示 сло́во 的单数二格、单数二格和复数一格、复数一格、复数二格：<pre><code>сло́во -а
+сло́во -а -а́
+сло́во -а -а́
+сло́во -а -а́ -￠
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>特殊变格不在上述范围内的，在中文列使用 【】 符号标注。
+        - 对动词、形容词的变化和接格的标注</p>
+</li>
+<li>将动词变位在对应体的后面依次写出</li>
+<li>单数第二人称变化可反映动词、形容词所有变化的词，只需依次写出 я ты 的变化，они 的变化可选的写出，单词变化特殊的，要将所有人称的变化写出</li>
+<li>
+<p>词的过去时变化总在单词后面或现在时变化后面，词的接格总在所有组成部分的后面，即：（ [] 表示可选部分）</p>
+<pre><code>单词 [现在时变化] [过去时变化] [接格]
+</code></pre>
+</li>
+<li>
+<p>约定俗成，词尾有重音的单词发生重音偏移，词尾没有重音的单词重音保持不变，单词重音偏移而不在词尾的单词的变化在对应位置写完整。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h3 id="2">2. 内容梳理生产</h3>
 <ul>
@@ -1725,6 +1927,39 @@ $$</code></li>
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="Java/Java%E6%95%99%E6%9D%90.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              Java
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="friends.html" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              友链
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

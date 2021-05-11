@@ -1,0 +1,7 @@
+@font-face { 
+    font-family: russian; 
+    src: url("/font/consola.ttf"),url("/font/consolab.ttf"),url("/font/consolai.ttf"),url("/font/consolaz.ttf"); 
+}
+body { 
+    font-family:russian; 
+}
