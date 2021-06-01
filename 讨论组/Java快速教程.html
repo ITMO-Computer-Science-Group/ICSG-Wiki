@@ -1,0 +1,1781 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="这个 Wiki 是我们整理的关于在俄罗斯留学时理工科学习的知识汇总，这个网站欢迎大家来贡献和修改内容。">
+      
+      
+      
+        <meta name="author" content="ICSG-Group">
+      
+      
+        <link rel="canonical" href="https://itmo.ranying.xyz/%E8%AE%A8%E8%AE%BA%E7%BB%84/Java%E5%BF%AB%E9%80%9F%E6%95%99%E7%A8%8B.html">
+      
+      <link rel="icon" href="/theme/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
+    
+    
+      
+        <title>Java - Russian Natural Science Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2c0c5eaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#7e56c2">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="/theme/theme.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#java" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Russian Natural Science Wiki" class="md-header__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
+      
+  <img src="/theme/icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Russian Natural Science Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Java
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/" title="前往 GitHub 仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Russian Natural Science Wiki" class="md-nav__button md-logo" aria-label="Russian Natural Science Wiki" data-md-component="logo">
+      
+  <img src="/theme/icon.png" alt="logo">
+
+    </a>
+    Russian Natural Science Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/" title="前往 GitHub 仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      <label class="md-nav__link" for="__nav_1">
+        语言学习
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="语言学习" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          语言学习
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Word.html" class="md-nav__link">
+        单词
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
+      
+      <label class="md-nav__link" for="__nav_1_2">
+        俄语
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="俄语" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          俄语
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Russian/Grammar%20for%20Russian.html" class="md-nav__link">
+        俄语语法
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" >
+      
+      <label class="md-nav__link" for="__nav_1_3">
+        物理
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="物理" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          物理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physics/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E9%A2%84%E7%A7%91%E7%89%A9%E7%90%86.Grammar.html" class="md-nav__link">
+        预科物理
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4" type="checkbox" id="__nav_1_4" >
+      
+      <label class="md-nav__link" for="__nav_1_4">
+        化学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="化学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          化学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chemistry/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E9%A2%84%E7%A7%91%E5%8C%96%E5%AD%A6.Grammar.html" class="md-nav__link">
+        预科化学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_5" type="checkbox" id="__nav_1_5" >
+      
+      <label class="md-nav__link" for="__nav_1_5">
+        数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="数学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Math/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E9%A2%84%E7%A7%91%E6%95%B0%E5%AD%A6.Grammar.html" class="md-nav__link">
+        预科数学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        预科课程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="预科课程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          预科课程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      <label class="md-nav__link" for="__nav_2_1">
+        物理
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="物理" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          物理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physics/%E9%A2%84%E7%A7%91%E7%89%A9%E7%90%86%E8%AF%BE%E4%BB%B6.html" class="md-nav__link">
+        预科物理课件
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physics/%E9%A2%84%E7%A7%91%E7%89%A9%E7%90%86%E6%95%99%E6%9D%90.html" class="md-nav__link">
+        预科物理教材
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physics/%E7%83%AD%E5%8A%9B%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93.html" class="md-nav__link">
+        热力学公式总结
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        化学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="化学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          化学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chemistry/%E6%99%AE%E9%80%9A%E5%8C%96%E5%AD%A6.html" class="md-nav__link">
+        普通化学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        数学
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="数学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          数学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Math/%E9%A2%84%E7%A7%91%E6%95%B0%E5%AD%A6.html" class="md-nav__link">
+        预科数学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Math/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6.html" class="md-nav__link">
+        高中数学
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        信息
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="信息" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          信息
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Information/%E9%A2%84%E7%A7%91%E4%BF%A1%E6%81%AF.html" class="md-nav__link">
+        预科信息
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        历史
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="历史" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          历史
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../History/%E5%85%B3%E4%BA%8E%E4%BF%84%E7%BD%97%E6%96%AF%E4%B8%8E%E4%BF%84%E7%BD%97%E6%96%AF%E4%BA%BA.html" class="md-nav__link">
+        关于俄罗斯与俄罗斯人
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../History/%E5%9C%A8%E4%BF%84%E7%BD%97%E6%96%AF%E5%AD%A6%E4%B9%A0%E4%B8%8E%E7%94%9F%E6%B4%BB.html" class="md-nav__link">
+        在俄罗斯学习与生活
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      <label class="md-nav__link" for="__nav_2_6">
+        工程制图
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="工程制图" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          工程制图
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Engineering%20graphics/%E5%B7%A5%E7%A8%8B%E5%88%B6%E5%9B%BE.html" class="md-nav__link">
+        工程制图
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        软件工程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="软件工程" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          软件工程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Java/Java%E6%95%99%E6%9D%90.html" class="md-nav__link">
+        Java
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Guide.html" class="md-nav__link">
+        说明文档
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../friends.html" class="md-nav__link">
+        友链
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ITMO-Computer-Science-Group/Natural-Sciences-Wiki/edit/main/讨论组/Java快速教程.md" title="编辑此页" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="java">Java</h1>
+<h2 id="2021520">2021年5月20日</h2>
+<ul>
+<li>Java 文件的基本结构</li>
+</ul>
+<pre><code class="language-Java">import java.lang.System;  //导入 java 库
+
+public class App {        //主方法所在的类
+    public static void main(String[] args) {//主方法
+        //你的代码在这里开始
+    }
+}
+</code></pre>
+<ul>
+<li>代码中可能出现的所有字符
+    （建议自己打一下）
+    <code>abcdefghijklmnopqrstuvwxyz?:;&gt;&lt;,.'"{}()`+-*/!@$%^&amp;|\[]</code></li>
+<li>注释</li>
+</ul>
+<pre><code class="language-Java">int num;//有两种注释，这是第一种，这种注释只能出现在一行代码的末尾
+int num;/*这一种注释可以出现在行的末尾，也可以分为多行，就像下面那样*/ 
+/*
+注释不影响程序的执行
+同时，注释里的程序无法执行
+*/
+</code></pre>
+<ul>
+<li>分号<ul>
+<li>在 Java 中，每一条语句后面要跟一个分号，即 <code>;</code></li>
+</ul>
+</li>
+<li>
+<p>创建变量</p>
+<ul>
+<li>基本结构是：<code>变量类型 变量名</code>  </li>
+<li>我们给出两种变量类型<ul>
+<li>int （存储<code>整数</code>，范围是 -2^31 ~ 2^31-1）</li>
+<li>boolean （存储<a href="https://baike.baidu.com/item/%E5%B8%83%E5%B0%94%E5%80%BC">布尔值</a>，即 <code>真</code> 或 <code>假</code>）</li>
+</ul>
+</li>
+<li>
+<p>示例：</p>
+<p><code>Java
+int num;
+boolean isNum;</code>
+- 给变量赋值
+    - 我们只能给已经创建的变量赋值，并且赋的值要在变量的数据类型范围中
+    - 每次给变量赋值时，变量的值都会改变
+    - <code>=</code> 运算符的含义是把左边表达式的值赋给右边的变量
+    - 我们根据已经学的两种数据类型给他们赋值：</p>
+<p><code>Java
+num   = 10;
+isNum = true;   //此时 isNum 是 true
+isNum = false;  //此时 isNum 是 false
+num   = 10/2;   //此时 num   是 5</code>
+- 使用变量
+    - 使用一个变量的前提是经历上面的<code>创建变量</code>和<code>给变量赋值</code>两步</p>
+</li>
+</ul>
+</li>
+<li>
+<p>二元运算符</p>
+<ul>
+<li>顾名思义，就是有两个值参与运算的符号，包括加减乘除和取余数</li>
+<li>这两个值可以是变量，也可以是普通的数字</li>
+<li>在运算时，先算 <code>乘</code>，<code>除</code>，<code>取余数</code>，后算 <code>加</code>，<code>减</code>，遇到同一级运算符时，从左到右依次计算</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-Java">//创建变量
+int a;
+int b;
+int c;
+
+//给变量赋值
+a = 10;
+b = 3;
+
+//运算
+c = a + b;   //此时 c 是 13
+c = a - b;   //此时 c 是 7
+c = a * b;   //此时 c 是 30
+c = a / b;   //理论上 c 是 3.33...，但是 c 是 int 类型，只能储存整数，所以 c 的值向下取整，此时 c 是 3
+c = a % b;   //此时 c 是 1，为什么？因为这个符号是 a 除以 b 的余数
+c = a / 5    //此时 c 是 2
+c = a+a * b; //此时 c 是 40
+c = a%5*3-b+a*b%5+3; //此时 c 是 0
+</code></pre>
+<ul>
+<li>括号<ul>
+<li>运算符有计算顺序，但是括号可以强行改变运算顺序</li>
+<li>括号中的变量会优先计算</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-Java">int a;
+int b;
+int c;
+
+//给变量赋值
+a = 10;
+b = 3;
+
+//运算
+c = a%5*3-b+a*b%5+3;        //此时 c 是 0
+c = a%5*(3-b+a)*b%5+3;      //此时 c 是 3
+c = (a%5*3-b+a)*b%5+3;      //此时 c 是 4
+c = a%5*(3-(b+a)*b)%5+3;    //此时 c 是 3
+</code></pre>
+<ul>
+<li>输入一个变量的值</li>
+</ul>
+<pre><code class="language-Java">import java.util.Scanner;//在文件的最开始导入 java.util.Scanner 这个包，才能使用后面的读取功能
+
+public class operate{
+    //...
+    public static void main(String[] args) {
+        //...
+        Scanner sc = new Scanner(System.in);//定义扫描器 sc，记住语法即可，目前无需深究
+        int a = sc.nextInt();//使用扫描器 sc 的读取整数这个功能，并且赋值给 a，这个功能也只需记住语法即可，无需深究
+        //...
+    }
+    //...
+}
+
+</code></pre>
+<ul>
+<li>输出一个变量的值</li>
+</ul>
+<pre><code class="language-Java">int a;
+a = 10;
+System.out.println(a);  //这一行很关键！
+</code></pre>
+<h2 id="2021521">2021年5月21日</h2>
+<ul>
+<li>将创建变量和变量赋值合并<ul>
+<li>以下两种方式是等价的</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-Java">int a;
+a = 10;
+
+int b = 10;
+</code></pre>
+<ul>
+<li>
+<p>用于比较的二元逻辑运算符</p>
+<ul>
+<li>符号<ul>
+<li>大于 &gt;</li>
+<li>小于 &lt;</li>
+<li>等于 ==</li>
+<li>大于等于 &gt;=</li>
+<li>小于等于 &lt;=</li>
+<li>不等于 !=</li>
+</ul>
+</li>
+<li>表达式的返回结果<ul>
+<li>真 true</li>
+<li>假 false</li>
+</ul>
+</li>
+<li>示例代码
+<code>Java
+int num = 10;
+boolean a = 5 &gt; 2;      // true
+boolean b = 5 &lt; 2;      // false
+boolean c = 11 &gt;= num;  // true
+boolean d = 10 != num;  // false
+boolean e = 3 &lt;= num;   // true
+boolean f = 7 == 7;     // true
+boolean g = (3 &gt; 5) == false;// true</code></li>
+</ul>
+</li>
+<li>
+<p>if 判断语句和变量的作用域</p>
+<ul>
+<li>if 语句用于程序的分支执行</li>
+<li>单个的 if 语句
+    <code>Java
+    boolean isNum;
+    if(3 &gt; 5){
+        //如果 3 &gt; 5 这个表达式的值是 true，则执行这个代码块里的代码
+        //如果 3 &gt; 5 这个表达式的值是 false，则不执行
+    }</code></li>
+<li>
+<p>if-else 语句
+    ```Java
+    if(3 &gt; 5){
+        //如果 3 &gt; 5 这个表达式的值是 true，则执行这个代码块里的代码
+    }
+    else {
+        //如果 3 &gt; 5 这个表达式的值是 false，则执行这个代码块里的代码
+    }</p>
+<p>//以上语句等价于：
+if(3 &gt; 5){
+    //如果 3 &gt; 5 这个表达式的值是 true，则执行这个代码块里的代码
+}
+if(3 &lt;= 5){
+    //如果 3 &lt;= 5 这个表达式的值是 true，则执行这个代码块里的代码
+}
+<code>- if-elseif-else</code>Java
+if(3 &gt; 5){
+    //如果 3 &gt; 5 这个表达式的值是 true，则执行这个代码块里的代码
+}
+else if(4 == 5){
+    //如果 4 == 5 这个表达式的值是 true，则执行这个代码块里的代码
+}
+else{
+    //如果 3 &gt; 5 和 4 == 5 这两个个表达式的值都是 false，则执行这个代码块里的代码
+}
+```
+    - 分支的原则
+- 必须以 if 开头
+- if 后面可以跟 0 个或多个 elseif
+- else 必须在最后面，并且只能有 0 ~ 1 个 else 语句
+    - 代码块
+- 我们认为 {   } 包括其之间的内容是一个代码块
+- if elseif else 语句后面的代码块，表示是 语句的表达式值为真时 要执行的一组语句
+    - 变量的作用域
+- 被创建的变量只有在它的作用域中才可以被赋值或者参与运算
+- 我们现阶段认为变量的作用域是他所在的代码块</p>
+<p>```Java
+public class App {        //主方法所在的类
+    public static void main(String[] args) {//这里是主方法所在的代码块的开始
+        int a = 10;
+        {          //这里是一个奇怪的代码块的开始
+            int b = 20;
+            //在这里 a b 两个变量均可使用
+        }          //这里是一个奇怪的代码块的结束</p>
+<pre><code>    //在这里只能使用 a 变量，b 变量只能在奇怪的代码块之间使用
+
+    if(1 &gt; 0){
+        int c = 10;
+    }
+    //无法使用 c 变量！
+}//这里是主方法所在的代码块的结束
+</code></pre>
+<p>}
+```</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021525">2021年5月25日</h2>
+<ul>
+<li>
+<p>while 循环</p>
+<ol>
+<li>判断 while 的表达式是否为真，若为假则终止执行</li>
+<li>执行代码块里的代码</li>
+<li>回到第一步</li>
+</ol>
+<p><code>Java
+num = 10;
+while(num &lt; 13){
+    num = num + 2;
+    System.out.println(num);
+}
+//...</code>
+- for 循环
+- for(expr1 ; expr2 ; expr3)
+    1. 首先在 for 循环前执行 expr1 的代码
+    2. 判断 expr2 是否为真，若为真执行 for 的语句块，若为假则终止执行
+    3. 执行 expr3
+    4. 回到第二步</p>
+<p><code>Java
+for(int i = 0; i &lt;10; i++){
+    System.out.println(i*i-i+1);
+}</code>
+- while 循环与 for 循环是等价的，可以相互转化。
+- 一元运算符</p>
+</li>
+</ul>
+<pre><code class="language-Java">int num = 10;
+
+//以下等价
+num++;
+++num;
+num = num + 1;
+
+//以下等价
+num--;
+--num;
+num = num - 1;
+
+//++num 和 num++ 的不同
+int ppnum = ++num;
+int numpp = num++;
+
+//以下等价
+num = 0 + num;
+num = + num;
+num = num;
+
+//以下等价
+num = 0 - num;
+num = - num;
+</code></pre>
+<ul>
+<li>循环控制语句<ul>
+<li>continue;</li>
+<li>break;</li>
+</ul>
+</li>
+<li>
+<p>用于逻辑运算的运算符</p>
+<ul>
+<li>
+<p>逻辑与 &amp;&amp;</p>
+<ul>
+<li>格式： 表达式1 &amp;&amp; 表达式2</li>
+<li>两个数都为真时，返回真</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>true</th>
+<th>false</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>逻辑或 ||</p>
+<ul>
+<li>格式：表达式1 || 表达式2</li>
+<li>两个数不都为假时，返回真</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>true</th>
+<th>false</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>逻辑非 !</p>
+<ul>
+<li>格式：!表达式</li>
+<li>返回一个与表达式相反的布尔值</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>true</th>
+<th>false</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>!</td>
+<td>false</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<p><code>Java
+boolean a = true &amp;&amp; true;
+boolean b = true || false;
+boolean c = !false;</code>
+- 数组
+- 数组是把某种数据类型相同的值组合起来的一种高级形式
+- 通过以下方式创建数组：</p>
+<p><code>Java
+boolean[] b;
+int[] a;</code></p>
+<ul>
+<li>通过以下方式为数组赋值</li>
+</ul>
+<p><code>Java
+b = new int[3];
+int[] b = {1, 2, 3};
+b[1] = 3;</code></p>
+<ul>
+<li>使用下标访问数组的元素<ul>
+<li>第一个元素的下标是 0</li>
+</ul>
+</li>
+</ul>
+<p><code>Java
+int x = b[0];</code></p>
+<ul>
+<li>获得数组的长度</li>
+</ul>
+<p><code>Java
+int x = b.length;</code></p>
+</li>
+</ul>
+<h2 id="2021526">2021年5月26日</h2>
+<ul>
+<li>
+<p>方法</p>
+<ul>
+<li>方法的构成<ul>
+<li><code>修饰符</code> <code>返回值类型</code> <code>方法名</code>(<code>形式参数</code>)</li>
+</ul>
+</li>
+<li>修饰符<ul>
+<li>static</li>
+</ul>
+</li>
+<li>返回值类型<ul>
+<li>int</li>
+<li>Boolean</li>
+<li>void 无返回值</li>
+</ul>
+</li>
+<li>返回语句<ul>
+<li>return <code>与返回值类型相匹配的表达式</code></li>
+<li>遇到 return 时函数终止执行并返回该表达式</li>
+</ul>
+</li>
+<li>
+<p>入口方法</p>
+<ul>
+<li><code>public</code> <code>static</code> <code>void</code> <code>main</code>(<code>String[] args</code>)<ul>
+<li>修饰符 public static</li>
+<li>返回值 void</li>
+<li>方法名 main</li>
+<li>形参 String[] args</li>
+</ul>
+</li>
+<li>
+<p>程序总从入口方法开始执行，默认的入口方法名称是 main
+    ```Java
+    import java.lang.System;  //导入 java 库</p>
+<p>public class App {        //主方法所在的类
+    public static void main(String[] args) {//主方法
+        //你的代码在这里开始
+    }
+}
+```
+    - 其他的方法</p>
+</li>
+</ul>
+<p>```Java
+import java.lang.System;  //导入 java 库</p>
+<p>public class App {        //主方法所在的类
+    public static void main(String[] args) {//主方法
+        //你的代码在这里开始
+        if(isOdd(20)){
+            //如果 20 是奇数时则执行
+        }
+    }</p>
+<pre><code>static Boolean isOdd(int num){
+    if(num%2 == 0){
+        return false;
+    }
+    return true;
+}
+</code></pre>
+<p>}
+```
+- char 与 ASCII
+    - ASCII 美国信息交换标准代码</p>
+<table>
+<thead>
+<tr>
+<th>十进制</th>
+<th>图形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>32</td>
+<td>(space)</td>
+</tr>
+<tr>
+<td>33</td>
+<td>!</td>
+</tr>
+<tr>
+<td>34</td>
+<td>"</td>
+</tr>
+<tr>
+<td>35</td>
+<td>#</td>
+</tr>
+<tr>
+<td>36</td>
+<td>$</td>
+</tr>
+<tr>
+<td>37</td>
+<td>%</td>
+</tr>
+<tr>
+<td>38</td>
+<td>&amp;</td>
+</tr>
+<tr>
+<td>39</td>
+<td>'</td>
+</tr>
+<tr>
+<td>40</td>
+<td>(</td>
+</tr>
+<tr>
+<td>41</td>
+<td>)</td>
+</tr>
+<tr>
+<td>42</td>
+<td>*</td>
+</tr>
+<tr>
+<td>43</td>
+<td>+</td>
+</tr>
+<tr>
+<td>44</td>
+<td>,</td>
+</tr>
+<tr>
+<td>45</td>
+<td>-</td>
+</tr>
+<tr>
+<td>46</td>
+<td>.</td>
+</tr>
+<tr>
+<td>47</td>
+<td>/</td>
+</tr>
+<tr>
+<td>48</td>
+<td>0</td>
+</tr>
+<tr>
+<td>49</td>
+<td>1</td>
+</tr>
+<tr>
+<td>50</td>
+<td>2</td>
+</tr>
+<tr>
+<td>51</td>
+<td>3</td>
+</tr>
+<tr>
+<td>52</td>
+<td>4</td>
+</tr>
+<tr>
+<td>53</td>
+<td>5</td>
+</tr>
+<tr>
+<td>54</td>
+<td>6</td>
+</tr>
+<tr>
+<td>55</td>
+<td>7</td>
+</tr>
+<tr>
+<td>56</td>
+<td>8</td>
+</tr>
+<tr>
+<td>57</td>
+<td>9</td>
+</tr>
+<tr>
+<td>58</td>
+<td>:</td>
+</tr>
+<tr>
+<td>59</td>
+<td>;</td>
+</tr>
+<tr>
+<td>60</td>
+<td>&lt;</td>
+</tr>
+<tr>
+<td>61</td>
+<td>=</td>
+</tr>
+<tr>
+<td>62</td>
+<td>&gt;</td>
+</tr>
+<tr>
+<td>63</td>
+<td>?</td>
+</tr>
+<tr>
+<td>64</td>
+<td>@</td>
+</tr>
+<tr>
+<td>65</td>
+<td>A</td>
+</tr>
+<tr>
+<td>66</td>
+<td>B</td>
+</tr>
+<tr>
+<td>67</td>
+<td>C</td>
+</tr>
+<tr>
+<td>68</td>
+<td>D</td>
+</tr>
+<tr>
+<td>69</td>
+<td>E</td>
+</tr>
+<tr>
+<td>70</td>
+<td>F</td>
+</tr>
+<tr>
+<td>71</td>
+<td>G</td>
+</tr>
+<tr>
+<td>72</td>
+<td>H</td>
+</tr>
+<tr>
+<td>73</td>
+<td>I</td>
+</tr>
+<tr>
+<td>74</td>
+<td>J</td>
+</tr>
+<tr>
+<td>75</td>
+<td>K</td>
+</tr>
+<tr>
+<td>76</td>
+<td>L</td>
+</tr>
+<tr>
+<td>77</td>
+<td>M</td>
+</tr>
+<tr>
+<td>78</td>
+<td>N</td>
+</tr>
+<tr>
+<td>79</td>
+<td>O</td>
+</tr>
+<tr>
+<td>80</td>
+<td>P</td>
+</tr>
+<tr>
+<td>81</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>82</td>
+<td>R</td>
+</tr>
+<tr>
+<td>83</td>
+<td>S</td>
+</tr>
+<tr>
+<td>84</td>
+<td>T</td>
+</tr>
+<tr>
+<td>85</td>
+<td>U</td>
+</tr>
+<tr>
+<td>86</td>
+<td>V</td>
+</tr>
+<tr>
+<td>87</td>
+<td>W</td>
+</tr>
+<tr>
+<td>88</td>
+<td>X</td>
+</tr>
+<tr>
+<td>89</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>90</td>
+<td>Z</td>
+</tr>
+<tr>
+<td>91</td>
+<td>[</td>
+</tr>
+<tr>
+<td>92</td>
+<td>\</td>
+</tr>
+<tr>
+<td>93</td>
+<td>]</td>
+</tr>
+<tr>
+<td>94</td>
+<td>^</td>
+</tr>
+<tr>
+<td>95</td>
+<td>_</td>
+</tr>
+<tr>
+<td>96</td>
+<td>`</td>
+</tr>
+<tr>
+<td>97</td>
+<td>a</td>
+</tr>
+<tr>
+<td>98</td>
+<td>b</td>
+</tr>
+<tr>
+<td>99</td>
+<td>c</td>
+</tr>
+<tr>
+<td>100</td>
+<td>d</td>
+</tr>
+<tr>
+<td>101</td>
+<td>e</td>
+</tr>
+<tr>
+<td>102</td>
+<td>f</td>
+</tr>
+<tr>
+<td>103</td>
+<td>g</td>
+</tr>
+<tr>
+<td>104</td>
+<td>h</td>
+</tr>
+<tr>
+<td>105</td>
+<td>i</td>
+</tr>
+<tr>
+<td>106</td>
+<td>j</td>
+</tr>
+<tr>
+<td>107</td>
+<td>k</td>
+</tr>
+<tr>
+<td>108</td>
+<td>l</td>
+</tr>
+<tr>
+<td>109</td>
+<td>m</td>
+</tr>
+<tr>
+<td>110</td>
+<td>n</td>
+</tr>
+<tr>
+<td>111</td>
+<td>o</td>
+</tr>
+<tr>
+<td>112</td>
+<td>p</td>
+</tr>
+<tr>
+<td>113</td>
+<td>q</td>
+</tr>
+<tr>
+<td>114</td>
+<td>r</td>
+</tr>
+<tr>
+<td>115</td>
+<td>s</td>
+</tr>
+<tr>
+<td>116</td>
+<td>t</td>
+</tr>
+<tr>
+<td>117</td>
+<td>u</td>
+</tr>
+<tr>
+<td>118</td>
+<td>v</td>
+</tr>
+<tr>
+<td>119</td>
+<td>w</td>
+</tr>
+<tr>
+<td>120</td>
+<td>x</td>
+</tr>
+<tr>
+<td>121</td>
+<td>y</td>
+</tr>
+<tr>
+<td>122</td>
+<td>z</td>
+</tr>
+<tr>
+<td>123</td>
+<td>{</td>
+</tr>
+<tr>
+<td>124</td>
+<td></td>
+</tr>
+<tr>
+<td>125</td>
+<td>}</td>
+</tr>
+<tr>
+<td>126</td>
+<td>~</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>char 数据类型</p>
+<p><code>Java
+char c = 'A';
+char c = 65;</code>
+    - 转义序列</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>转义序列</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\t</td>
+<td>在文中该处插入一个tab键</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>在文中该处插入一个后退键</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>在文中该处换行</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>在文中该处插入回车</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>在文中该处插入换页符</td>
+</tr>
+<tr>
+<td>\'</td>
+<td>在文中该处插入单引号</td>
+</tr>
+<tr>
+<td>\"</td>
+<td>在文中该处插入双引号</td>
+</tr>
+<tr>
+<td>\\</td>
+<td>在文中该处插入反斜杠</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>String</p>
+<p><code>Java
+String s = "你好";
+String b = s + "！";  //拼接字符串</code></p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "navigation.top"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1c7c35e.min.js"></script>
+      
+        <script src="/mathjax/LaTeX.js"></script>
+      
+    
+  </body>
+</html>
